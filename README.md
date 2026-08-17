@@ -1,117 +1,128 @@
-# SmartStay AI — Akıllı Konaklama Öneri & Dinamik Fiyat Değerleme Platformu
+# SmartStay AI 🏨✨
+> **Akıllı Konaklama Öneri & Dinamik Fiyat Değerleme Platformu**
 
-SmartStay AI; kullanıcıların bütçe, konum, oda tipi ve konaklama olanakları (Wi-Fi, klima, havuz, mutfak vb.) tercihlerine göre en uygun konaklama ilanlarını öneren ve makine öğrenmesi algoritmalarıyla ilanın piyasa fiyat değerlemesini (Fırsat / Piyasa Değerinde / Pahalı) gerçekleştiren uçtan uca modern bir web platformudur.
-
----
-
-## 🎯 Proje Amacı ve Çözülen Problem
-
-Seyahat ve konaklama sektöründe kullanıcılar binlerce ilan arasından kendi kriterlerine en uygun olanı bulmakta ve gördükleri fiyatın o bölge ve olanaklar için adil olup olmadığını anlamakta zorlanmaktadır. SmartStay AI bu problemi iki temel yapay zeka modülüyle çözer:
-
-1. **İçerik Tabanlı Akıllı Öneri Motoru (Content-Based Recommendation Engine):**
-   - Kullanıcının aradığı anahtar kelimeleri ve filtreleri, ilanların metinsel ve özellik verileriyle **TF-IDF (Term Frequency - Inverse Document Frequency)** vektör uzayında eşleştirir.
-   - **Kosinüs Benzerliği (Cosine Similarity)** metriği ile kullanıcı talebine en yakın ilanları yüksek doğrulukla sıralar.
-
-2. **Dinamik Fiyat Değerleme ve Anomali Tespiti (ML Price Valuation Engine):**
-   - Konum (enlem/boylam, semt), oda tipi, yatak/banyo sayısı, olanak çeşitliliği ve kullanıcı puanları gibi çok boyutlu öznitelikleri kullanarak **XGBoost / Random Forest Regressor** modelleriyle ilanın "olması gereken tahmini piyasa değerini" hesaplar.
-   - Gerçek fiyat ile model tahmini arasındaki farkı analiz ederek kullanıcıya dinamik rozetler sunar:
-     - 🟢 **Fırsat (Good Deal):** Gerçek fiyat, piyasa tahmininin belirgin şekilde altında (%15+ indirimli).
-     - 🔵 **Piyasa Değerinde (Fair Price):** Gerçek fiyat, tahmin edilen piyasa aralığında.
-     - 🔴 **Pahalı (Overpriced):** Gerçek fiyat, bölge ve olanak ortalamasının belirgin şekilde üzerinde.
+SmartStay AI; kullanıcıların bütçe, lokasyon ve olanak tercihlerine (Wi-Fi, klima, havuz, ev tipi vb.) göre en uygun konaklama ilanlarını öneren ve seçilen ilanın fiyatını bölge/özellik ortalamasına göre **"Fırsat"**, **"Piyasa Değerinde"** veya **"Pahalı"** olarak makine öğrenmesiyle tespit eden modern, tam yığın (full-stack) bir web platformudur.
 
 ---
 
-## 🏗️ Sistem Mimarisi ve Teknoloji Yığını
+## 📌 Proje Mimarisi ve Ana Modüller
 
-Proje, kurumsal standartlarda **Monorepo** ve mikroservis/çok katmanlı mimari yaklaşımıyla kurgulanmıştır:
+Platform, modern bir mikroservis ve çok katmanlı mimari yaklaşımıyla 4 ana bileşenden oluşmaktadır:
 
+```mermaid
+graph TD
+    A[React.js + Leaflet Frontend] -->|REST API Calls| B[ASP.NET Core 8 Web API]
+    B -->|Entity Framework Core| C[(MSSQL Database)]
+    B -->|HttpClient REST| D[FastAPI ML Microservice]
+    D -->|Predict / Recommend| E[Scikit-Learn & XGBoost Models]
+    F[Jupyter / Data Science Pipeline] -->|Train & Export .joblib| E
 ```
-SmartStay AI
-├── data_science/                 # Veri Analitiği, Özellik Mühendisliği ve Model Eğitimi
+
+### 1. 🤖 Akıllı Öneri Motoru (Recommendation Engine)
+- **Teknoloji:** TF-IDF (Term Frequency-Inverse Document Frequency) + Cosine Similarity
+- **İşlev:** Kullanıcının serbest metin veya filtreler ile girdiği tercihler ile konaklama ilanlarının özellikleri, açıklamaları ve olanakları (amenities) vektör uzayında karşılaştırılarak benzerlik skoru en yüksek ilanlar listelenir.
+
+### 2. 📊 Dinamik Fiyat Değerleme Motoru (Valuation Engine)
+- **Teknoloji:** XGBoost & Random Forest Regressor
+- **İşlev:** İlanın oda tipi, coğrafi konumu (enlem/boylam), mahalle, olanaklar, yorum sayısı ve puanlarına göre olması gereken tahmini piyasa fiyatını hesaplar. Gerçek fiyat ile tahmin edilen fiyat kıyaslanarak kullanıcıya dinamik değerleme rozetleri sunulur:
+  - 🟢 **Fırsat:** Piyasa değerinin altında (%10+ indirimli)
+  - 🔵 **Piyasa Değerinde:** Piyasa ortalamasında (+/-%10)
+  - 🔴 **Pahalı:** Piyasa değerinin üzerinde (%10+ pahalı)
+
+---
+
+## 🛠️ Teknoloji Yığını
+
+| Katman | Teknolojiler |
+|---|---|
+| **Veri Bilimi & ML** | Python 3.14, Pandas, NumPy, Scikit-Learn, XGBoost, Matplotlib, Seaborn, Joblib, Jupyter |
+| **ML Servis Katmanı** | FastAPI, Uvicorn, Pydantic |
+| **Ana Backend** | ASP.NET Core 8 Web API, C#, Entity Framework Core, MSSQL Server |
+| **Frontend** | React.js, Tailwind CSS, Leaflet.js, React-Leaflet, Axios, Lucide Icons |
+| **Versiyon Kontrol** | Git, Monorepo Mimarisi |
+
+---
+
+## 📂 Proje Klasör Yapısı
+
+```text
+SmartStay-AI
+├── data_science/               # Veri bilimi, keşifçi veri analizi ve modelleme
 │   ├── data/
-│   │   ├── raw/                 # Ham veri seti (Inside Airbnb listings.csv)
-│   │   └── processed/           # Temizlenmiş ve zenginleştirilmiş veri setleri
-│   ├── notebooks/               # Jupyter analiz ve model geliştirme defterleri
+│   │   ├── raw/                # Ham veri seti (listings.csv)
+│   │   └── processed/          # Temizlenmiş ve işlenmiş veri seti
+│   ├── notebooks/              # Jupyter analiz ve model geliştirme defterleri
 │   │   ├── 01_eda_and_cleaning.ipynb
 │   │   ├── 02_recommender_system.ipynb
 │   │   └── 03_price_prediction_model.ipynb
-│   └── models/                  # Eğitilmiş .joblib model ve vektörleştirici dosyaları
-│
-├── ml_service/                  # FastAPI (Python) Mikroservisi
+│   └── models/                 # Eğitilmiş modeller ve vektörleştiriciler (.joblib)
+├── ml_service/                 # FastAPI tabanlı ML mikroservisi
 │   ├── app/
-│   │   ├── main.py              # REST API Router & Middleware
-│   │   ├── schemas.py           # Pydantic Request/Response modelleri
-│   │   └── services/            # Model inference ve öneri algoritmaları
+│   │   ├── main.py             # FastAPI giriş noktası
+│   │   ├── schemas.py          # Pydantic veri modelleri
+│   │   └── services/           # Model yükleme ve tahmin servisleri
 │   └── requirements.txt
-│
-├── backend/                     # ASP.NET Core 8 Web API (N-Tier Architecture)
-│   ├── SmartStay.API/           # Controller & API Gateway katmanı
-│   ├── SmartStay.Core/          # Domain Entities, DTOs & Repository Arayüzleri
-│   ├── SmartStay.Data/          # EF Core DbContext, Migrations & MSSQL Veri Erişimi
-│   └── SmartStay.Services/      # İş Mantığı, ML HttpClient İstemcisi & Servisler
-│
-├── frontend/                    # Modern React Web Arayüzü
+├── backend/                    # ASP.NET Core 8 Web API (Çok Katmanlı Mimari)
+│   ├── SmartStay.API/          # Controllers, Middlewares, Dependency Injection
+│   ├── SmartStay.Core/         # Entities, DTOs, Interfaces
+│   ├── SmartStay.Data/         # DbContext, Migrations, Repositories
+│   └── SmartStay.Services/     # Business Logic, ML Client Service
+├── frontend/                   # React + Tailwind + Leaflet Arayüzü
 │   ├── src/
-│   │   ├── components/          # Reusable UI bileşenleri, Harita (Leaflet), Kartlar
-│   │   ├── pages/               # Ana Sayfa, Arama/Filtreleme, İlan Detay, Analiz Paneli
-│   │   └── services/            # Axios API istemcileri
+│   │   ├── components/         # Kartlar, Filtreler, Harita, Modal bileşenleri
+│   │   ├── pages/              # Ana Sayfa, Arama/Sonuç, İlan Detay
+│   │   └── services/           # Backend API istemcileri (Axios)
 │   └── package.json
-│
-├── requirements.txt             # Python ortam bağımlılıkları
-├── .gitignore                   # Versiyon kontrol hariç tutma kuralları
-└── README.md                    # Proje dokümantasyonu
+└── README.md
 ```
 
-### 🛠️ Teknolojiler
-- **Veri Bilimi & Makine Öğrenmesi:** Python, Pandas, NumPy, Scikit-Learn (TF-IDF, Cosine Similarity), XGBoost, Matplotlib, Seaborn, Joblib.
-- **ML API Servisi:** FastAPI, Uvicorn, Pydantic.
-- **Ana Backend:** C#, .NET 8 (ASP.NET Core Web API), Entity Framework Core (Code-First), Microsoft SQL Server.
-- **Frontend & Görselleştirme:** React.js, Tailwind CSS, Leaflet.js / React-Leaflet (İnteraktif Harita Entegrasyonu), Lucide Icons, Axios.
-- **Versiyon Kontrol:** Git & GitHub.
+---
+
+## 📊 Veri Seti Bilgisi
+
+Projede **Inside Airbnb** açık veri setinden elde edilen `listings.csv` verisi kullanılmaktadır.
+- **Kritik Kolonlar:** `id`, `name`, `description`, `neighbourhood_cleansed`, `latitude`, `longitude`, `room_type`, `accommodates`, `bathrooms`, `bedrooms`, `beds`, `amenities`, `price`, `number_of_reviews`, `review_scores_rating`.
 
 ---
 
-## 📊 Veri Seti
+## 🚀 Kurulum ve Başlangıç
 
-- **Kaynak:** Inside Airbnb / Kaggle (`listings.csv`)
-- **Önemli Nitelikler:** `price`, `neighbourhood_cleansed`, `latitude`, `longitude`, `room_type`, `accommodates`, `amenities`, `number_of_reviews`, `review_scores_rating`.
-
----
-
-## 🚀 Kurulum ve Çalıştırma
-
-### 1. Python Sanal Ortamı ve ML Servisi
+### 1. Veri Bilimi & ML Ortamı
 ```bash
-# Sanal ortam oluşturma ve etkinleştirme
-python -m venv .venv
-# Windows:
+# Sanal ortamı aktive edin
 .venv\Scripts\activate
 
-# Bağımlılıkların yüklenmesi
+# Bağımlılıkları yükleyin
 pip install -r requirements.txt
 
-# ML Servisini Başlatma (İlerleyen aşamalarda)
-# uvicorn ml_service.app.main:app --reload --port 8000
+# Jupyter Notebook'u başlatın
+jupyter notebook
 ```
 
-### 2. Backend (ASP.NET Core)
+### 2. FastAPI ML Servisi
 ```bash
-cd backend
-dotnet restore
-dotnet run --project SmartStay.API
+cd ml_service
+uvicorn app.main:app --reload --port 8000
 ```
 
-### 3. Frontend (React)
+### 3. Backend (ASP.NET Core)
+```bash
+cd backend/SmartStay.API
+dotnet run
+```
+
+### 4. Frontend (React)
 ```bash
 cd frontend
 npm install
-npm run dev
+npm start
 ```
 
 ---
 
-## 📈 Başarı Kriterleri ve Metrikler
+## 📅 Geliştirme Yol Haritası
 
-- **Fiyat Tahmin Modeli:** $R^2 \ge 0.80$, Düşük RMSE (Root Mean Squared Error) ve MAE değerleri.
-- **Öneri Doğruluğu:** Kullanıcı olanak ve lokasyon kriterleriyle yüksek anlamsal örtüşme.
-- **Sistem Performansı:** API uç noktalarında 200ms altı yanıt süresi.
+- **Aşama 1 (Veri Bilimi & ML):** Keşifçi Veri Analizi (EDA), Veri Temizleme, TF-IDF Öneri Motoru, XGBoost Fiyat Tahmin Modeli ve Model Kaydı (`.joblib`).
+- **Aşama 2 (FastAPI ML Servisi):** REST endpoint'leri (`/predict`, `/recommend`), Pydantic şemaları ve CORS yapılandırması.
+- **Aşama 3 (ASP.NET Core Backend):** EF Core Code-First veritabanı, Repository Pattern, N-Tier Mimari, HttpClient ML entegrasyonu.
+- **Aşama 4 (React Frontend & Harita):** Dinamik filtreleme, Leaflet interaktif harita, Fırsat/Piyasa/Pahalı rozetleri ve UI/UX geliştirmeleri.

@@ -1,7 +1,3 @@
-# ==============================================================================
-# SmartStay AI - .gitignore
-# ==============================================================================
-
 # Python & Virtual Environments
 .venv/
 venv/
@@ -12,84 +8,56 @@ __pycache__/
 *$py.class
 *.so
 .Python
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
 
-# Jupyter Notebooks
-.ipynb_checkpoints
-*/.ipynb_checkpoints/*
-*.ipynb_checkpoints*
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
 
-# Data Files (Raw & Processed Large Datasets)
+# Data Files (Do not commit large datasets)
+data_science/data/raw/*
+!data_science/data/raw/.gitkeep
+data_science/data/processed/*
+!data_science/data/processed/.gitkeep
 *.csv
 *.tsv
-*.xlsx
 *.parquet
-*.feather
-*.h5
-*.hdf5
+*.sqlite
+*.db
 *.zip
 *.tar.gz
 *.gz
-*.sqlite
-*.db
-!data_science/data/raw/.gitkeep
-!data_science/data/processed/.gitkeep
 
-# Machine Learning Large Binary Models
-*.joblib
-*.pkl
-*.pickle
-*.onnx
-*.pt
-*.pth
+# Serialized ML Models (Large binaries)
+data_science/models/*.joblib
+data_science/models/*.pkl
 !data_science/models/.gitkeep
 
-# .NET / C# Backend
+# Backend - .NET / C# / Visual Studio
 bin/
 obj/
 *.user
-*.userosscache
+*.userprefs
+*.suo
 *.sln.docstates
 .vs/
-_ReSharper*/
-*.DotSettings.user
 appsettings.Development.json
-appsettings.Local.json
 
-# Node.js / React Frontend
+# Frontend - React / Node.js
 node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
 build/
 dist/
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 # Operating System & IDEs
+.vscode/
+.idea/
 .DS_Store
 Thumbs.db
 desktop.ini
-.idea/
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-*.swp
-*~
+*.bak
+*.tmp
