@@ -61,3 +61,6 @@ Thumbs.db
 desktop.ini
 *.bak
 *.tmp
+
+# Internal Project Plans & Guidelines
+proje_planlari/
