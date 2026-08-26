@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/SmartStay.API/SmartStay.API.csproj" />
+    <Project Path="src/SmartStay.Core/SmartStay.Core.csproj" />
+    <Project Path="src/SmartStay.Data/SmartStay.Data.csproj" />
+    <Project Path="src/SmartStay.Services/SmartStay.Services.csproj" />
+  </Folder>
+</Solution>

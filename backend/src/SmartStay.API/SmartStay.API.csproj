@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.11" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SmartStay.Core\SmartStay.Core.csproj" />
+    <ProjectReference Include="..\SmartStay.Data\SmartStay.Data.csproj" />
+    <ProjectReference Include="..\SmartStay.Services\SmartStay.Services.csproj" />
+  </ItemGroup>
+
+</Project>
