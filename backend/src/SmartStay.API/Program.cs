@@ -1,14 +1,19 @@
 using System;
+using System.IO;
+using System.Reflection;
 using System.Text.Json;
 using System.Threading.Tasks;
+using FluentValidation;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using SmartStay.API.Middlewares;
 using SmartStay.Core.Interfaces.Repositories;
 using SmartStay.Core.Interfaces.Services;
+using SmartStay.Core.Validators;
 using SmartStay.Data.Context;
 using SmartStay.Data.Repositories;
 using SmartStay.Data.Seed;
@@ -44,11 +49,23 @@ builder.Services.AddControllers()
         options.JsonSerializerOptions.WriteIndented = true;
     });
 
-// OpenAPI & Swagger Yapilandirmasi
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+// FluentValidation Dogrulayicilarinin Kaydi
+builder.Services.AddValidatorsFromAssemblyContaining<PricePredictionRequestValidator>();
 
-// CORS Politikasi (React frontend icin)
+// OpenAPI & Swagger Dökümantasyonu Yapılandırması
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(c =>
+{
+    // XML Yorum Satırlarının Swagger'a Dahil Edilmesi
+    var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+    if (File.Exists(xmlPath))
+    {
+        c.IncludeXmlComments(xmlPath);
+    }
+});
+
+// CORS Politikası (React frontend için)
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("SmartStayCorsPolicy", policy =>
@@ -59,11 +76,11 @@ builder.Services.AddCors(options =>
     });
 });
 
-// Katman Servis Kayitlari (DI)
+// Katman Servis Kayıtları (DI)
 builder.Services.AddScoped<IListingsRepository, ListingsRepository>();
 builder.Services.AddScoped<IListingsService, ListingsService>();
 
-// FastAPI ML Servisi Istemcisi (Typed HttpClient)
+// FastAPI ML Servisi İstemcisi (Typed HttpClient)
 var mlBaseUrl = builder.Configuration["MlService:BaseUrl"] ?? "http://127.0.0.1:8000";
 builder.Services.AddHttpClient<IMlServiceClient, MlServiceClient>(client =>
 {
@@ -74,7 +91,12 @@ builder.Services.AddHttpClient<IMlServiceClient, MlServiceClient>(client =>
 var app = builder.Build();
 
 // ---------------------------------------------------------------------------
-// 2. Veritabani Migrasyon ve Seed Islemi (Startup)
+// 2. Global Hata Yönetimi Middleware (En Başta)
+// ---------------------------------------------------------------------------
+app.UseMiddleware<GlobalExceptionHandlingMiddleware>();
+
+// ---------------------------------------------------------------------------
+// 3. Veritabani Migrasyon ve Seed Islemi (Startup)
 // ---------------------------------------------------------------------------
 using (var scope = app.Services.CreateScope())
 {
@@ -83,26 +105,25 @@ using (var scope = app.Services.CreateScope())
     try
     {
         var context = services.GetRequiredService<AppDbContext>();
-        logger.LogInformation("MSSQL Veritabani baglantisi ve migrasyonlar kontrol ediliyor...");
         await context.Database.MigrateAsync();
-        logger.LogInformation("Veritabani migrasyonlari guncel. CSV Seed kontrol ediliyor...");
         await DataSeeder.SeedAsync(context, logger);
     }
     catch (Exception ex)
     {
-        logger.LogError(ex, "Veritabani baslatma ve seed sirasinda hata olustu: {Message}", ex.Message);
+        logger.LogError(ex, "Veritabani baslatma veya seed sirasinda hata olustu: {Message}", ex.Message);
     }
 }
 
 // ---------------------------------------------------------------------------
-// 3. HTTP Istek Isleme Hatti (Middleware Pipeline)
+// 4. HTTP İstek İşleme Hattı (Pipeline) & Swagger
 // ---------------------------------------------------------------------------
 
-if (app.Environment.IsDevelopment())
+app.UseSwagger();
+app.UseSwaggerUI(c =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "SmartStay AI API v1");
+    c.RoutePrefix = "swagger";
+});
 
 app.UseCors("SmartStayCorsPolicy");
 
