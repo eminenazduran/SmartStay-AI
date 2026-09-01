@@ -1,23 +1,83 @@
-import React, { useState } from 'react';
-import { useParams, useNavigate, Link } from 'react-router-dom';
-import { MOCK_LISTINGS } from '../data/mockListings';
+import React, { useState, useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import { fetchListingById } from '../services/api';
 
 export const ListingDetailPage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const [guestsCount, setGuestsCount] = useState(2);
+  const [listing, setListing] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [errorMessage, setErrorMessage] = useState(null);
 
-  // Find listing by ID or fallback to first listing
-  const listing = MOCK_LISTINGS.find((item) => String(item.id) === String(id)) || MOCK_LISTINGS[0];
+  useEffect(() => {
+    let isMounted = true;
+    async function loadListingDetail() {
+      setIsLoading(true);
+      setErrorMessage(null);
+      try {
+        const res = await fetchListingById(id);
+        if (res && res.success && res.data && isMounted) {
+          setListing(res.data);
+        } else {
+          throw new Error('İlan detayları yüklenemedi.');
+        }
+      } catch (err) {
+        console.error('[ListingDetailPage] Detay getirme hatası:', err);
+        if (isMounted) {
+          setErrorMessage(err.message || 'İlan bilgileri yüklenemedi.');
+        }
+      } finally {
+        if (isMounted) setIsLoading(false);
+      }
+    }
+
+    if (id) {
+      loadListingDetail();
+    }
+    return () => {
+      isMounted = false;
+    };
+  }, [id]);
+
+  if (isLoading) {
+    return (
+      <div className="bg-[#fcf8fa] min-h-screen pt-24 pb-16 font-body-md flex items-center justify-center">
+        <div className="text-center space-y-4">
+          <div className="w-12 h-12 border-4 border-[#4648d4] border-t-transparent rounded-full animate-spin mx-auto"></div>
+          <p className="text-sm font-semibold text-[#45464d]">İlan detayları ve AI analizi hazırlanıyor...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (errorMessage || !listing) {
+    return (
+      <div className="bg-[#fcf8fa] min-h-screen pt-24 pb-16 font-body-md flex items-center justify-center">
+        <div className="text-center space-y-4 max-w-md p-8 bg-white rounded-3xl border border-[#e2e8f0] shadow-sm">
+          <span className="material-symbols-outlined text-4xl text-[#ba1a1a]">error</span>
+          <h2 className="text-xl font-bold text-[#1b1b1d]">İlan Bulunamadı</h2>
+          <p className="text-xs text-[#45464d]">{errorMessage || 'İstenilen ilan mevcut değil veya erişilemiyor.'}</p>
+          <button
+            onClick={() => navigate('/search')}
+            className="px-6 py-2.5 bg-[#4648d4] text-white text-xs font-bold rounded-xl hover:bg-[#4648d4]/90 transition-all cursor-pointer"
+          >
+            Aramaya Geri Dön
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   const nightPrice = listing.price || 2450;
+  const predictedPrice = listing.predictedPrice || (nightPrice * 1.15);
+  const isDeal = Boolean(listing.isDeal || nightPrice < predictedPrice);
+  const discountPercent = listing.discountPercentage || Math.round(((predictedPrice - nightPrice) / predictedPrice) * 100);
+
   const nights = 5;
-  const cleaningFee = 850;
+  const cleaningFee = Math.round(nightPrice * 0.25);
   const subtotal = nightPrice * nights;
   const totalPrice = subtotal + cleaningFee;
-
-  const isGreatValue = listing.aiBadgeType === 'great-value' || listing.price < 2500;
-  const discountPercent = 15;
 
   return (
     <div className="bg-[#fcf8fa] text-[#1b1b1d] min-h-screen pt-20 pb-16 font-body-md">
@@ -46,11 +106,15 @@ export const ListingDetailPage = () => {
                   <span className="material-symbols-outlined text-[18px] text-[#4648d4]" style={{ fontVariationSettings: "'FILL' 1" }}>
                     star
                   </span>
-                  {Number(listing.reviewScoresRating || 4.98).toFixed(2)} ({listing.numberOfReviews || 124} yorum)
+                  {Number(listing.reviewScoresRating || 4.98).toFixed(2)} ({listing.numberOfReviews || 124} değerlendirme)
                 </span>
                 <span>•</span>
                 <span className="underline font-medium">
                   {listing.districtName || listing.neighbourhoodCleansed}, İstanbul
+                </span>
+                <span>•</span>
+                <span className="bg-[#f0edef] px-2.5 py-0.5 rounded-md text-xs font-bold text-[#1b1b1d]">
+                  {listing.roomType}
                 </span>
               </div>
             </div>
@@ -66,21 +130,21 @@ export const ListingDetailPage = () => {
               </div>
               <div className="relative bg-slate-200">
                 <img
-                  src={listing.images?.[1] || "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80"}
+                  src={listing.images?.[1] || listing.imageUrl}
                   alt="Gallery 2"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="relative bg-slate-200">
                 <img
-                  src={listing.images?.[2] || "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80"}
+                  src={listing.images?.[2] || listing.imageUrl}
                   alt="Gallery 3"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="relative bg-slate-200">
                 <img
-                  src={listing.images?.[3] || "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80"}
+                  src={listing.images?.[3] || listing.imageUrl}
                   alt="Gallery 4"
                   className="w-full h-full object-cover"
                 />
@@ -96,7 +160,7 @@ export const ListingDetailPage = () => {
                 <div className="bg-[#e1e0ff]/60 p-2 rounded-xl">
                   <span className="material-symbols-outlined text-[#4648d4]">auto_awesome</span>
                 </div>
-                <h2 className="text-xl font-bold text-[#1b1b1d]">Smart Analysis</h2>
+                <h2 className="text-xl font-bold text-[#1b1b1d]">Smart AI Fiyat Analizi</h2>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -107,23 +171,37 @@ export const ListingDetailPage = () => {
                       ₺{Number(nightPrice).toLocaleString('tr-TR')}
                       <span className="text-xs font-normal text-[#45464d]">/gece</span>
                     </div>
-                    <div className="bg-[#dec29a]/30 text-[#574425] text-xs font-bold px-3 py-1 rounded-full inline-flex items-center gap-1">
-                      <span className="material-symbols-outlined text-[16px]">trending_down</span>
-                      Bölge Ort. -%{discountPercent}
-                    </div>
+                    {isDeal ? (
+                      <div className="bg-[#dec29a]/30 text-[#574425] text-xs font-bold px-3 py-1 rounded-full inline-flex items-center gap-1">
+                        <span className="material-symbols-outlined text-[16px]">trending_down</span>
+                        Bölge Ort. -%{discountPercent}
+                      </div>
+                    ) : (
+                      <div className="bg-[#e4e2e4] text-[#45464d] text-xs font-bold px-3 py-1 rounded-full inline-flex items-center gap-1">
+                        <span className="material-symbols-outlined text-[16px]">balance</span>
+                        Piyasa Değerinde
+                      </div>
+                    )}
                   </div>
 
-                  {/* Simple Gauge Bar */}
+                  {/* Gauge Visualization */}
                   <div className="w-full max-w-[200px] h-3 bg-[#e4e2e4] rounded-full overflow-hidden relative mb-2">
-                    <div className="absolute left-0 top-0 h-full bg-[#1b1b1d] rounded-full" style={{ width: '35%' }}></div>
+                    <div
+                      className={`absolute left-0 top-0 h-full rounded-full ${isDeal ? 'bg-[#4648d4]' : 'bg-[#1b1b1d]'}`}
+                      style={{ width: isDeal ? '35%' : '50%' }}
+                    ></div>
                     <div className="absolute left-[50%] top-0 h-full w-[2px] bg-[#76777d] z-10"></div>
                   </div>
                   <div className="flex justify-between w-full max-w-[200px] text-[11px] text-[#45464d]">
                     <span>Bu Ev</span>
-                    <span className="pr-2">Ortalama (₺2,880)</span>
+                    <span className="pr-2">Ortalama (₺{Number(predictedPrice).toLocaleString('tr-TR')})</span>
                   </div>
                   <p className="mt-4 text-center text-xs font-semibold text-[#1b1b1d]">
-                    Bu ev bölge ortalamasının <strong className="text-[#4648d4]">%{discountPercent} altında!</strong>
+                    {isDeal ? (
+                      <>Bu ev yapay zeka modeline göre bölge ortalamasının <strong className="text-[#4648d4]">%{discountPercent} altında!</strong></>
+                    ) : (
+                      <>Bu ev semtin adil piyasa değerine uygun olarak fiyatlandırılmıştır.</>
+                    )}
                   </p>
                 </div>
 
@@ -136,7 +214,7 @@ export const ListingDetailPage = () => {
                     <div>
                       <div className="flex justify-between text-xs mb-1">
                         <span className="text-[#45464d]">Eylül (Tahmini)</span>
-                        <span className="text-[#1b1b1d] font-bold">₺2,600</span>
+                        <span className="text-[#1b1b1d] font-bold">₺{Number(nightPrice * 1.05).toLocaleString('tr-TR', { maximumFractionDigits: 0 })}</span>
                       </div>
                       <div className="w-full h-2 bg-[#eae7e9] rounded-full overflow-hidden">
                         <div className="h-full bg-[#4648d4]/80 rounded-full" style={{ width: '60%' }}></div>
@@ -146,7 +224,7 @@ export const ListingDetailPage = () => {
                     <div>
                       <div className="flex justify-between text-xs mb-1">
                         <span className="text-[#45464d]">Ekim (Yüksek Sezon)</span>
-                        <span className="text-[#1b1b1d] font-bold">₺3,100</span>
+                        <span className="text-[#1b1b1d] font-bold">₺{Number(nightPrice * 1.25).toLocaleString('tr-TR', { maximumFractionDigits: 0 })}</span>
                       </div>
                       <div className="w-full h-2 bg-[#eae7e9] rounded-full overflow-hidden">
                         <div className="h-full bg-[#4648d4] rounded-full" style={{ width: '85%' }}></div>
@@ -156,7 +234,7 @@ export const ListingDetailPage = () => {
                     <div>
                       <div className="flex justify-between text-xs mb-1">
                         <span className="text-[#45464d]">Kasım (Düzeltme)</span>
-                        <span className="text-[#1b1b1d] font-bold">₺2,550</span>
+                        <span className="text-[#1b1b1d] font-bold">₺{Number(nightPrice * 1.02).toLocaleString('tr-TR', { maximumFractionDigits: 0 })}</span>
                       </div>
                       <div className="w-full h-2 bg-[#eae7e9] rounded-full overflow-hidden">
                         <div className="h-full bg-[#4648d4]/60 rounded-full" style={{ width: '55%' }}></div>
@@ -176,13 +254,17 @@ export const ListingDetailPage = () => {
                     SMART VERDICT
                   </span>
                   <p className="text-sm text-[#1b1b1d] leading-relaxed">
-                    Yapay zekamız bu evi <strong>"Kaçırılmaması Gereken"</strong> olarak nitelendiriyor. Cihangir bölgesindeki benzer premium özelliklere sahip evlere göre ciddi bir fiyat avantajı sunuyor.
+                    {isDeal ? (
+                      <>Yapay zekamız bu evi <strong>"Kaçırılmaması Gereken Fırsat"</strong> olarak nitelendiriyor. {listing.districtName || listing.neighbourhoodCleansed} bölgesindeki benzer konaklamalara göre belirgin bir fiyat avantajı sunuyor.</>
+                    ) : (
+                      <>Bu ev konumu ve sunduğu olanaklarıyla dengeli bir fiyat/performans oranına sahiptir.</>
+                    )}
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* Listing Amenities & Description */}
+            {/* Listing Amenities */}
             <div className="bg-white rounded-2xl p-6 sm:p-8 border border-[#e2e8f0] shadow-sm space-y-4">
               <h3 className="text-lg font-bold text-[#1b1b1d]">Öne Çıkan Ev Olanakları</h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
@@ -243,7 +325,7 @@ export const ListingDetailPage = () => {
               </div>
 
               <button
-                onClick={() => alert("Rezervasyon talebiniz alındı!")}
+                onClick={() => alert(`Rezervasyon talebiniz alındı!\nİlan: ${listing.name}\nToplam Tutar: ₺${totalPrice.toLocaleString('tr-TR')}`)}
                 className="w-full bg-[#4648d4] hover:bg-[#4648d4]/90 text-white font-bold text-sm py-3.5 rounded-xl transition-all active:scale-[0.98] shadow-sm cursor-pointer"
               >
                 Hemen Rezerve Et
@@ -256,7 +338,7 @@ export const ListingDetailPage = () => {
                   <span className="font-semibold text-[#1b1b1d]">₺{Number(subtotal).toLocaleString('tr-TR')}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="underline">Temizlik ücreti</span>
+                  <span className="underline">Temizlik ve servis ücreti</span>
                   <span className="font-semibold text-[#1b1b1d]">₺{Number(cleaningFee).toLocaleString('tr-TR')}</span>
                 </div>
               </div>
