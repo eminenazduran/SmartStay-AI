@@ -1,58 +1,58 @@
-import React from 'react';
-import { Sparkles, Home, MapPin, BrainCircuit, Activity } from 'lucide-react';
+import React, { useState } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
+import { Sparkles, Menu, X, Home, Search, Map } from 'lucide-react';
 
 export const Navbar = () => {
+  const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
+  const loc = useLocation();
+  const isHome = loc.pathname === '/';
+
   return (
-    <header className="sticky top-0 z-50 glass-card border-b border-slate-800/80 bg-slate-900/80 backdrop-blur-md">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className={`fixed top-0 inset-x-0 z-50 transition-all ${
+      isHome ? 'bg-transparent' : 'bg-[#0a0a0f]/90 backdrop-blur-xl border-b border-white/5'
+    }`}>
+      <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          {/* Brand Logo */}
-          <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-500 via-primary-500 to-emerald-400 p-[2px] shadow-lg shadow-brand-500/20">
-              <div className="w-full h-full bg-slate-900 rounded-[10px] flex items-center justify-center">
-                <Sparkles className="w-5 h-5 text-brand-400" />
-              </div>
+          <button onClick={() => navigate('/')} className="flex items-center gap-2.5 group">
+            <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-orange-500 to-rose-500 flex items-center justify-center">
+              <Sparkles className="w-4 h-4 text-white" strokeWidth={2.5} />
             </div>
-            <div>
-              <div className="flex items-center space-x-2">
-                <span className="font-extrabold text-xl tracking-tight bg-gradient-to-r from-white via-slate-100 to-slate-400 bg-clip-text text-transparent">
-                  SmartStay
-                </span>
-                <span className="text-xs px-2 py-0.5 rounded-full font-bold bg-brand-500/10 text-brand-400 border border-brand-500/30">
-                  AI
-                </span>
-              </div>
-              <p className="text-[10px] text-slate-400 font-medium tracking-wider uppercase">
-                Akıllı Konaklama & Değerleme
-              </p>
-            </div>
+            <span className="text-[15px] font-extrabold text-white tracking-tight">SmartStay</span>
+          </button>
+
+          <div className="hidden md:flex items-center gap-1">
+            {[
+              { to: '/', label: 'Ana Sayfa', icon: Home },
+              { to: '/search', label: 'İlan Ara', icon: Search },
+              { to: '/search#map', label: 'Harita', icon: Map },
+            ].map(({ to, label, icon: I }) => (
+              <button key={label} onClick={() => navigate(to)}
+                className="flex items-center gap-2 px-4 py-2 rounded-xl text-[13px] text-white/50 hover:text-white hover:bg-white/5 transition-all font-medium">
+                <I className="w-3.5 h-3.5" /> {label}
+              </button>
+            ))}
           </div>
 
-          {/* Quick Nav Links */}
-          <nav className="hidden md:flex items-center space-x-6">
-            <a href="#listings" className="text-sm font-medium text-slate-300 hover:text-white transition-colors flex items-center space-x-1.5">
-              <Home className="w-4 h-4 text-slate-400" />
-              <span>İlanlar</span>
-            </a>
-            <a href="#map" className="text-sm font-medium text-slate-300 hover:text-white transition-colors flex items-center space-x-1.5">
-              <MapPin className="w-4 h-4 text-slate-400" />
-              <span>Harita</span>
-            </a>
-            <a href="#ai-pricing" className="text-sm font-medium text-slate-300 hover:text-white transition-colors flex items-center space-x-1.5">
-              <BrainCircuit className="w-4 h-4 text-slate-400" />
-              <span>AI Değerleme</span>
-            </a>
-          </nav>
-
-          {/* System Status Pill */}
-          <div className="flex items-center space-x-3">
-            <div className="hidden sm:flex items-center space-x-2 px-3 py-1.5 rounded-full bg-slate-800/80 border border-slate-700/60 text-xs text-slate-300">
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              <span className="font-medium text-slate-300">FastAPI & .NET 10 Aktif</span>
-            </div>
-          </div>
+          <button onClick={() => setOpen(!open)} className="md:hidden p-2 rounded-lg text-white/50 hover:text-white hover:bg-white/5">
+            {open ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+          </button>
         </div>
+
+        {open && (
+          <div className="md:hidden border-t border-white/5 py-3 space-y-1 bg-[#0a0a0f]/95 backdrop-blur-xl">
+            {[
+              { to: '/', label: 'Ana Sayfa', icon: Home },
+              { to: '/search', label: 'İlan Ara', icon: Search },
+            ].map(({ to, label, icon: I }) => (
+              <button key={label} onClick={() => { navigate(to); setOpen(false); }}
+                className="flex items-center gap-3 w-full px-4 py-3 rounded-xl text-sm text-white/60 hover:text-white hover:bg-white/5">
+                <I className="w-4 h-4" /> {label}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
-    </header>
+    </nav>
   );
 };
