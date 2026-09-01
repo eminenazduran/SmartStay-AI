@@ -2,11 +2,14 @@ import React, { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { SearchForm } from './components/SearchForm';
 import { ListingGrid } from './components/ListingGrid';
+import { MapView } from './components/MapView';
 import { MOCK_LISTINGS } from './data/mockListings';
-import { Sparkles, Compass, ShieldCheck, Cpu, Database, Award } from 'lucide-react';
+import { Sparkles, LayoutGrid, Map, Layers } from 'lucide-react';
 
 export function App() {
   const [filteredListings, setFilteredListings] = useState(MOCK_LISTINGS);
+  const [selectedListingId, setSelectedListingId] = useState(null);
+  const [viewMode, setViewMode] = useState('both'); // 'both', 'grid', 'map'
   const [currentFilters, setCurrentFilters] = useState({
     neighbourhood: '',
     roomType: '',
@@ -99,20 +102,74 @@ export function App() {
               <p className="text-xs text-slate-400 font-medium">AI Öneri Hızı</p>
             </div>
             <div className="glass-card rounded-xl p-4 border border-slate-800/80 text-center">
-              <p className="text-2xl font-black text-emerald-400">4 Katman</p>
-              <p className="text-xs text-slate-400 font-medium">.NET 10 API</p>
+              <p className="text-2xl font-black text-emerald-400">Leaflet</p>
+              <p className="text-xs text-slate-400 font-medium">İnteraktif Harita</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* 3. Main Content Area */}
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
+      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10">
         {/* Search & Filter Component */}
         <SearchForm onFilterChange={handleFilterChange} initialFilters={currentFilters} />
 
+        {/* View Mode Toggle Bar */}
+        <div className="flex items-center justify-between pt-2">
+          <div className="text-xs text-slate-400 font-medium">
+            Toplam <span className="text-white font-bold">{filteredListings.length}</span> ilan görüntüleniyor
+          </div>
+
+          <div className="flex items-center bg-slate-900 p-1 rounded-xl border border-slate-800 space-x-1">
+            <button
+              onClick={() => setViewMode('both')}
+              className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
+                viewMode === 'both'
+                  ? 'bg-brand-500 text-slate-950 shadow-md'
+                  : 'text-slate-400 hover:text-white'
+              }`}
+            >
+              <Layers className="w-3.5 h-3.5" />
+              <span className="hidden sm:inline">Harita + Liste</span>
+            </button>
+            <button
+              onClick={() => setViewMode('map')}
+              className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
+                viewMode === 'map'
+                  ? 'bg-brand-500 text-slate-950 shadow-md'
+                  : 'text-slate-400 hover:text-white'
+              }`}
+            >
+              <Map className="w-3.5 h-3.5" />
+              <span>Yalnızca Harita</span>
+            </button>
+            <button
+              onClick={() => setViewMode('grid')}
+              className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
+                viewMode === 'grid'
+                  ? 'bg-brand-500 text-slate-950 shadow-md'
+                  : 'text-slate-400 hover:text-white'
+              }`}
+            >
+              <LayoutGrid className="w-3.5 h-3.5" />
+              <span>Yalnızca Liste</span>
+            </button>
+          </div>
+        </div>
+
+        {/* Interactive Map View */}
+        {(viewMode === 'both' || viewMode === 'map') && (
+          <MapView
+            listings={filteredListings}
+            selectedListingId={selectedListingId}
+            onSelectListing={(id) => setSelectedListingId(id)}
+          />
+        )}
+
         {/* Listing Cards Grid */}
-        <ListingGrid listings={filteredListings} />
+        {(viewMode === 'both' || viewMode === 'grid') && (
+          <ListingGrid listings={filteredListings} />
+        )}
       </main>
 
       {/* 4. Footer */}
@@ -121,7 +178,7 @@ export function App() {
           SmartStay AI © 2026 — Akıllı Konaklama Öneri & Dinamik Fiyat Değerleme Platformu
         </p>
         <p className="text-[11px] text-slate-600">
-          FastAPI • Python XGBoost • ASP.NET Core 10 Web API • Entity Framework Core • React • Tailwind CSS
+          FastAPI • Python XGBoost • ASP.NET Core 10 Web API • Entity Framework Core • React • Leaflet.js • Tailwind CSS
         </p>
       </footer>
     </div>
