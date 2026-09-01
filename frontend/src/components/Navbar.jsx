@@ -8,10 +8,10 @@ export const Navbar = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-[#fcf8fa]/80 backdrop-blur-xl border-b border-[#e2e8f0]/80 shadow-sm transition-all duration-300">
+    <nav className="fixed top-0 w-full z-50 bg-[#fcf8fa]/85 backdrop-blur-xl border-b border-[#e2e8f0]/80 shadow-sm transition-all duration-300">
       <div className="flex justify-between items-center h-16 px-4 md:px-16 max-w-[1440px] mx-auto w-full">
         {/* Brand Logo */}
-        <Link to="/" className="flex items-center gap-2 group">
+        <Link to="/" className="flex items-center gap-2.5 group">
           <span className="material-symbols-outlined text-[#4648d4] text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>
             insights
           </span>
@@ -21,7 +21,17 @@ export const Navbar = () => {
         </Link>
 
         {/* Navigation Links */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="flex items-center gap-6 sm:gap-8">
+          <Link
+            to="/"
+            className={`font-semibold text-sm transition-all py-1 border-b-2 ${
+              isActive('/')
+                ? 'text-[#4648d4] border-[#4648d4]'
+                : 'text-[#45464d] border-transparent hover:text-[#1b1b1d]'
+            }`}
+          >
+            Ana Sayfa
+          </Link>
           <Link
             to="/search"
             className={`font-semibold text-sm transition-all py-1 border-b-2 ${
@@ -30,49 +40,18 @@ export const Navbar = () => {
                 : 'text-[#45464d] border-transparent hover:text-[#1b1b1d]'
             }`}
           >
-            Explore
-          </Link>
-          <Link
-            to="/dashboard"
-            className={`font-semibold text-sm transition-all py-1 border-b-2 ${
-              isActive('/dashboard')
-                ? 'text-[#4648d4] border-[#4648d4]'
-                : 'text-[#45464d] border-transparent hover:text-[#1b1b1d]'
-            }`}
-          >
-            AI Insights
-          </Link>
-          <Link
-            to="/search"
-            className="font-semibold text-sm text-[#45464d] border-b-2 border-transparent hover:text-[#1b1b1d] transition-all py-1"
-          >
-            Pricing
-          </Link>
-          <Link
-            to="/dashboard"
-            className="font-semibold text-sm text-[#45464d] border-b-2 border-transparent hover:text-[#1b1b1d] transition-all py-1"
-          >
-            Host Dashboard
+            İlan Ara & Keşfet
           </Link>
         </div>
 
-        {/* Right Trailing Icons */}
-        <div className="flex items-center gap-2 md:gap-3 text-[#1b1b1d]">
+        {/* Action Button */}
+        <div className="hidden sm:flex items-center">
           <button
-            onClick={() => navigate('/dashboard')}
-            aria-label="Notifications"
-            className="hover:bg-[#f0edef] rounded-xl p-2 transition-colors active:scale-95"
-            title="Notifications"
+            onClick={() => navigate('/search')}
+            className="bg-[#4648d4] hover:bg-[#4648d4]/90 text-white font-bold text-xs px-4 py-2.5 rounded-xl transition-all flex items-center gap-1.5 shadow-sm active:scale-95 cursor-pointer"
           >
-            <span className="material-symbols-outlined">notifications</span>
-          </button>
-          <button
-            onClick={() => navigate('/dashboard')}
-            aria-label="Account"
-            className="hover:bg-[#f0edef] rounded-xl p-2 transition-colors active:scale-95 flex items-center gap-1.5"
-            title="User Account"
-          >
-            <span className="material-symbols-outlined">account_circle</span>
+            <span className="material-symbols-outlined text-[18px]">search</span>
+            İlanları İncele
           </button>
         </div>
       </div>

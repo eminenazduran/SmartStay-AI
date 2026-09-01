@@ -5,7 +5,6 @@ import { Footer } from './components/Footer';
 import { HomePage } from './pages/HomePage';
 import { SearchPage } from './pages/SearchPage';
 import { ListingDetailPage } from './pages/ListingDetailPage';
-import { DashboardPage } from './pages/DashboardPage';
 
 export function App() {
   return (
@@ -17,7 +16,6 @@ export function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/search" element={<SearchPage />} />
             <Route path="/listing/:id" element={<ListingDetailPage />} />
-            <Route path="/dashboard" element={<DashboardPage />} />
           </Routes>
         </div>
         <Footer />
