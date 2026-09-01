@@ -1,123 +1,245 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
-import { SearchForm } from '../components/SearchForm';
-import { ListingGrid } from '../components/ListingGrid';
+import { MOCK_LISTINGS, filterListings, ISTANBUL_NEIGHBOURHOODS, ROOM_TYPES } from '../data/mockListings';
 import { MapView } from '../components/MapView';
-import { MOCK_LISTINGS } from '../data/mockListings';
-import { Map, LayoutGrid, Layers, ArrowLeft, SlidersHorizontal, X, Sparkles } from 'lucide-react';
-
-const applyFilter = (source, f) => source.filter(item => {
-  if (f.neighbourhood && item.neighbourhoodCleansed.toLowerCase() !== f.neighbourhood.toLowerCase()) return false;
-  if (f.roomType && item.roomType !== f.roomType) return false;
-  if (item.price < f.minPrice || item.price > f.maxPrice) return false;
-  if (item.accommodates < f.accommodates) return false;
-  if (f.amenities?.length && !f.amenities.every(a => item.amenities?.some(ia => ia.toLowerCase().includes(a.toLowerCase())))) return false;
-  return true;
-});
-
-const INIT = { neighbourhood:'', roomType:'', minPrice:0, maxPrice:10000, accommodates:1, amenities:[] };
 
 export const SearchPage = () => {
-  const [sp] = useSearchParams();
+  const [searchParams] = useSearchParams();
   const navigate = useNavigate();
 
-  const initNeighbourhood = sp.get('neighbourhood') || '';
-  const initRoom = sp.get('roomType') || '';
+  const [filters, setFilters] = useState({
+    neighbourhood: searchParams.get('neighbourhood') || '',
+    roomType: searchParams.get('roomType') || '',
+    minPrice: 0,
+    maxPrice: 15000,
+    accommodates: 1,
+    amenities: []
+  });
 
-  const [view, setView] = useState('both');
-  const [showFilter, setShowFilter] = useState(false);
-  const [filters, setFilters] = useState({ ...INIT, neighbourhood: initNeighbourhood, roomType: initRoom });
-  const [listings, setListings] = useState(applyFilter(MOCK_LISTINGS, { ...INIT, neighbourhood: initNeighbourhood, roomType: initRoom }));
+  const [showFilterDrawer, setShowFilterDrawer] = useState(false);
+  const [mobileMapOpen, setMobileMapOpen] = useState(false);
+  const [activeListings, setActiveListings] = useState([]);
 
-  const handleFilter = f => { setFilters(f); setListings(applyFilter(MOCK_LISTINGS, f)); setShowFilter(false); };
+  useEffect(() => {
+    const neighbourhoodParam = searchParams.get('neighbourhood') || '';
+    const roomTypeParam = searchParams.get('roomType') || '';
+    const newFilters = {
+      ...filters,
+      neighbourhood: neighbourhoodParam,
+      roomType: roomTypeParam
+    };
+    setFilters(newFilters);
+    setActiveListings(filterListings(MOCK_LISTINGS, newFilters));
+  }, [searchParams]);
 
-  const cnt = (filters.neighbourhood ? 1 : 0) + (filters.roomType ? 1 : 0) + (filters.minPrice > 0 || filters.maxPrice < 10000 ? 1 : 0) + (filters.accommodates > 1 ? 1 : 0) + (filters.amenities?.length || 0);
+  const handleFilterUpdate = (key, value) => {
+    const updated = { ...filters, [key]: value };
+    setFilters(updated);
+    setActiveListings(filterListings(MOCK_LISTINGS, updated));
+  };
 
   return (
-    <div className="min-h-screen bg-[#0a0a0f] flex flex-col" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
-      {/* Subheader */}
-      <div className="sticky top-16 z-40 border-b border-white/5 bg-[#0a0a0f]/95 backdrop-blur-xl">
-        <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between gap-4">
-          <div className="flex items-center gap-3 min-w-0">
-            <button onClick={() => navigate('/')} className="p-2 rounded-lg hover:bg-white/5 text-white/30 hover:text-white transition shrink-0">
-              <ArrowLeft className="w-4 h-4" />
-            </button>
-            <div className="min-w-0">
-              <h1 className="text-sm font-bold text-white truncate">
-                İlan Arama
-                {filters.neighbourhood && <span className="text-orange-400"> · {filters.neighbourhood}</span>}
-                {filters.roomType && <span className="text-orange-400/70"> · {filters.roomType}</span>}
-              </h1>
-              <p className="text-[11px] text-white/25">{listings.length} sonuç</p>
-            </div>
-          </div>
+    <div className="flex-1 mt-16 flex flex-col md:flex-row h-[calc(100vh-64px)] w-full font-body-md overflow-hidden bg-[#fcf8fa]">
+      {/* ── LEFT SIDE: Property List (40%) ────────────────────────────── */}
+      <section className="w-full md:w-[40%] flex flex-col bg-[#ffffff] border-r border-[#c6c6cd]/30 z-10 shadow-lg md:shadow-none h-full">
+        {/* Sticky Filter Bar */}
+        <div className="bg-[#ffffff] p-4 sticky top-0 z-20 flex flex-wrap gap-2.5 items-center border-b border-[#c6c6cd]/30 shadow-sm">
+          <button
+            onClick={() => setShowFilterDrawer(!showFilterDrawer)}
+            className="flex items-center gap-2 bg-[#f0edef] px-3.5 py-2 rounded-full border border-[#c6c6cd]/50 hover:border-[#76777d] hover:bg-[#e4e2e4] transition-all text-xs font-semibold text-[#1b1b1d] cursor-pointer"
+          >
+            <span className="material-symbols-outlined text-[18px]">tune</span>
+            Filtreler
+          </button>
 
-          <div className="flex items-center gap-2 shrink-0">
-            <button onClick={() => setShowFilter(!showFilter)}
-              className={`flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-semibold border transition-all ${
-                cnt > 0 ? 'bg-orange-500/10 border-orange-500/30 text-orange-300' : 'bg-white/[0.04] border-white/[0.08] text-white/40 hover:text-white/70'
-              }`}>
-              <SlidersHorizontal className="w-3.5 h-3.5" />
-              Filtrele
-              {cnt > 0 && <span className="px-1.5 py-0.5 rounded-full bg-orange-500 text-white text-[10px] font-black">{cnt}</span>}
-            </button>
+          <select
+            value={filters.neighbourhood || 'all'}
+            onChange={(e) => handleFilterUpdate('neighbourhood', e.target.value)}
+            className="bg-[#f0edef] px-3 py-2 rounded-full border border-[#c6c6cd]/50 hover:border-[#76777d] text-xs font-semibold text-[#1b1b1d] appearance-none cursor-pointer pr-6 relative"
+          >
+            {ISTANBUL_NEIGHBOURHOODS.map((n) => (
+              <option key={n.value} value={n.value}>
+                {n.label}
+              </option>
+            ))}
+          </select>
 
-            <div className="hidden sm:flex items-center bg-white/[0.03] border border-white/[0.06] rounded-xl p-1 gap-0.5">
-              {[
-                { id:'both', label:'Her İkisi', icon: Layers },
-                { id:'map',  label:'Harita',    icon: Map },
-                { id:'grid', label:'Liste',     icon: LayoutGrid },
-              ].map(({id,label,icon:I}) => (
-                <button key={id} onClick={() => setView(id)}
-                  className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-[11px] font-semibold transition-all ${
-                    view===id ? 'bg-orange-500 text-white shadow-md shadow-orange-500/20' : 'text-white/30 hover:text-white/60'
-                  }`}>
-                  <I className="w-3.5 h-3.5" />
-                  <span className={id==='both'?'hidden md:inline':''}>{label}</span>
-                </button>
-              ))}
-            </div>
+          <select
+            value={filters.roomType || 'all'}
+            onChange={(e) => handleFilterUpdate('roomType', e.target.value)}
+            className="bg-[#f0edef] px-3 py-2 rounded-full border border-[#c6c6cd]/50 hover:border-[#76777d] text-xs font-semibold text-[#1b1b1d] appearance-none cursor-pointer pr-6"
+          >
+            {ROOM_TYPES.map((rt) => (
+              <option key={rt.id} value={rt.id}>
+                {rt.label}
+              </option>
+            ))}
+          </select>
+
+          <div className="ml-auto text-xs text-[#45464d] flex items-center gap-1 font-semibold">
+            <span className="font-bold text-[#1b1b1d]">{activeListings.length}</span> sonuç
           </div>
         </div>
-      </div>
 
-      {/* Filter drawer */}
-      {showFilter && (
-        <div className="z-40 border-b border-white/5 bg-[#0e0e14]/98">
-          <div className="max-w-6xl mx-auto px-6 py-6">
-            <div className="flex items-center justify-between mb-5">
-              <p className="text-sm font-bold text-white">Filtrele & Ara</p>
-              <button onClick={() => setShowFilter(false)} className="p-1.5 rounded-lg hover:bg-white/5 text-white/30 hover:text-white transition">
-                <X className="w-4 h-4" />
+        {/* Filter Drawer Overlay */}
+        {showFilterDrawer && (
+          <div className="p-4 bg-[#f0edef] border-b border-[#c6c6cd] space-y-3 text-xs">
+            <div className="flex justify-between items-center">
+              <span className="font-bold text-[#1b1b1d]">Fiyat Aralığı (TL)</span>
+              <button
+                onClick={() => {
+                  const resetF = { ...filters, neighbourhood: '', roomType: 'all', minPrice: 0, maxPrice: 15000 };
+                  setFilters(resetF);
+                  setActiveListings(MOCK_LISTINGS);
+                }}
+                className="text-[#4648d4] font-semibold hover:underline"
+              >
+                Sıfırla
               </button>
             </div>
-            <SearchForm onFilterChange={handleFilter} initialFilters={filters} />
-          </div>
-        </div>
-      )}
-
-      {/* Content */}
-      <main className="flex-1 max-w-6xl w-full mx-auto px-6 py-6 space-y-8">
-        {(view==='both'||view==='map') && (
-          <div id="map">
-            <div className="flex items-center justify-between mb-3">
-              <h2 className="text-sm font-bold text-white flex items-center gap-2">
-                <Map className="w-4 h-4 text-orange-400" /> Harita · {listings.length} konum
-              </h2>
-              <div className="hidden sm:flex items-center gap-4 text-[11px] text-white/20">
-                <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-full bg-[#0a0a0f] border border-orange-500/50" /> Standart</span>
-                <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-amber-500 to-rose-500" /> 🔥 Fırsat</span>
-              </div>
+            <div className="flex items-center gap-3">
+              <input
+                type="range"
+                min="0"
+                max="10000"
+                step="250"
+                value={filters.maxPrice}
+                onChange={(e) => handleFilterUpdate('maxPrice', Number(e.target.value))}
+                className="w-full"
+              />
+              <span className="font-mono font-bold text-[#4648d4] shrink-0">
+                Maks: ₺{filters.maxPrice}
+              </span>
             </div>
-            <MapView listings={listings} />
           </div>
         )}
-        {(view==='both'||view==='grid') && <ListingGrid listings={listings} />}
-      </main>
 
-      <footer className="border-t border-white/5 py-6 px-6 text-center">
-        <p className="text-[11px] text-white/15">SmartStay © 2026</p>
-      </footer>
+        {/* Scrollable List */}
+        <div className="flex-1 overflow-y-auto no-scrollbar p-6 space-y-6 pb-24 md:pb-6 bg-[#ffffff]">
+          {activeListings.length > 0 ? (
+            activeListings.map((listing) => {
+              const isGreatValue = listing.aiBadgeType === 'great-value' || listing.price < 2000;
+
+              return (
+                <article
+                  key={listing.id}
+                  onClick={() => navigate(`/listing/${listing.id}`)}
+                  className="bg-[#ffffff] rounded-2xl shadow-ambient border border-[#e2e8f0] overflow-hidden flex flex-col group hover:shadow-lg transition-all duration-300 cursor-pointer relative"
+                >
+                  {/* AI Badge Overlay */}
+                  <div
+                    className={`absolute top-4 left-4 z-10 px-3 py-1.5 rounded-full flex items-center gap-1.5 text-xs font-bold shadow-sm ${
+                      isGreatValue
+                        ? 'bg-ai-purple-gradient text-white'
+                        : 'bg-[#e4e2e4]/90 backdrop-blur-sm text-[#1b1b1d] border border-[#c6c6cd]/50'
+                    }`}
+                  >
+                    <span className="material-symbols-outlined text-[16px]">
+                      {isGreatValue ? 'psychology' : 'balance'}
+                    </span>
+                    {isGreatValue ? 'Harika Değer' : 'Fiyatı Normal'}
+                  </div>
+
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                    }}
+                    className="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center text-[#45464d] hover:text-[#ba1a1a] hover:bg-white transition-all shadow-sm"
+                  >
+                    <span className="material-symbols-outlined text-[20px]">favorite</span>
+                  </button>
+
+                  <div className="h-56 w-full relative bg-slate-100">
+                    <img
+                      src={listing.imageUrl}
+                      alt={listing.name}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+
+                  <div className="p-5 flex flex-col gap-3">
+                    <div className="flex justify-between items-start gap-4">
+                      <div>
+                        <h3 className="text-lg font-bold text-[#1b1b1d] mb-1 line-clamp-1">
+                          {listing.name}
+                        </h3>
+                        <p className="text-xs text-[#45464d] flex items-center gap-1.5">
+                          <span className="material-symbols-outlined text-[16px]">location_on</span>
+                          {listing.districtName || listing.neighbourhoodCleansed}, İstanbul
+                        </p>
+                      </div>
+                      <div className="flex items-center gap-1 bg-[#f0edef] px-2.5 py-1 rounded-lg text-[#1b1b1d] text-xs font-semibold border border-[#c6c6cd]/30 shrink-0">
+                        <span className="material-symbols-outlined text-[16px] text-[#dec29a]" style={{ fontVariationSettings: "'FILL' 1" }}>
+                          star
+                        </span>
+                        {Number(listing.reviewScoresRating || 4.8).toFixed(1)}
+                      </div>
+                    </div>
+
+                    <div className="flex justify-between items-end mt-2 pt-4 border-t border-[#c6c6cd]/30">
+                      <div>
+                        <p className="text-xs text-[#45464d] mb-0.5">Tahmini Gecelik</p>
+                        <p className="text-xl font-extrabold text-[#1b1b1d]">
+                          ₺{Number(listing.price).toLocaleString('tr-TR')}
+                        </p>
+                      </div>
+
+                      {/* Sparkline Trend Chart Mockup */}
+                      <div className="w-28 h-10 flex flex-col justify-end relative" title="30-Günlük Fiyat Trendi">
+                        <span className={`text-[11px] absolute -top-5 right-0 font-bold px-1.5 py-0.5 rounded ${
+                          isGreatValue ? 'text-[#4648d4] bg-[#e1e0ff]/50' : 'text-[#45464d] bg-[#f0edef]'
+                        }`}>
+                          {listing.trendPercent ? `${listing.trendPercent}% Trend` : 'Stabil'}
+                        </span>
+                        <svg height="100%" preserveAspectRatio="none" viewBox="0 0 100 30" width="100%">
+                          <path
+                            d={isGreatValue ? "M0,25 L20,20 L40,28 L60,15 L80,18 L100,5" : "M0,15 L20,16 L40,14 L60,15 L80,14 L100,15"}
+                            fill="none"
+                            stroke={isGreatValue ? "#4648d4" : "#76777d"}
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2.5"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              );
+            })
+          ) : (
+            <div className="p-12 text-center text-[#45464d] space-y-3">
+              <span className="material-symbols-outlined text-4xl text-[#76777d]">search_off</span>
+              <p className="font-bold text-[#1b1b1d]">Arama kriterlerine uygun ilan bulunamadı.</p>
+              <p className="text-xs">Lütfen farklı bir ilçe veya fiyat aralığı seçiniz.</p>
+            </div>
+          )}
+        </div>
+      </section>
+
+      {/* ── RIGHT SIDE: Interactive Map (60%) ───────────────────────── */}
+      <section className={`w-full md:w-[60%] relative bg-[#f0edef] ${mobileMapOpen ? 'block fixed inset-0 z-50 pt-16' : 'hidden md:block'}`}>
+        <MapView listings={activeListings} onListingSelect={(item) => navigate(`/listing/${item.id}`)} />
+
+        {/* Mobile close button */}
+        {mobileMapOpen && (
+          <button
+            onClick={() => setMobileMapOpen(false)}
+            className="md:hidden absolute top-20 right-4 z-50 bg-[#131b2e] text-white px-4 py-2 rounded-full text-xs font-bold shadow-lg"
+          >
+            Listeye Dön
+          </button>
+        )}
+      </section>
+
+      {/* Mobile Floating Map Button */}
+      <button
+        onClick={() => setMobileMapOpen(!mobileMapOpen)}
+        className="md:hidden fixed bottom-6 left-1/2 -translate-x-1/2 z-40 bg-[#131b2e] text-white px-6 py-3 rounded-full font-semibold text-xs shadow-lg flex items-center gap-2 cursor-pointer"
+      >
+        <span className="material-symbols-outlined">map</span>
+        {mobileMapOpen ? 'Listeyi Gör' : 'Haritayı Gör'}
+      </button>
     </div>
   );
 };

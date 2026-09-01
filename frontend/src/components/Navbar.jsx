@@ -1,57 +1,80 @@
-import React, { useState } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
-import { Sparkles, Menu, X, Home, Search, Map } from 'lucide-react';
+import React from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 export const Navbar = () => {
-  const [open, setOpen] = useState(false);
+  const location = useLocation();
   const navigate = useNavigate();
-  const loc = useLocation();
-  const isHome = loc.pathname === '/';
+
+  const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className={`fixed top-0 inset-x-0 z-50 transition-all ${
-      isHome ? 'bg-transparent' : 'bg-[#0a0a0f]/90 backdrop-blur-xl border-b border-white/5'
-    }`}>
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="flex items-center justify-between h-16">
-          <button onClick={() => navigate('/')} className="flex items-center gap-2.5 group">
-            <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-orange-500 to-rose-500 flex items-center justify-center">
-              <Sparkles className="w-4 h-4 text-white" strokeWidth={2.5} />
-            </div>
-            <span className="text-[15px] font-extrabold text-white tracking-tight">SmartStay</span>
-          </button>
+    <nav className="fixed top-0 w-full z-50 bg-[#fcf8fa]/80 backdrop-blur-xl border-b border-[#e2e8f0]/80 shadow-sm transition-all duration-300">
+      <div className="flex justify-between items-center h-16 px-4 md:px-16 max-w-[1440px] mx-auto w-full">
+        {/* Brand Logo */}
+        <Link to="/" className="flex items-center gap-2 group">
+          <span className="material-symbols-outlined text-[#4648d4] text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>
+            insights
+          </span>
+          <span className="font-extrabold text-xl tracking-tight text-[#1b1b1d]">
+            SmartStay AI
+          </span>
+        </Link>
 
-          <div className="hidden md:flex items-center gap-1">
-            {[
-              { to: '/', label: 'Ana Sayfa', icon: Home },
-              { to: '/search', label: 'İlan Ara', icon: Search },
-              { to: '/search#map', label: 'Harita', icon: Map },
-            ].map(({ to, label, icon: I }) => (
-              <button key={label} onClick={() => navigate(to)}
-                className="flex items-center gap-2 px-4 py-2 rounded-xl text-[13px] text-white/50 hover:text-white hover:bg-white/5 transition-all font-medium">
-                <I className="w-3.5 h-3.5" /> {label}
-              </button>
-            ))}
-          </div>
-
-          <button onClick={() => setOpen(!open)} className="md:hidden p-2 rounded-lg text-white/50 hover:text-white hover:bg-white/5">
-            {open ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-          </button>
+        {/* Navigation Links */}
+        <div className="hidden md:flex items-center gap-8">
+          <Link
+            to="/search"
+            className={`font-semibold text-sm transition-all py-1 border-b-2 ${
+              isActive('/search')
+                ? 'text-[#4648d4] border-[#4648d4]'
+                : 'text-[#45464d] border-transparent hover:text-[#1b1b1d]'
+            }`}
+          >
+            Explore
+          </Link>
+          <Link
+            to="/dashboard"
+            className={`font-semibold text-sm transition-all py-1 border-b-2 ${
+              isActive('/dashboard')
+                ? 'text-[#4648d4] border-[#4648d4]'
+                : 'text-[#45464d] border-transparent hover:text-[#1b1b1d]'
+            }`}
+          >
+            AI Insights
+          </Link>
+          <Link
+            to="/search"
+            className="font-semibold text-sm text-[#45464d] border-b-2 border-transparent hover:text-[#1b1b1d] transition-all py-1"
+          >
+            Pricing
+          </Link>
+          <Link
+            to="/dashboard"
+            className="font-semibold text-sm text-[#45464d] border-b-2 border-transparent hover:text-[#1b1b1d] transition-all py-1"
+          >
+            Host Dashboard
+          </Link>
         </div>
 
-        {open && (
-          <div className="md:hidden border-t border-white/5 py-3 space-y-1 bg-[#0a0a0f]/95 backdrop-blur-xl">
-            {[
-              { to: '/', label: 'Ana Sayfa', icon: Home },
-              { to: '/search', label: 'İlan Ara', icon: Search },
-            ].map(({ to, label, icon: I }) => (
-              <button key={label} onClick={() => { navigate(to); setOpen(false); }}
-                className="flex items-center gap-3 w-full px-4 py-3 rounded-xl text-sm text-white/60 hover:text-white hover:bg-white/5">
-                <I className="w-4 h-4" /> {label}
-              </button>
-            ))}
-          </div>
-        )}
+        {/* Right Trailing Icons */}
+        <div className="flex items-center gap-2 md:gap-3 text-[#1b1b1d]">
+          <button
+            onClick={() => navigate('/dashboard')}
+            aria-label="Notifications"
+            className="hover:bg-[#f0edef] rounded-xl p-2 transition-colors active:scale-95"
+            title="Notifications"
+          >
+            <span className="material-symbols-outlined">notifications</span>
+          </button>
+          <button
+            onClick={() => navigate('/dashboard')}
+            aria-label="Account"
+            className="hover:bg-[#f0edef] rounded-xl p-2 transition-colors active:scale-95 flex items-center gap-1.5"
+            title="User Account"
+          >
+            <span className="material-symbols-outlined">account_circle</span>
+          </button>
+        </div>
       </div>
     </nav>
   );
