@@ -114,6 +114,8 @@ def get_recommendations(request: RecommendationRequest):
                 status_code=status.HTTP_400_BAD_REQUEST,
                 detail="Lütfen 'listing_id' veya 'query_text' parametrelerinden en az birini belirtin."
             )
+    except HTTPException:
+        raise
     except ValueError as ve:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,

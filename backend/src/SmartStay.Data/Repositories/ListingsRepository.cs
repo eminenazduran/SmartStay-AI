@@ -28,7 +28,10 @@ namespace SmartStay.Data.Repositories
 
             if (!string.IsNullOrWhiteSpace(filter.Neighbourhood))
             {
-                query = query.Where(l => l.NeighbourhoodCleansed.ToLower() == filter.Neighbourhood.ToLower());
+                var inputLower = filter.Neighbourhood.Trim().ToLowerInvariant();
+                var normalized = NormalizeTurkishCharacters(inputLower);
+                query = query.Where(l => l.NeighbourhoodCleansed.ToLower() == inputLower 
+                                      || l.NeighbourhoodCleansed.ToLower() == normalized);
             }
 
             if (!string.IsNullOrWhiteSpace(filter.RoomType))
@@ -131,6 +134,25 @@ namespace SmartStay.Data.Repositories
                 _context.Listings.Remove(listing);
                 await _context.SaveChangesAsync();
             }
+        }
+
+        private static string NormalizeTurkishCharacters(string text)
+        {
+            if (string.IsNullOrWhiteSpace(text)) return string.Empty;
+
+            return text
+                .Replace('ı', 'i')
+                .Replace('İ', 'i')
+                .Replace('ö', 'o')
+                .Replace('Ö', 'o')
+                .Replace('ü', 'u')
+                .Replace('Ü', 'u')
+                .Replace('ş', 's')
+                .Replace('Ş', 's')
+                .Replace('ç', 'c')
+                .Replace('Ç', 'c')
+                .Replace('ğ', 'g')
+                .Replace('Ğ', 'g');
         }
     }
 }
