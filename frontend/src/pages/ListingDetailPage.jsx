@@ -356,3 +356,5 @@ export const ListingDetailPage = () => {
     </div>
   );
 };
+
+export default ListingDetailPage;

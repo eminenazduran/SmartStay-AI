@@ -1,0 +1,83 @@
+version: '3.8'
+
+services:
+  # 1. MSSQL Veritabanı Servisi
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: smartstay-mssql
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=SmartStay2026!Password
+      - MSSQL_PID=Developer
+    ports:
+      - "1433:1433"
+    volumes:
+      - mssql-data:/var/opt/mssql
+    networks:
+      - smartstay-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P SmartStay2026!Password -Q 'SELECT 1' || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # 2. FastAPI ML Mikroservisi (XGBoost + TF-IDF)
+  ml_service:
+    build:
+      context: .
+      dockerfile: ml_service/Dockerfile
+    container_name: smartstay-ml-service
+    ports:
+      - "8000:8000"
+    networks:
+      - smartstay-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+
+  # 3. ASP.NET Core Web API (Backend)
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: smartstay-backend-api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ConnectionStrings__DefaultConnection=Server=mssql;Database=SmartStayDb;User Id=sa;Password=SmartStay2026!Password;TrustServerCertificate=True;MultipleActiveResultSets=true;
+      - MlService__BaseUrl=http://ml_service:8000
+    ports:
+      - "5018:5018"
+    depends_on:
+      mssql:
+        condition: service_healthy
+      ml_service:
+        condition: service_healthy
+    networks:
+      - smartstay-network
+    restart: unless-stopped
+
+  # 4. React Vite Frontend (Nginx SPA)
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    container_name: smartstay-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    networks:
+      - smartstay-network
+    restart: unless-stopped
+
+volumes:
+  mssql-data:
+    driver: local
+
+networks:
+  smartstay-network:
+    driver: bridge
