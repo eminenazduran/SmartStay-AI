@@ -3,26 +3,30 @@ import { Link } from 'react-router-dom';
 
 export const Footer = () => {
   return (
-    <footer className="w-full py-12 border-t border-[#e2e8f0]/80 bg-white grid grid-cols-1 md:grid-cols-4 gap-6 px-4 md:px-16 max-w-[1440px] mx-auto mt-auto">
-      <div className="col-span-1 space-y-4">
-        <span className="font-extrabold text-xl text-[#1b1b1d]">SmartStay AI</span>
-        <p className="text-sm text-[#45464d]">
-          © 2026 SmartStay AI Istanbul. Powered by Property Intelligence.
-        </p>
-      </div>
-      <div className="col-span-1 md:col-span-3 flex justify-start md:justify-end gap-8 items-center flex-wrap">
-        <Link to="#" className="text-sm text-[#45464d] hover:text-[#1b1b1d] transition-colors">
-          Terms
-        </Link>
-        <Link to="#" className="text-sm text-[#45464d] hover:text-[#1b1b1d] transition-colors">
-          Privacy
-        </Link>
-        <Link to="#" className="text-sm text-[#45464d] hover:text-[#1b1b1d] transition-colors">
-          Sitemap
-        </Link>
-        <Link to="/search" className="text-sm text-[#45464d] hover:text-[#1b1b1d] transition-colors">
-          District Guide
-        </Link>
+    <footer className="bg-surface-container-lowest border-t border-border-subtle w-full py-section-gap px-margin-mobile md:px-margin-desktop mt-auto">
+      <div className="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+        <div>
+          <Link to="/" className="font-headline-sm text-headline-sm font-bold text-primary mb-4 block tracking-tight">
+            SmartStay AI
+          </Link>
+          <p className="font-body-sm text-body-sm text-on-surface mt-2 max-w-md opacity-80">
+            © 2026 SmartStay AI Istanbul. Institutional Grade Real Estate Data.
+          </p>
+        </div>
+        <div className="flex flex-wrap gap-x-8 gap-y-4 md:justify-end">
+          <Link to="/search" className="font-body-sm text-body-sm text-ink-muted hover:text-primary transition-colors">
+            Semt Rehberi
+          </Link>
+          <a href="#" className="font-body-sm text-body-sm text-ink-muted hover:text-primary transition-colors">
+            Gizlilik Politikası
+          </a>
+          <a href="#" className="font-body-sm text-body-sm text-ink-muted hover:text-primary transition-colors">
+            Kullanım Koşulları
+          </a>
+          <a href="#" className="font-body-sm text-body-sm text-ink-muted hover:text-primary transition-colors">
+            Çerez Politikası
+          </a>
+        </div>
       </div>
     </footer>
   );

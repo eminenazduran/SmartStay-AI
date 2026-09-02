@@ -21,7 +21,7 @@ function PageLoadingFallback() {
 export function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-[#fcf8fa] text-[#1b1b1d] flex flex-col font-sans selection:bg-[#4648d4] selection:text-white">
+      <div className="min-h-screen bg-background text-on-surface flex flex-col font-sans selection:bg-secondary selection:text-on-secondary antialiased">
         <Navbar />
         <div className="flex-1 flex flex-col">
           <Suspense fallback={<PageLoadingFallback />}>
