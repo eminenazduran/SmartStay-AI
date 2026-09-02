@@ -51,10 +51,13 @@ namespace SmartStay.Data.Repositories
                 query = query.Where(l => l.Accommodates >= filter.MinAccommodates.Value);
             }
 
+            int page = filter.PageNumber < 1 ? 1 : filter.PageNumber;
+            int size = filter.PageSize < 1 ? 20 : Math.Min(filter.PageSize, 100);
+
             return await query
-                .OrderByDescending(l => l.ReviewScoresRating)
-                .Skip((filter.PageNumber - 1) * filter.PageSize)
-                .Take(filter.PageSize)
+                .OrderBy(l => l.Id)
+                .Skip((page - 1) * size)
+                .Take(size)
                 .ToListAsync();
         }
 
