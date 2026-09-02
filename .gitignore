@@ -9,9 +9,11 @@ __pycache__/
 *.so
 .Python
 
-# Scratch Scripts & IDE Cache
+# Scratch Scripts, Local Tests & IDE Cache
 scratch/
 .gemini/
+test_*.py
+*_test.py
 
 # Jupyter Notebook Checkpoints
 .ipynb_checkpoints/
