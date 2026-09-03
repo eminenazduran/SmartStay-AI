@@ -97,34 +97,31 @@ export const HomePage = () => {
 
         {/* Hero Content */}
         <div className="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col items-center text-center pt-20">
-          <span className="inline-block px-4 py-2 bg-surface-glass backdrop-blur-md border border-border-subtle rounded-full font-label-md text-label-md text-primary uppercase tracking-widest mb-6">
-            SmartStay
-          </span>
           <h1 className="font-headline-lg text-headline-lg-mobile md:text-headline-xl text-on-primary mb-6 drop-shadow-lg">
             İstanbul'un En Akıllı <br /> Konaklama Rehberi
           </h1>
           <p className="font-body-lg text-body-lg text-surface-container-low max-w-2xl mb-12 drop-shadow-md">
-            Yapay zeka ile ev fiyatlarını analiz edin, bütçenize en uygun ve gerçek değerinde olan evi saniyeler içinde bulun.
+            Konaklama fiyatlarını analiz edin, bütçenize en uygun ve gerçek değerinde olan evi saniyeler içinde bulun.
           </p>
 
           {/* Search Module (Premium Layered Glass) */}
           <form
             onSubmit={handleSearchSubmit}
-            className="bg-surface-glass backdrop-blur-2xl border border-border-subtle rounded-xl p-8 shadow-[0_20px_60px_rgba(19,27,46,0.08)] w-full max-w-5xl text-left"
+            className="bg-surface-glass backdrop-blur-2xl border border-border-subtle rounded-2xl p-5 sm:p-6 md:p-8 shadow-[0_20px_60px_rgba(19,27,46,0.08)] w-full max-w-5xl text-left"
           >
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-end">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 lg:gap-6 items-end">
               {/* 1. İlçe veya Mahalle Seçimi */}
-              <div className="flex flex-col gap-2">
-                <label className="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">
+              <div className="flex flex-col gap-1.5 lg:col-span-4">
+                <label className="text-[11px] font-bold text-on-surface-variant uppercase tracking-wider">
                   İlçe veya Mahalle
                 </label>
                 <div className="relative border-b border-border-subtle focus-within:border-primary transition-colors flex items-center">
-                  <span className="material-symbols-outlined absolute left-0 bottom-2 text-on-surface-variant">location_on</span>
+                  <span className="material-symbols-outlined absolute left-0 bottom-2 text-on-surface-variant text-xl">location_on</span>
                   <input
                     value={districtQuery}
                     onChange={(e) => setDistrictQuery(e.target.value)}
                     list="istanbul-districts-list"
-                    className="w-full bg-transparent border-none pl-8 pb-2 pt-2 focus:ring-0 font-body-lg text-on-surface placeholder:text-ink-muted cursor-pointer"
+                    className="w-full bg-transparent border-none pl-8 pb-2 pt-1.5 focus:ring-0 text-sm md:text-base font-semibold text-on-surface placeholder:text-ink-muted cursor-pointer"
                     placeholder="Örn: Kadıköy, Beşiktaş"
                     type="text"
                   />
@@ -137,20 +134,20 @@ export const HomePage = () => {
               </div>
 
               {/* 2. Gerçek Tarih Seçimi (Giriş - Çıkış) */}
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-1.5 lg:col-span-4">
                 <div className="flex justify-between items-center">
-                  <label className="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">
+                  <label className="text-[11px] font-bold text-on-surface-variant uppercase tracking-wider">
                     Giriş - Çıkış
                   </label>
                   {nights > 0 && (
-                    <span className="text-[11px] font-bold text-secondary bg-secondary-fixed px-2 py-0.5 rounded-full">
+                    <span className="text-[10px] font-bold text-secondary bg-secondary-fixed px-2 py-0.5 rounded-full">
                       {nights} Gece
                     </span>
                   )}
                 </div>
-                <div className="relative border-b border-border-subtle focus-within:border-primary transition-colors flex items-center gap-2 pb-1">
-                  <span className="material-symbols-outlined text-on-surface-variant text-xl">calendar_month</span>
-                  <div className="flex items-center gap-1.5 flex-1">
+                <div className="relative border-b border-border-subtle focus-within:border-primary transition-colors flex items-center gap-2 pb-1.5 pt-1">
+                  <span className="material-symbols-outlined text-on-surface-variant text-xl shrink-0">calendar_month</span>
+                  <div className="grid grid-cols-2 gap-2 flex-1 items-center min-w-0">
                     <input
                       type="date"
                       min={todayStr}
@@ -163,16 +160,15 @@ export const HomePage = () => {
                           setCheckOutDate(nextD.toISOString().split('T')[0]);
                         }
                       }}
-                      className="bg-transparent border-none p-0 focus:ring-0 text-xs font-semibold text-on-surface cursor-pointer w-28"
+                      className="bg-transparent border-none p-0 focus:ring-0 text-xs font-semibold text-on-surface cursor-pointer w-full"
                       title="Giriş Tarihi"
                     />
-                    <span className="text-on-surface-variant text-xs font-bold">→</span>
                     <input
                       type="date"
                       min={checkInDate || todayStr}
                       value={checkOutDate}
                       onChange={(e) => setCheckOutDate(e.target.value)}
-                      className="bg-transparent border-none p-0 focus:ring-0 text-xs font-semibold text-on-surface cursor-pointer w-28"
+                      className="bg-transparent border-none p-0 focus:ring-0 text-xs font-semibold text-on-surface cursor-pointer w-full"
                       title="Çıkış Tarihi"
                     />
                   </div>
@@ -180,16 +176,16 @@ export const HomePage = () => {
               </div>
 
               {/* 3. AI Değerleme Filtresi */}
-              <div className="flex flex-col gap-2">
-                <label className="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">
+              <div className="flex flex-col gap-1.5 lg:col-span-4">
+                <label className="text-[11px] font-bold text-on-surface-variant uppercase tracking-wider">
                   AI Değer Skoru
                 </label>
-                <div className="relative border-b border-border-subtle focus-within:border-primary transition-colors">
-                  <span className="material-symbols-outlined absolute left-0 bottom-2 text-on-surface-variant">analytics</span>
+                <div className="relative border-b border-border-subtle focus-within:border-primary transition-colors flex items-center">
+                  <span className="material-symbols-outlined absolute left-0 bottom-2 text-on-surface-variant text-xl">analytics</span>
                   <select
                     value={dealType}
                     onChange={(e) => setDealType(e.target.value)}
-                    className="w-full bg-transparent border-none pl-8 pb-2 pt-2 focus:ring-0 font-body-lg text-on-surface appearance-none cursor-pointer pr-6"
+                    className="w-full bg-transparent border-none pl-8 pb-2 pt-1.5 focus:ring-0 text-xs md:text-sm font-semibold text-on-surface appearance-none cursor-pointer pr-6 truncate"
                   >
                     <option value="all">Tümü (Tüm İlanlar)</option>
                     <option value="opportunity">🔥 Yüksek Fırsat (Piyasanın Altında)</option>
@@ -200,12 +196,12 @@ export const HomePage = () => {
               </div>
             </div>
 
-            <div className="mt-10 flex justify-end">
+            <div className="mt-6 sm:mt-8 flex justify-end">
               <button
                 type="submit"
-                className="bg-primary text-on-primary px-10 py-4 rounded-lg font-label-md text-label-md uppercase tracking-widest hover:bg-surface-tint transition-all shadow-lg flex items-center gap-3 cursor-pointer active:scale-95"
+                className="w-full sm:w-auto bg-primary text-on-primary px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl font-label-md text-label-md uppercase tracking-widest hover:bg-surface-tint transition-all shadow-lg flex items-center justify-center gap-3 cursor-pointer active:scale-95"
               >
-                Bul
+                <span>Bul</span>
                 <span className="material-symbols-outlined text-sm">arrow_forward</span>
               </button>
             </div>
@@ -270,7 +266,7 @@ export const HomePage = () => {
             Neden SmartStay?
           </h2>
           <p className="font-body-lg text-body-lg text-on-surface-variant">
-            Kurumsal düzeyde veri bütünlüğü ile gayrimenkul kiralama sürecinizi optimize ediyoruz.
+            Bütçenize değer veriyor, İstanbul'da en doğru evi bulmanıza yardımcı oluyoruz.
           </p>
         </div>
 

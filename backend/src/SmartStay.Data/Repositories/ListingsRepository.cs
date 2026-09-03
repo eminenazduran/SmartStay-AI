@@ -71,6 +71,15 @@ namespace SmartStay.Data.Repositories
                 .FirstOrDefaultAsync(l => l.Id == id);
         }
 
+        public async Task<IEnumerable<ListingReview>> GetReviewsByListingIdAsync(long listingId, int maxCount = 3)
+        {
+            return await _context.ListingReviews
+                .AsNoTracking()
+                .Where(r => r.ListingId == listingId)
+                .Take(maxCount)
+                .ToListAsync();
+        }
+
         public async Task<int> GetCountAsync(ListingFilterDto filter)
         {
             var query = _context.Listings.AsQueryable();

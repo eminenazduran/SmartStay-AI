@@ -13,6 +13,7 @@ namespace SmartStay.Data.Context
         }
 
         public DbSet<Listing> Listings => Set<Listing>();
+        public DbSet<ListingReview> ListingReviews => Set<ListingReview>();
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

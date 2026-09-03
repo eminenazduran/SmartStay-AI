@@ -127,6 +127,22 @@ export function normalizeListing(item) {
     imageUrl: photoUrl || defaultPlaceholder,
     images: photoUrl ? [photoUrl] : [defaultPlaceholder],
     trendPercent: isDeal ? -Math.abs(discountPercentage) : 0,
+    hostName: item.hostName || 'Ev Sahibi',
+    hostPictureUrl: item.hostPictureUrl || null,
+    hostUrl: item.hostUrl || (item.id ? `https://www.airbnb.com/rooms/${item.id}` : null),
+    hostSinceYears: item.hostSinceYears || null,
+    hostIsSuperhost: Boolean(item.hostIsSuperhost),
+    hostIdentityVerified: item.hostIdentityVerified != null ? Boolean(item.hostIdentityVerified) : true,
+    listingUrl: item.listingUrl || (item.id ? `https://www.airbnb.com/rooms/${item.id}` : null),
+    firstReview: item.firstReview || null,
+    lastReview: item.lastReview || null,
+    reviewScoresCleanliness: item.reviewScoresCleanliness != null ? Number(item.reviewScoresCleanliness) : null,
+    reviewScoresLocation: item.reviewScoresLocation != null ? Number(item.reviewScoresLocation) : null,
+    reviewScoresCommunication: item.reviewScoresCommunication != null ? Number(item.reviewScoresCommunication) : null,
+    reviewScoresAccuracy: item.reviewScoresAccuracy != null ? Number(item.reviewScoresAccuracy) : null,
+    reviewScoresCheckin: item.reviewScoresCheckin != null ? Number(item.reviewScoresCheckin) : null,
+    reviewScoresValue: item.reviewScoresValue != null ? Number(item.reviewScoresValue) : null,
+    reviews: Array.isArray(item.reviews) ? item.reviews : [],
   };
 }
 

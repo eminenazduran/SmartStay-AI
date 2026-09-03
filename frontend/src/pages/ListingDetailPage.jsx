@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { fetchListingById, predictPrice, getDistrictBenchmarkPrice, fetchListingGallery } from '../services/api';
+import mockReviewsData from '../data/mockReviews.json';
 
 const AMENITY_MAP = {
   'wifi': { label: 'Kablosuz İnternet (Wi-Fi)', icon: 'wifi' },
@@ -128,6 +129,27 @@ function formatAmenity(raw) {
     if (clean.includes(key)) return val;
   }
   return { label: raw, icon: 'check_circle' };
+}
+
+function getListingReviews(listing, district) {
+  if (!listing) return [];
+
+  // 1. Direct reviews attached from backend API (MSSQL ListingReviews - max 3)
+  if (Array.isArray(listing.reviews) && listing.reviews.length > 0) {
+    return listing.reviews.slice(0, 3);
+  }
+
+  // 2. Real dataset reviews from mockReviewsData (100 listings - max 3)
+  const fromMock = mockReviewsData && mockReviewsData[String(listing.id)];
+  if (Array.isArray(fromMock) && fromMock.length > 0) {
+    return fromMock.slice(0, 3);
+  }
+
+  // 3. Known verified reviews map (max 3)
+  const known = LISTING_REAL_REVIEWS[String(listing.id)];
+  if (known && known.length > 0) return known.slice(0, 3);
+
+  return [];
 }
 
 export const ListingDetailPage = () => {
@@ -326,12 +348,16 @@ export const ListingDetailPage = () => {
                   <span className="material-symbols-outlined text-sm text-yellow-500" style={{ fontVariationSettings: "'FILL' 1" }}>
                     star
                   </span>
-                  {listing.reviewScoresRating
-                    ? Number(listing.reviewScoresRating).toFixed(2)
-                    : (listing.numberOfReviews === 0 ? 'Yeni İlan' : '4.80')}
-                  <span className="font-normal text-on-surface-variant text-xs">
-                    ({listing.numberOfReviews != null ? listing.numberOfReviews : 0} değerlendirme)
-                  </span>
+                  {listing.numberOfReviews > 0 && listing.reviewScoresRating > 0 ? (
+                    <>
+                      <span>{Number(listing.reviewScoresRating).toFixed(2)}</span>
+                      <span className="font-normal text-on-surface-variant text-xs">
+                        ({listing.numberOfReviews} değerlendirme)
+                      </span>
+                    </>
+                  ) : (
+                    <span>Yeni</span>
+                  )}
                 </span>
                 <span>•</span>
                 <span>{listing.accommodates || 1} misafir</span>
@@ -559,14 +585,16 @@ export const ListingDetailPage = () => {
                 <div>
                   <h3 className="text-base font-bold text-primary flex items-center gap-2">
                     <span className="material-symbols-outlined text-yellow-500" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                    <span>
-                      {listing.reviewScoresRating
-                        ? Number(listing.reviewScoresRating).toFixed(2)
-                        : (listing.numberOfReviews === 0 ? 'Yeni İlan' : '4.80')}
-                    </span>
-                    <span className="text-on-surface-variant text-sm font-normal">
-                      • {listing.numberOfReviews != null ? listing.numberOfReviews : 0} değerlendirme
-                    </span>
+                    {listing.numberOfReviews > 0 && listing.reviewScoresRating > 0 ? (
+                      <>
+                        <span>{Number(listing.reviewScoresRating).toFixed(2)}</span>
+                        <span className="text-on-surface-variant text-sm font-normal">
+                          • {listing.numberOfReviews} değerlendirme
+                        </span>
+                      </>
+                    ) : (
+                      <span>Yeni İlan (Henüz Değerlendirme Yok)</span>
+                    )}
                   </h3>
                   <p className="text-xs text-on-surface-variant mt-1">
                     Bu ilanda konaklamış misafirlerin puan dağılımı ve doğrulanmış değerlendirmeleri.
@@ -580,7 +608,7 @@ export const ListingDetailPage = () => {
                   <span className="text-on-surface-variant text-[11px]">Temizlik</span>
                   <div className="flex items-center justify-between mt-1.5">
                     <span className="font-bold text-on-surface">
-                      {listing.reviewScoresCleanliness ? Number(listing.reviewScoresCleanliness).toFixed(1) : '4.9'}
+                      {listing.numberOfReviews > 0 && listing.reviewScoresCleanliness ? Number(listing.reviewScoresCleanliness).toFixed(1) : '—'}
                     </span>
                     <span className="material-symbols-outlined text-xs text-secondary">cleaning_services</span>
                   </div>
@@ -589,7 +617,7 @@ export const ListingDetailPage = () => {
                   <span className="text-on-surface-variant text-[11px]">Konum</span>
                   <div className="flex items-center justify-between mt-1.5">
                     <span className="font-bold text-on-surface">
-                      {listing.reviewScoresLocation ? Number(listing.reviewScoresLocation).toFixed(1) : '4.8'}
+                      {listing.numberOfReviews > 0 && listing.reviewScoresLocation ? Number(listing.reviewScoresLocation).toFixed(1) : '—'}
                     </span>
                     <span className="material-symbols-outlined text-xs text-secondary">location_on</span>
                   </div>
@@ -598,7 +626,7 @@ export const ListingDetailPage = () => {
                   <span className="text-on-surface-variant text-[11px]">İletişim</span>
                   <div className="flex items-center justify-between mt-1.5">
                     <span className="font-bold text-on-surface">
-                      {listing.reviewScoresCommunication ? Number(listing.reviewScoresCommunication).toFixed(1) : '4.9'}
+                      {listing.numberOfReviews > 0 && listing.reviewScoresCommunication ? Number(listing.reviewScoresCommunication).toFixed(1) : '—'}
                     </span>
                     <span className="material-symbols-outlined text-xs text-secondary">chat</span>
                   </div>
@@ -607,7 +635,7 @@ export const ListingDetailPage = () => {
                   <span className="text-on-surface-variant text-[11px]">Giriş Deneyimi</span>
                   <div className="flex items-center justify-between mt-1.5">
                     <span className="font-bold text-on-surface">
-                      {listing.reviewScoresCheckin ? Number(listing.reviewScoresCheckin).toFixed(1) : '4.9'}
+                      {listing.numberOfReviews > 0 && listing.reviewScoresCheckin ? Number(listing.reviewScoresCheckin).toFixed(1) : '—'}
                     </span>
                     <span className="material-symbols-outlined text-xs text-secondary">key</span>
                   </div>
@@ -616,7 +644,7 @@ export const ListingDetailPage = () => {
                   <span className="text-on-surface-variant text-[11px]">İlan Doğruluğu</span>
                   <div className="flex items-center justify-between mt-1.5">
                     <span className="font-bold text-on-surface">
-                      {listing.reviewScoresAccuracy ? Number(listing.reviewScoresAccuracy).toFixed(1) : '4.8'}
+                      {listing.numberOfReviews > 0 && listing.reviewScoresAccuracy ? Number(listing.reviewScoresAccuracy).toFixed(1) : '—'}
                     </span>
                     <span className="material-symbols-outlined text-xs text-secondary">verified</span>
                   </div>
@@ -625,58 +653,47 @@ export const ListingDetailPage = () => {
                   <span className="text-on-surface-variant text-[11px]">Fiyat / Performans</span>
                   <div className="flex items-center justify-between mt-1.5">
                     <span className="font-bold text-on-surface">
-                      {listing.reviewScoresValue ? Number(listing.reviewScoresValue).toFixed(1) : '4.8'}
+                      {listing.numberOfReviews > 0 && listing.reviewScoresValue ? Number(listing.reviewScoresValue).toFixed(1) : '—'}
                     </span>
                     <span className="material-symbols-outlined text-xs text-secondary">payments</span>
                   </div>
                 </div>
               </div>
 
-              {/* Gerçek Misafir Yorum Kartları */}
+              {/* Gerçek Misafir Yorum Kartları (Maksimum 3 Gerçek Değerlendirme) */}
               <div className="space-y-3 pt-1">
-                {(LISTING_REAL_REVIEWS[String(listing.id)] || [
-                  {
-                    author: 'Caner T.',
-                    location: 'İstanbul',
-                    date: 'Ocak 2024',
-                    rating: 5,
-                    comment: `Ev fotoğraflarda göründüğü gibi çok temiz ve düzenliydi. ${district} bölgesinde merkezi bir konumda, toplu taşımaya ve cafelere yürüme mesafesinde olması büyük kolaylık sağladı. Giriş süreci sorunsuzdu, kesinlikle tavsiye ederim.`
-                  },
-                  {
-                    author: 'Elena K.',
-                    location: 'Yurtdışı Misafiri',
-                    date: 'Kasım 2023',
-                    rating: 5,
-                    comment: `Sessiz, huzurlu ve çok rahat bir konaklama deneyimiydi. İnternet hızı uzaktan çalışmak için çok iyiydi. Ev sahibi sorularımıza hızlıca dönüş yaptı. ${district} seyahatlerimizde tekrar kalmak isteriz.`
-                  },
-                  {
-                    author: 'Murat B.',
-                    location: 'Ankara',
-                    date: 'Ağustos 2023',
-                    rating: 5,
-                    comment: 'Bölgedeki emsallerine göre fiyat/performans dengesi gayet başarılı. Yataklar konforlu ve mutfak temel ihtiyaçlar için yeterliydi. Teşekkürler!'
+                {(() => {
+                  const reviewsList = getListingReviews(listing, district);
+                  if (reviewsList.length === 0) {
+                    return (
+                      <div className="p-6 text-center text-on-surface-variant bg-surface-container-low rounded-xl border border-border-subtle">
+                        <span className="material-symbols-outlined text-2xl text-on-surface-variant mb-1">rate_review</span>
+                        <p className="text-xs font-semibold">Bu ilan için henüz bir misafir değerlendirmesi bulunmamaktadır.</p>
+                      </div>
+                    );
                   }
-                ]).map((rev, idx) => (
-                  <div key={idx} className="p-4 rounded-xl bg-surface-container-low border border-border-subtle space-y-2">
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-2.5">
-                        <div className="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center text-xs font-bold uppercase">
-                          {rev.author[0]}
+                  return reviewsList.map((rev, idx) => (
+                    <div key={idx} className="p-4 rounded-xl bg-surface-container-low border border-border-subtle space-y-2">
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-2.5">
+                          <div className="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center text-xs font-bold uppercase">
+                            {rev.author ? rev.author[0] : 'M'}
+                          </div>
+                          <div>
+                            <span className="block text-xs font-bold text-primary">{rev.author || 'Misafir'}</span>
+                            <span className="text-[10px] text-on-surface-variant">{rev.location || 'Doğrulanmış Misafir'} • {rev.date}</span>
+                          </div>
                         </div>
-                        <div>
-                          <span className="block text-xs font-bold text-primary">{rev.author}</span>
-                          <span className="text-[10px] text-on-surface-variant">{rev.location} • {rev.date}</span>
+                        <div className="flex text-yellow-500 text-xs">
+                          {'★'.repeat(rev.rating || 5)}
                         </div>
                       </div>
-                      <div className="flex text-yellow-500 text-xs">
-                        {'★'.repeat(rev.rating || 5)}
-                      </div>
+                      <p className="text-xs text-on-surface leading-relaxed">
+                        "{rev.comment}"
+                      </p>
                     </div>
-                    <p className="text-xs text-on-surface leading-relaxed">
-                      "{rev.comment}"
-                    </p>
-                  </div>
-                ))}
+                  ));
+                })()}
               </div>
             </section>
           </div>
@@ -696,7 +713,9 @@ export const ListingDetailPage = () => {
 
                 <div className="flex items-center gap-1 text-xs text-on-surface font-semibold">
                   <span className="material-symbols-outlined text-yellow-500 text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                  {Number(listing.reviewScoresRating || 4.8).toFixed(2)}
+                  {listing.numberOfReviews > 0 && listing.reviewScoresRating > 0
+                    ? Number(listing.reviewScoresRating).toFixed(2)
+                    : 'Yeni'}
                 </div>
               </div>
 
@@ -755,33 +774,77 @@ export const ListingDetailPage = () => {
                 </div>
               </div>
 
-              {/* Rezervasyon & İletişim Kutusu */}
-              <div className="bg-surface-container-low p-4 rounded-xl border border-border-subtle space-y-3">
-                <div className="flex items-center gap-2 text-xs font-bold text-primary">
-                  <span className="material-symbols-outlined text-base text-secondary">phone_in_talk</span>
-                  <span>Rezervasyon ve İletişim</span>
+              {/* Gerçek Ev Sahibi & İletişim Kartı */}
+              <div className="bg-surface-container-low p-4 rounded-xl border border-border-subtle space-y-3.5">
+                {/* Ev Sahibi Başlığı */}
+                <div className="flex items-center gap-3 pb-3 border-b border-border-subtle">
+                  {listing.hostPictureUrl ? (
+                    <img
+                      src={listing.hostPictureUrl}
+                      alt={listing.hostName || 'Ev Sahibi'}
+                      className="w-12 h-12 rounded-full object-cover border-2 border-primary/20 shadow-sm"
+                    />
+                  ) : (
+                    <div className="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-base shadow-sm">
+                      {(listing.hostName || 'E')[0]}
+                    </div>
+                  )}
+                  <div className="min-w-0 flex-1">
+                    <div className="flex items-center gap-1.5 flex-wrap">
+                      <span className="font-bold text-sm text-primary truncate">
+                        {listing.hostName || 'Ev Sahibi'}
+                      </span>
+                      {listing.hostIsSuperhost && (
+                        <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 bg-amber-50 border border-amber-200 text-amber-800 text-[10px] font-bold rounded-md">
+                          <span className="material-symbols-outlined text-[12px] text-amber-600">workspace_premium</span>
+                          Süper Ev Sahibi
+                        </span>
+                      )}
+                    </div>
+                    <p className="text-[11px] text-on-surface-variant flex items-center gap-1 mt-0.5">
+                      <span className="material-symbols-outlined text-[13px] text-emerald-600">verified</span>
+                      {listing.hostSinceYears ? `${listing.hostSinceYears} yıldır ev sahibi` : 'Doğrulanmış Ev Sahibi'}
+                    </p>
+                  </div>
                 </div>
+
                 <p className="text-[11px] text-on-surface-variant leading-relaxed">
-                  Bu konaklama için rezervasyon yaptırmak ve detaylı bilgi almak için aşağıdaki numaradan bize ulaşabilirsiniz:
+                  Bu konaklama için rezervasyon ve bilgi taleplerinizi ev sahibi {listing.hostName ? `(${listing.hostName})` : ''} ile doğrudan görüşebilir veya destek hattımızdan bize ulaşabilirsiniz:
                 </p>
-                <div className="p-3 bg-surface rounded-lg border border-border-subtle">
-                  <span className="block text-[10px] text-on-surface-variant uppercase font-semibold mb-0.5">Rezervasyon ve İletişim Hattı</span>
-                  <a href="tel:+902124447829" className="text-sm font-bold text-primary hover:underline block">
-                    +90 (212) 444 78 29
-                  </a>
-                </div>
-                <div className="flex items-center justify-between text-[11px] text-on-surface-variant pt-1 border-t border-border-subtle">
-                  <span>İlan Referans Kodu:</span>
-                  <span className="font-mono font-bold text-on-surface">#SS-{listing.id}</span>
-                </div>
+
+                {/* Ev Sahibi ile Doğrudan İletişim Butonu */}
                 <a
-                  href={`https://www.airbnb.com/rooms/${listing.id}`}
+                  href={listing.hostUrl || listing.listingUrl || `https://www.airbnb.com/rooms/${listing.id}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-lg border border-border-subtle text-xs font-semibold text-on-surface hover:bg-surface-container-high transition-all text-center"
+                  className="w-full flex items-center justify-center gap-2 py-2.5 px-3 rounded-lg bg-primary text-on-primary text-xs font-bold hover:bg-surface-tint transition-all text-center shadow-sm"
+                >
+                  <span className="material-symbols-outlined text-sm">chat</span>
+                  <span>{listing.hostName ? `${listing.hostName} ile İletişime Geç` : 'Ev Sahibi ile İletişime Geç'}</span>
+                </a>
+
+                {/* Rezervasyon Hattı & İlan Kodu */}
+                <div className="p-2.5 bg-surface rounded-lg border border-border-subtle flex items-center justify-between text-xs">
+                  <div>
+                    <span className="block text-[10px] text-on-surface-variant uppercase font-semibold">SmartStay Danışma Hattı</span>
+                    <a href="tel:+902124447829" className="text-xs font-bold text-primary hover:underline">
+                      +90 (212) 444 78 29
+                    </a>
+                  </div>
+                  <div className="text-right">
+                    <span className="block text-[10px] text-on-surface-variant uppercase font-semibold">İlan Kodu</span>
+                    <span className="font-mono font-bold text-on-surface text-xs">#SS-{listing.id}</span>
+                  </div>
+                </div>
+
+                <a
+                  href={listing.listingUrl || `https://www.airbnb.com/rooms/${listing.id}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full flex items-center justify-center gap-1.5 py-2 px-3 rounded-lg border border-border-subtle text-[11px] font-semibold text-on-surface hover:bg-surface-container-high transition-all text-center"
                 >
                   <span>Airbnb Üzerinden İncele</span>
-                  <span className="material-symbols-outlined text-sm">open_in_new</span>
+                  <span className="material-symbols-outlined text-xs">open_in_new</span>
                 </a>
               </div>
 

@@ -55,6 +55,16 @@ namespace SmartStay.Services.Services
                     return ApiResponse<ListingDto>.ErrorResponse($"ID'si {id} olan ilan bulunamadi.");
 
                 var dto = MapToDetailDto(entity);
+                var reviews = await _listingsRepository.GetReviewsByListingIdAsync(id, 3);
+                dto.Reviews = reviews.Select(r => new ReviewDto
+                {
+                    Author = r.Author,
+                    Location = r.Location ?? "Doğrulanmış Misafir",
+                    Date = r.Date ?? string.Empty,
+                    Rating = r.Rating,
+                    Comment = r.Comment
+                }).ToList();
+
                 return ApiResponse<ListingDto>.SuccessResponse(dto, "Ilan detaylari basariyla getirildi.");
             }
             catch (Exception ex)
@@ -134,7 +144,9 @@ namespace SmartStay.Services.Services
                 Beds = entity.Beds,
                 Latitude = entity.Latitude,
                 Longitude = entity.Longitude,
-                PictureUrl = entity.PictureUrl
+                PictureUrl = entity.PictureUrl,
+                HostName = entity.HostName,
+                HostPictureUrl = entity.HostPictureUrl
             };
         }
 
@@ -164,7 +176,22 @@ namespace SmartStay.Services.Services
                 MinimumNights = entity.MinimumNights,
                 Availability365 = entity.Availability365,
                 Amenities = amenitiesList,
-                PictureUrl = entity.PictureUrl
+                PictureUrl = entity.PictureUrl,
+                HostName = entity.HostName,
+                HostPictureUrl = entity.HostPictureUrl,
+                HostUrl = entity.HostUrl,
+                HostSinceYears = entity.HostSinceYears,
+                HostIsSuperhost = entity.HostIsSuperhost,
+                HostIdentityVerified = entity.HostIdentityVerified,
+                ListingUrl = entity.ListingUrl,
+                FirstReview = entity.FirstReview,
+                LastReview = entity.LastReview,
+                ReviewScoresCleanliness = entity.ReviewScoresCleanliness,
+                ReviewScoresLocation = entity.ReviewScoresLocation,
+                ReviewScoresCommunication = entity.ReviewScoresCommunication,
+                ReviewScoresAccuracy = entity.ReviewScoresAccuracy,
+                ReviewScoresCheckin = entity.ReviewScoresCheckin,
+                ReviewScoresValue = entity.ReviewScoresValue
             };
         }
     }

@@ -12,6 +12,7 @@ namespace SmartStay.Core.Interfaces.Repositories
     {
         Task<IEnumerable<Listing>> GetAllAsync(ListingFilterDto filter);
         Task<Listing?> GetByIdAsync(long id);
+        Task<IEnumerable<ListingReview>> GetReviewsByListingIdAsync(long listingId, int maxCount = 3);
         Task<int> GetCountAsync(ListingFilterDto filter);
         Task<IEnumerable<Listing>> GetFeaturedAsync(int count = 6);
         Task<Listing> AddAsync(Listing listing);

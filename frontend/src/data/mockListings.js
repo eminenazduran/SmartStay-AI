@@ -31,7 +31,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 2
+    "beds": 2,
+    "hostName": "Adem",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/f819c0fe-3cc4-4513-974e-4fd37888e1ef.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/182039224",
+    "hostSinceYears": 7,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/31270923",
+    "firstReview": "2019-01-13",
+    "lastReview": "2026-06-14",
+    "reviewScoresCleanliness": 4.77,
+    "reviewScoresLocation": 4.94,
+    "reviewScoresCommunication": 4.85,
+    "reviewScoresAccuracy": 4.88,
+    "reviewScoresCheckin": 4.88,
+    "reviewScoresValue": 4.78
   },
   {
     "id": 746428138912447799,
@@ -66,7 +81,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 2
+    "beds": 2,
+    "hostName": "Kaan",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User/original/77c5a070-4900-4414-85e9-af0fffa7ee3e.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/338996032",
+    "hostSinceYears": 6,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/746428138912447799",
+    "firstReview": "2022-10-29",
+    "lastReview": "2026-06-16",
+    "reviewScoresCleanliness": 4.53,
+    "reviewScoresLocation": 4.83,
+    "reviewScoresCommunication": 4.77,
+    "reviewScoresAccuracy": 4.62,
+    "reviewScoresCheckin": 4.81,
+    "reviewScoresValue": 4.59
   },
   {
     "id": 51684496,
@@ -99,7 +129,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Hakan S",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User/original/3923762a-cbba-4bd9-83dc-7cf3a0ba8494.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/486447053",
+    "hostSinceYears": 3,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/51684496",
+    "firstReview": "2021-08-18",
+    "lastReview": "2026-06-15",
+    "reviewScoresCleanliness": 4.89,
+    "reviewScoresLocation": 4.78,
+    "reviewScoresCommunication": 4.95,
+    "reviewScoresAccuracy": 4.91,
+    "reviewScoresCheckin": 4.95,
+    "reviewScoresValue": 4.89
   },
   {
     "id": 845680469667232115,
@@ -134,7 +179,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 2
+    "beds": 2,
+    "hostName": "Kaan",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User/original/77c5a070-4900-4414-85e9-af0fffa7ee3e.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/338996032",
+    "hostSinceYears": 6,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/845680469667232115",
+    "firstReview": "2023-03-17",
+    "lastReview": "2026-05-21",
+    "reviewScoresCleanliness": 4.52,
+    "reviewScoresLocation": 4.8,
+    "reviewScoresCommunication": 4.76,
+    "reviewScoresAccuracy": 4.58,
+    "reviewScoresCheckin": 4.74,
+    "reviewScoresValue": 4.56
   },
   {
     "id": 33730243,
@@ -168,7 +228,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 4
+    "beds": 4,
+    "hostName": "Murat",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/0fd14c29-735d-4e79-91b0-953aae880489.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/217879853",
+    "hostSinceYears": 7,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/33730243",
+    "firstReview": "2019-04-20",
+    "lastReview": "2026-06-27",
+    "reviewScoresCleanliness": 4.89,
+    "reviewScoresLocation": 4.86,
+    "reviewScoresCommunication": 4.94,
+    "reviewScoresAccuracy": 4.85,
+    "reviewScoresCheckin": 4.93,
+    "reviewScoresValue": 4.82
   },
   {
     "id": 1109410403679737908,
@@ -203,7 +278,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 2
+    "beds": 2,
+    "hostName": "Ahmet",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User/original/872b0156-6bc3-4d21-9802-1a36a4e4f193.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/175455168",
+    "hostSinceYears": 2,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/1109410403679737908",
+    "firstReview": "2024-03-17",
+    "lastReview": "2026-06-30",
+    "reviewScoresCleanliness": 4.78,
+    "reviewScoresLocation": 4.92,
+    "reviewScoresCommunication": 4.96,
+    "reviewScoresAccuracy": 4.89,
+    "reviewScoresCheckin": 4.96,
+    "reviewScoresValue": 4.79
   },
   {
     "id": 992063181695271198,
@@ -237,7 +327,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 2
+    "beds": 2,
+    "hostName": "Hakan",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User/original/e418af6e-e5a4-459a-b4ff-61dcc04caacc.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/237892516",
+    "hostSinceYears": 2,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/992063181695271198",
+    "firstReview": "2023-10-31",
+    "lastReview": "2026-06-29",
+    "reviewScoresCleanliness": 4.73,
+    "reviewScoresLocation": 4.89,
+    "reviewScoresCommunication": 4.9,
+    "reviewScoresAccuracy": 4.9,
+    "reviewScoresCheckin": 4.87,
+    "reviewScoresValue": 4.79
   },
   {
     "id": 987785467664090332,
@@ -271,7 +376,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 2
+    "beds": 2,
+    "hostName": "Ahmet",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User/original/872b0156-6bc3-4d21-9802-1a36a4e4f193.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/175455168",
+    "hostSinceYears": 2,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/987785467664090332",
+    "firstReview": "2024-03-17",
+    "lastReview": "2026-06-30",
+    "reviewScoresCleanliness": 4.77,
+    "reviewScoresLocation": 4.91,
+    "reviewScoresCommunication": 4.96,
+    "reviewScoresAccuracy": 4.92,
+    "reviewScoresCheckin": 4.93,
+    "reviewScoresValue": 4.79
   },
   {
     "id": 957882008785714795,
@@ -307,7 +427,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 2
+    "beds": 2,
+    "hostName": "Kaan",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User/original/77c5a070-4900-4414-85e9-af0fffa7ee3e.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/338996032",
+    "hostSinceYears": 6,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/957882008785714795",
+    "firstReview": "2023-09-02",
+    "lastReview": "2026-06-14",
+    "reviewScoresCleanliness": 4.55,
+    "reviewScoresLocation": 4.86,
+    "reviewScoresCommunication": 4.82,
+    "reviewScoresAccuracy": 4.66,
+    "reviewScoresCheckin": 4.79,
+    "reviewScoresValue": 4.66
   },
   {
     "id": 724334680068575075,
@@ -340,7 +475,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Hakan S",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User/original/3923762a-cbba-4bd9-83dc-7cf3a0ba8494.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/486447053",
+    "hostSinceYears": 3,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/724334680068575075",
+    "firstReview": "2022-10-09",
+    "lastReview": "2026-06-27",
+    "reviewScoresCleanliness": 4.91,
+    "reviewScoresLocation": 4.76,
+    "reviewScoresCommunication": 4.95,
+    "reviewScoresAccuracy": 4.91,
+    "reviewScoresCheckin": 4.9,
+    "reviewScoresValue": 4.83
   },
   {
     "id": 753515621427946412,
@@ -374,7 +524,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Hakan S",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User/original/3923762a-cbba-4bd9-83dc-7cf3a0ba8494.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/486447053",
+    "hostSinceYears": 3,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/753515621427946412",
+    "firstReview": "2022-11-08",
+    "lastReview": "2026-06-28",
+    "reviewScoresCleanliness": 4.83,
+    "reviewScoresLocation": 4.88,
+    "reviewScoresCommunication": 4.91,
+    "reviewScoresAccuracy": 4.88,
+    "reviewScoresCheckin": 4.93,
+    "reviewScoresValue": 4.8
   },
   {
     "id": 753562225721171681,
@@ -408,7 +573,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Hakan S",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User/original/3923762a-cbba-4bd9-83dc-7cf3a0ba8494.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/486447053",
+    "hostSinceYears": 3,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/753562225721171681",
+    "firstReview": "2022-11-20",
+    "lastReview": "2026-06-17",
+    "reviewScoresCleanliness": 4.89,
+    "reviewScoresLocation": 4.94,
+    "reviewScoresCommunication": 4.96,
+    "reviewScoresAccuracy": 4.91,
+    "reviewScoresCheckin": 4.96,
+    "reviewScoresValue": 4.8
   },
   {
     "id": 751946896471898170,
@@ -441,7 +621,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Hakan S",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User/original/3923762a-cbba-4bd9-83dc-7cf3a0ba8494.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/486447053",
+    "hostSinceYears": 3,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/751946896471898170",
+    "firstReview": "2022-11-20",
+    "lastReview": "2026-06-29",
+    "reviewScoresCleanliness": 4.89,
+    "reviewScoresLocation": 4.94,
+    "reviewScoresCommunication": 4.96,
+    "reviewScoresAccuracy": 4.91,
+    "reviewScoresCheckin": 4.95,
+    "reviewScoresValue": 4.78
   },
   {
     "id": 752038819278909666,
@@ -475,7 +670,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Hakan S",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User/original/3923762a-cbba-4bd9-83dc-7cf3a0ba8494.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/486447053",
+    "hostSinceYears": 3,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/752038819278909666",
+    "firstReview": "2022-11-12",
+    "lastReview": "2026-06-21",
+    "reviewScoresCleanliness": 4.87,
+    "reviewScoresLocation": 4.93,
+    "reviewScoresCommunication": 4.97,
+    "reviewScoresAccuracy": 4.89,
+    "reviewScoresCheckin": 4.95,
+    "reviewScoresValue": 4.85
   },
   {
     "id": 53028976,
@@ -508,7 +718,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Yigit",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/da5b5db0-4944-42cd-a69a-8a93742caecb.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/427998831",
+    "hostSinceYears": 4,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/53028976",
+    "firstReview": "2021-11-10",
+    "lastReview": "2026-05-02",
+    "reviewScoresCleanliness": 4.65,
+    "reviewScoresLocation": 4.91,
+    "reviewScoresCommunication": 4.86,
+    "reviewScoresAccuracy": 4.83,
+    "reviewScoresCheckin": 4.83,
+    "reviewScoresValue": 4.73
   },
   {
     "id": 751995522180696218,
@@ -542,7 +767,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Hakan K",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/0a8ed062-bc03-45af-9710-87bfd3fe6ffa.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/486150850",
+    "hostSinceYears": 3,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/751995522180696218",
+    "firstReview": "2022-11-05",
+    "lastReview": "2026-06-22",
+    "reviewScoresCleanliness": 4.91,
+    "reviewScoresLocation": 4.95,
+    "reviewScoresCommunication": 4.97,
+    "reviewScoresAccuracy": 4.93,
+    "reviewScoresCheckin": 4.95,
+    "reviewScoresValue": 4.86
   },
   {
     "id": 753560696977964601,
@@ -576,7 +816,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Hakan S",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User/original/3923762a-cbba-4bd9-83dc-7cf3a0ba8494.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/486447053",
+    "hostSinceYears": 3,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/753560696977964601",
+    "firstReview": "2022-11-10",
+    "lastReview": "2026-06-13",
+    "reviewScoresCleanliness": 4.91,
+    "reviewScoresLocation": 4.88,
+    "reviewScoresCommunication": 4.97,
+    "reviewScoresAccuracy": 4.95,
+    "reviewScoresCheckin": 4.98,
+    "reviewScoresValue": 4.88
   },
   {
     "id": 846266802719815640,
@@ -611,7 +866,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Fatih",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/3ba23190-035f-4f06-8cd9-2be59ae48eae.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/238740161",
+    "hostSinceYears": 3,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/846266802719815640",
+    "firstReview": "2023-03-16",
+    "lastReview": "2026-06-22",
+    "reviewScoresCleanliness": 4.32,
+    "reviewScoresLocation": 4.87,
+    "reviewScoresCommunication": 4.83,
+    "reviewScoresAccuracy": 4.69,
+    "reviewScoresCheckin": 4.86,
+    "reviewScoresValue": 4.56
   },
   {
     "id": 841988194798221249,
@@ -645,7 +915,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Fatih",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/3ba23190-035f-4f06-8cd9-2be59ae48eae.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/238740161",
+    "hostSinceYears": 3,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/841988194798221249",
+    "firstReview": "2023-03-14",
+    "lastReview": "2026-06-20",
+    "reviewScoresCleanliness": 4.29,
+    "reviewScoresLocation": 4.85,
+    "reviewScoresCommunication": 4.82,
+    "reviewScoresAccuracy": 4.67,
+    "reviewScoresCheckin": 4.82,
+    "reviewScoresValue": 4.47
   },
   {
     "id": 846923359131400007,
@@ -679,7 +964,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Fatih",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/3ba23190-035f-4f06-8cd9-2be59ae48eae.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/238740161",
+    "hostSinceYears": 3,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/846923359131400007",
+    "firstReview": "2023-03-17",
+    "lastReview": "2026-06-17",
+    "reviewScoresCleanliness": 4.2,
+    "reviewScoresLocation": 4.74,
+    "reviewScoresCommunication": 4.69,
+    "reviewScoresAccuracy": 4.58,
+    "reviewScoresCheckin": 4.7,
+    "reviewScoresValue": 4.39
   },
   {
     "id": 21811046,
@@ -712,7 +1012,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Ece",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User/original/52477f41-6c3f-46a5-bbd1-42d77a9ad1c8.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/158692070",
+    "hostSinceYears": 8,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": false,
+    "listingUrl": "https://www.airbnb.com/rooms/21811046",
+    "firstReview": "2018-01-17",
+    "lastReview": "2026-06-17",
+    "reviewScoresCleanliness": 4.78,
+    "reviewScoresLocation": 4.9,
+    "reviewScoresCommunication": 4.91,
+    "reviewScoresAccuracy": 4.79,
+    "reviewScoresCheckin": 4.92,
+    "reviewScoresValue": 4.73
   },
   {
     "id": 818654745124406522,
@@ -747,7 +1062,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "George",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User-297319980/original/f1cbd7d4-3b4d-486f-bb8a-d8a5487974a5.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/297319980",
+    "hostSinceYears": 6,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": false,
+    "listingUrl": "https://www.airbnb.com/rooms/818654745124406522",
+    "firstReview": "2023-02-18",
+    "lastReview": "2026-06-28",
+    "reviewScoresCleanliness": 4.8,
+    "reviewScoresLocation": 4.71,
+    "reviewScoresCommunication": 4.96,
+    "reviewScoresAccuracy": 4.89,
+    "reviewScoresCheckin": 4.96,
+    "reviewScoresValue": 4.81
   },
   {
     "id": 32186550,
@@ -781,7 +1111,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Flats Company",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/4b30628c-902b-432a-b241-5808db9c328c.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/6047256",
+    "hostSinceYears": 8,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/32186550",
+    "firstReview": "2019-03-09",
+    "lastReview": "2026-06-04",
+    "reviewScoresCleanliness": 4.66,
+    "reviewScoresLocation": 4.45,
+    "reviewScoresCommunication": 4.88,
+    "reviewScoresAccuracy": 4.73,
+    "reviewScoresCheckin": 4.9,
+    "reviewScoresValue": 4.69
   },
   {
     "id": 35611885,
@@ -815,7 +1160,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 2
+    "beds": 2,
+    "hostName": "Ece",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User/original/52477f41-6c3f-46a5-bbd1-42d77a9ad1c8.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/158692070",
+    "hostSinceYears": 8,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": false,
+    "listingUrl": "https://www.airbnb.com/rooms/35611885",
+    "firstReview": "2019-06-17",
+    "lastReview": "2026-06-18",
+    "reviewScoresCleanliness": 4.82,
+    "reviewScoresLocation": 4.9,
+    "reviewScoresCommunication": 4.94,
+    "reviewScoresAccuracy": 4.89,
+    "reviewScoresCheckin": 4.92,
+    "reviewScoresValue": 4.87
   },
   {
     "id": 6682900,
@@ -849,7 +1209,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Kerem",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User-1605466/original/1929773b-02dc-4a34-8089-a71991eae92c.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/1605466",
+    "hostSinceYears": 13,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/6682900",
+    "firstReview": "2015-08-09",
+    "lastReview": "2026-06-28",
+    "reviewScoresCleanliness": 4.78,
+    "reviewScoresLocation": 4.73,
+    "reviewScoresCommunication": 4.91,
+    "reviewScoresAccuracy": 4.73,
+    "reviewScoresCheckin": 4.88,
+    "reviewScoresValue": 4.67
   },
   {
     "id": 718917,
@@ -883,7 +1258,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Kerem",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User-1605466/original/1929773b-02dc-4a34-8089-a71991eae92c.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/1605466",
+    "hostSinceYears": 13,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/718917",
+    "firstReview": "2014-06-02",
+    "lastReview": "2026-06-19",
+    "reviewScoresCleanliness": 4.79,
+    "reviewScoresLocation": 4.73,
+    "reviewScoresCommunication": 4.91,
+    "reviewScoresAccuracy": 4.71,
+    "reviewScoresCheckin": 4.91,
+    "reviewScoresValue": 4.72
   },
   {
     "id": 8487113,
@@ -917,7 +1307,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 2
+    "beds": 2,
+    "hostName": "Berna Melih Verda",
+    "hostPictureUrl": "https://a0.muscache.com/im/users/44695496/profile_pic/1442794162/original.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/44695496",
+    "hostSinceYears": 10,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/8487113",
+    "firstReview": "2015-09-29",
+    "lastReview": "2026-06-21",
+    "reviewScoresCleanliness": 4.75,
+    "reviewScoresLocation": 4.77,
+    "reviewScoresCommunication": 4.85,
+    "reviewScoresAccuracy": 4.77,
+    "reviewScoresCheckin": 4.88,
+    "reviewScoresValue": 4.69
   },
   {
     "id": 38287262,
@@ -950,7 +1355,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 2
+    "beds": 2,
+    "hostName": "Salih Buğra",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/fa21e598-84c7-498f-9e94-439a0e3cbe42.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/258814514",
+    "hostSinceYears": 7,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/38287262",
+    "firstReview": "2019-09-19",
+    "lastReview": "2026-06-17",
+    "reviewScoresCleanliness": 4.65,
+    "reviewScoresLocation": 4.93,
+    "reviewScoresCommunication": 4.94,
+    "reviewScoresAccuracy": 4.79,
+    "reviewScoresCheckin": 4.9,
+    "reviewScoresValue": 4.68
   },
   {
     "id": 1832186,
@@ -984,7 +1404,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Kerem",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User-1605466/original/1929773b-02dc-4a34-8089-a71991eae92c.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/1605466",
+    "hostSinceYears": 13,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/1832186",
+    "firstReview": "2013-11-04",
+    "lastReview": "2026-05-17",
+    "reviewScoresCleanliness": 4.78,
+    "reviewScoresLocation": 4.76,
+    "reviewScoresCommunication": 4.87,
+    "reviewScoresAccuracy": 4.76,
+    "reviewScoresCheckin": 4.92,
+    "reviewScoresValue": 4.72
   },
   {
     "id": 11402277,
@@ -1020,7 +1455,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 4
+    "beds": 4,
+    "hostName": "Ozde And Omer",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/223f44c6-9767-4434-9469-4e7d0a9e4612.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/11628655",
+    "hostSinceYears": 10,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/11402277",
+    "firstReview": "2016-02-26",
+    "lastReview": "2026-06-14",
+    "reviewScoresCleanliness": 4.69,
+    "reviewScoresLocation": 4.92,
+    "reviewScoresCommunication": 4.94,
+    "reviewScoresAccuracy": 4.63,
+    "reviewScoresCheckin": 4.87,
+    "reviewScoresValue": 4.71
   },
   {
     "id": 4216459,
@@ -1056,7 +1506,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Filiz",
+    "hostPictureUrl": "https://a0.muscache.com/im/users/21881710/profile_pic/1423644439/original.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/21881710",
+    "hostSinceYears": 11,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/4216459",
+    "firstReview": "2015-03-02",
+    "lastReview": "2026-06-08",
+    "reviewScoresCleanliness": 4.94,
+    "reviewScoresLocation": 4.89,
+    "reviewScoresCommunication": 4.93,
+    "reviewScoresAccuracy": 4.85,
+    "reviewScoresCheckin": 4.93,
+    "reviewScoresValue": 4.86
   },
   {
     "id": 6664471,
@@ -1092,7 +1557,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 2
+    "beds": 2,
+    "hostName": "Hikmet",
+    "hostPictureUrl": "https://a0.muscache.com/im/users/17975030/profile_pic/1413666790/original.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/17975030",
+    "hostSinceYears": 11,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/6664471",
+    "firstReview": "2015-06-18",
+    "lastReview": "2026-06-03",
+    "reviewScoresCleanliness": 4.79,
+    "reviewScoresLocation": 4.63,
+    "reviewScoresCommunication": 4.91,
+    "reviewScoresAccuracy": 4.74,
+    "reviewScoresCheckin": 4.87,
+    "reviewScoresValue": 4.79
   },
   {
     "id": 9745074,
@@ -1126,7 +1606,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 2
+    "beds": 2,
+    "hostName": "Yusuf",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User-50274213/original/2c11ba64-5974-4da1-8806-f56f0bc40c17.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/50274213",
+    "hostSinceYears": 10,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/9745074",
+    "firstReview": "2015-12-04",
+    "lastReview": "2026-06-01",
+    "reviewScoresCleanliness": 4.8,
+    "reviewScoresLocation": 4.85,
+    "reviewScoresCommunication": 4.95,
+    "reviewScoresAccuracy": 4.82,
+    "reviewScoresCheckin": 4.94,
+    "reviewScoresValue": 4.84
   },
   {
     "id": 33736245,
@@ -1160,7 +1655,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Mehmet",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/718b3745-7d0a-4efb-8c9e-4c90c8d809b5.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/45793776",
+    "hostSinceYears": 10,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/33736245",
+    "firstReview": "2019-04-20",
+    "lastReview": "2026-06-22",
+    "reviewScoresCleanliness": 4.95,
+    "reviewScoresLocation": 4.97,
+    "reviewScoresCommunication": 4.99,
+    "reviewScoresAccuracy": 4.94,
+    "reviewScoresCheckin": 4.95,
+    "reviewScoresValue": 4.92
   },
   {
     "id": 4442791,
@@ -1195,7 +1705,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 2
+    "beds": 2,
+    "hostName": "Hikmet",
+    "hostPictureUrl": "https://a0.muscache.com/im/users/17975030/profile_pic/1413666790/original.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/17975030",
+    "hostSinceYears": 11,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/4442791",
+    "firstReview": "2015-04-08",
+    "lastReview": "2026-06-22",
+    "reviewScoresCleanliness": 4.65,
+    "reviewScoresLocation": 4.86,
+    "reviewScoresCommunication": 4.9,
+    "reviewScoresAccuracy": 4.74,
+    "reviewScoresCheckin": 4.84,
+    "reviewScoresValue": 4.74
   },
   {
     "id": 12621498,
@@ -1229,7 +1754,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 2
+    "beds": 2,
+    "hostName": "Yusuf",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User-50274213/original/2c11ba64-5974-4da1-8806-f56f0bc40c17.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/50274213",
+    "hostSinceYears": 10,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/12621498",
+    "firstReview": "2016-05-02",
+    "lastReview": "2026-06-12",
+    "reviewScoresCleanliness": 4.84,
+    "reviewScoresLocation": 4.84,
+    "reviewScoresCommunication": 4.94,
+    "reviewScoresAccuracy": 4.83,
+    "reviewScoresCheckin": 4.95,
+    "reviewScoresValue": 4.88
   },
   {
     "id": 23661826,
@@ -1263,7 +1803,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Mehmet",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/718b3745-7d0a-4efb-8c9e-4c90c8d809b5.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/45793776",
+    "hostSinceYears": 10,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/23661826",
+    "firstReview": "2018-03-30",
+    "lastReview": "2026-06-20",
+    "reviewScoresCleanliness": 4.94,
+    "reviewScoresLocation": 4.94,
+    "reviewScoresCommunication": 4.98,
+    "reviewScoresAccuracy": 4.92,
+    "reviewScoresCheckin": 4.95,
+    "reviewScoresValue": 4.86
   },
   {
     "id": 3093528,
@@ -1299,7 +1854,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 2
+    "beds": 2,
+    "hostName": "Ozan",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/7ab93b56-bb68-46f6-966b-415d8636daeb.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/15732904",
+    "hostSinceYears": 12,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/3093528",
+    "firstReview": "2014-06-11",
+    "lastReview": "2022-11-08",
+    "reviewScoresCleanliness": 4.85,
+    "reviewScoresLocation": 4.84,
+    "reviewScoresCommunication": 4.96,
+    "reviewScoresAccuracy": 4.92,
+    "reviewScoresCheckin": 4.96,
+    "reviewScoresValue": 4.85
   },
   {
     "id": 23660273,
@@ -1333,7 +1903,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Mehmet",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/718b3745-7d0a-4efb-8c9e-4c90c8d809b5.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/45793776",
+    "hostSinceYears": 10,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/23660273",
+    "firstReview": "2018-04-01",
+    "lastReview": "2026-06-17",
+    "reviewScoresCleanliness": 4.91,
+    "reviewScoresLocation": 4.94,
+    "reviewScoresCommunication": 4.98,
+    "reviewScoresAccuracy": 4.93,
+    "reviewScoresCheckin": 4.95,
+    "reviewScoresValue": 4.9
   },
   {
     "id": 11662755,
@@ -1367,7 +1952,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Yusuf",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User-50274213/original/2c11ba64-5974-4da1-8806-f56f0bc40c17.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/50274213",
+    "hostSinceYears": 10,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/11662755",
+    "firstReview": "2016-03-13",
+    "lastReview": "2026-06-11",
+    "reviewScoresCleanliness": 4.81,
+    "reviewScoresLocation": 4.83,
+    "reviewScoresCommunication": 4.93,
+    "reviewScoresAccuracy": 4.85,
+    "reviewScoresCheckin": 4.93,
+    "reviewScoresValue": 4.84
   },
   {
     "id": 3598671,
@@ -1401,7 +2001,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 2
+    "beds": 2,
+    "hostName": "Elvan",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/dbeae24a-b465-4159-80bd-d24192f98b25.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/867244",
+    "hostSinceYears": 14,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": false,
+    "listingUrl": "https://www.airbnb.com/rooms/3598671",
+    "firstReview": "2014-08-12",
+    "lastReview": "2025-07-04",
+    "reviewScoresCleanliness": 4.91,
+    "reviewScoresLocation": 4.77,
+    "reviewScoresCommunication": 4.99,
+    "reviewScoresAccuracy": 4.94,
+    "reviewScoresCheckin": 4.98,
+    "reviewScoresValue": 4.92
   },
   {
     "id": 25657462,
@@ -1435,7 +2050,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Metin",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/f91beb2a-77b7-4003-bb2f-97f82a5020a7.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/69089629",
+    "hostSinceYears": 8,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/25657462",
+    "firstReview": "2018-06-19",
+    "lastReview": "2026-06-29",
+    "reviewScoresCleanliness": 4.47,
+    "reviewScoresLocation": 4.69,
+    "reviewScoresCommunication": 4.67,
+    "reviewScoresAccuracy": 4.63,
+    "reviewScoresCheckin": 4.68,
+    "reviewScoresValue": 4.44
   },
   {
     "id": 782635148159751010,
@@ -1469,7 +2099,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 7
+    "beds": 7,
+    "hostName": "Kaan",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User/original/77c5a070-4900-4414-85e9-af0fffa7ee3e.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/338996032",
+    "hostSinceYears": 6,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/782635148159751010",
+    "firstReview": "2022-12-18",
+    "lastReview": "2026-06-17",
+    "reviewScoresCleanliness": 4.63,
+    "reviewScoresLocation": 4.86,
+    "reviewScoresCommunication": 4.89,
+    "reviewScoresAccuracy": 4.76,
+    "reviewScoresCheckin": 4.91,
+    "reviewScoresValue": 4.73
   },
   {
     "id": 594133631643137789,
@@ -1504,7 +2149,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Metin",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/f91beb2a-77b7-4003-bb2f-97f82a5020a7.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/69089629",
+    "hostSinceYears": 8,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/594133631643137789",
+    "firstReview": "2022-04-06",
+    "lastReview": "2026-06-26",
+    "reviewScoresCleanliness": 4.31,
+    "reviewScoresLocation": 4.69,
+    "reviewScoresCommunication": 4.65,
+    "reviewScoresAccuracy": 4.59,
+    "reviewScoresCheckin": 4.62,
+    "reviewScoresValue": 4.32
   },
   {
     "id": 37250528,
@@ -1538,7 +2198,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Metin",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/f91beb2a-77b7-4003-bb2f-97f82a5020a7.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/69089629",
+    "hostSinceYears": 8,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/37250528",
+    "firstReview": "2019-08-15",
+    "lastReview": "2026-06-12",
+    "reviewScoresCleanliness": 4.37,
+    "reviewScoresLocation": 4.7,
+    "reviewScoresCommunication": 4.63,
+    "reviewScoresAccuracy": 4.57,
+    "reviewScoresCheckin": 4.59,
+    "reviewScoresValue": 4.42
   },
   {
     "id": 560155137046056859,
@@ -1572,7 +2247,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 3
+    "beds": 3,
+    "hostName": "Tuğkan Berke",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User/original/91b3c6d9-b63b-4fef-aa22-250f7ad065f5.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/356170830",
+    "hostSinceYears": 4,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/560155137046056859",
+    "firstReview": "2022-02-19",
+    "lastReview": "2026-06-20",
+    "reviewScoresCleanliness": 4.89,
+    "reviewScoresLocation": 4.73,
+    "reviewScoresCommunication": 4.98,
+    "reviewScoresAccuracy": 4.9,
+    "reviewScoresCheckin": 4.94,
+    "reviewScoresValue": 4.88
   },
   {
     "id": 41311684,
@@ -1606,7 +2296,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Kerim",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/5f877d98-9bd5-484a-8c53-fb9e97c74c23.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/21086972",
+    "hostSinceYears": 11,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/41311684",
+    "firstReview": "2020-01-12",
+    "lastReview": "2026-06-03",
+    "reviewScoresCleanliness": 4.65,
+    "reviewScoresLocation": 4.85,
+    "reviewScoresCommunication": 4.78,
+    "reviewScoresAccuracy": 4.77,
+    "reviewScoresCheckin": 4.78,
+    "reviewScoresValue": 4.71
   },
   {
     "id": 24710644,
@@ -1640,7 +2345,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Metin",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/f91beb2a-77b7-4003-bb2f-97f82a5020a7.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/69089629",
+    "hostSinceYears": 8,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/24710644",
+    "firstReview": "2018-06-08",
+    "lastReview": "2026-06-12",
+    "reviewScoresCleanliness": 4.29,
+    "reviewScoresLocation": 4.58,
+    "reviewScoresCommunication": 4.6,
+    "reviewScoresAccuracy": 4.53,
+    "reviewScoresCheckin": 4.61,
+    "reviewScoresValue": 4.31
   },
   {
     "id": 1374192737862792461,
@@ -1674,7 +2394,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 2
+    "beds": 2,
+    "hostName": "Hamzos",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User/original/738caad6-c4ce-4dbb-af85-35c35d29b508.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/451823252",
+    "hostSinceYears": 1,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/1374192737862792461",
+    "firstReview": "2025-03-16",
+    "lastReview": "2026-07-01",
+    "reviewScoresCleanliness": 4.95,
+    "reviewScoresLocation": 4.91,
+    "reviewScoresCommunication": 4.92,
+    "reviewScoresAccuracy": 4.94,
+    "reviewScoresCheckin": 4.91,
+    "reviewScoresValue": 4.9
   },
   {
     "id": 843840183562215849,
@@ -1709,7 +2444,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Monev",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/1d154e25-6c7c-45c3-a21e-11e4ea4b0d38.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/504698184",
+    "hostSinceYears": 3,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/843840183562215849",
+    "firstReview": "2024-02-15",
+    "lastReview": "2026-06-29",
+    "reviewScoresCleanliness": 4.81,
+    "reviewScoresLocation": 4.84,
+    "reviewScoresCommunication": 4.85,
+    "reviewScoresAccuracy": 4.79,
+    "reviewScoresCheckin": 4.77,
+    "reviewScoresValue": 4.7
   },
   {
     "id": 8517896,
@@ -1744,7 +2494,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Ayten & Ercan",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User-8687196/original/428eaf40-e74a-43c4-9266-576af87edaf0.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/8687196",
+    "hostSinceYears": 10,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/8517896",
+    "firstReview": "2015-11-21",
+    "lastReview": "2026-06-28",
+    "reviewScoresCleanliness": 4.98,
+    "reviewScoresLocation": 4.88,
+    "reviewScoresCommunication": 4.99,
+    "reviewScoresAccuracy": 4.98,
+    "reviewScoresCheckin": 4.99,
+    "reviewScoresValue": 4.88
   },
   {
     "id": 8715436,
@@ -1778,7 +2543,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 4
+    "beds": 4,
+    "hostName": "Ayten & Ercan",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User-8687196/original/428eaf40-e74a-43c4-9266-576af87edaf0.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/8687196",
+    "hostSinceYears": 10,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/8715436",
+    "firstReview": "2016-04-12",
+    "lastReview": "2026-06-27",
+    "reviewScoresCleanliness": 4.99,
+    "reviewScoresLocation": 4.9,
+    "reviewScoresCommunication": 5.0,
+    "reviewScoresAccuracy": 4.96,
+    "reviewScoresCheckin": 5.0,
+    "reviewScoresValue": 4.93
   },
   {
     "id": 35534459,
@@ -1812,7 +2592,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 3
+    "beds": 3,
+    "hostName": "Hamdi",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/0a237db7-e8be-4899-a1f6-d575f46ce0fa.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/262980891",
+    "hostSinceYears": 7,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/35534459",
+    "firstReview": "2019-07-09",
+    "lastReview": "2026-06-26",
+    "reviewScoresCleanliness": 4.87,
+    "reviewScoresLocation": 4.96,
+    "reviewScoresCommunication": 4.97,
+    "reviewScoresAccuracy": 4.97,
+    "reviewScoresCheckin": 4.98,
+    "reviewScoresValue": 4.94
   },
   {
     "id": 551828892898499255,
@@ -1846,7 +2641,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 2
+    "beds": 2,
+    "hostName": "Yüce Bilge",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/70749a75-1d32-4a82-96be-1474ff45590e.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/247229845",
+    "hostSinceYears": 6,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/551828892898499255",
+    "firstReview": "2022-02-17",
+    "lastReview": "2026-06-20",
+    "reviewScoresCleanliness": 4.72,
+    "reviewScoresLocation": 4.88,
+    "reviewScoresCommunication": 4.9,
+    "reviewScoresAccuracy": 4.88,
+    "reviewScoresCheckin": 4.89,
+    "reviewScoresValue": 4.69
   },
   {
     "id": 35727547,
@@ -1880,7 +2690,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 3
+    "beds": 3,
+    "hostName": "Alp Tekin",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/cd6b5114-e300-4857-ad72-4a9bdd313ac8.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/267381030",
+    "hostSinceYears": 7,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/35727547",
+    "firstReview": "2019-06-27",
+    "lastReview": "2026-06-18",
+    "reviewScoresCleanliness": 4.82,
+    "reviewScoresLocation": 4.82,
+    "reviewScoresCommunication": 4.96,
+    "reviewScoresAccuracy": 4.97,
+    "reviewScoresCheckin": 4.96,
+    "reviewScoresValue": 4.86
   },
   {
     "id": 3494585,
@@ -1915,7 +2740,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 2
+    "beds": 2,
+    "hostName": "Aral",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/8fe2a726-27e3-468c-8af1-ff1a9941e27c.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/17595373",
+    "hostSinceYears": 11,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/3494585",
+    "firstReview": "2014-09-02",
+    "lastReview": "2024-07-15",
+    "reviewScoresCleanliness": 4.09,
+    "reviewScoresLocation": 4.64,
+    "reviewScoresCommunication": 4.89,
+    "reviewScoresAccuracy": 4.6,
+    "reviewScoresCheckin": 4.83,
+    "reviewScoresValue": 4.55
   },
   {
     "id": 584430639633403398,
@@ -1949,7 +2789,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Mehmet",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/44611aea-2d46-41c1-86db-de18a6bd6102.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/449959129",
+    "hostSinceYears": 4,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/584430639633403398",
+    "firstReview": "2022-04-08",
+    "lastReview": "2026-06-06",
+    "reviewScoresCleanliness": 4.5,
+    "reviewScoresLocation": 4.88,
+    "reviewScoresCommunication": 4.84,
+    "reviewScoresAccuracy": 4.72,
+    "reviewScoresCheckin": 4.83,
+    "reviewScoresValue": 4.57
   },
   {
     "id": 648204798699274411,
@@ -1984,7 +2839,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 2
+    "beds": 2,
+    "hostName": "⁨No16 Otelci̇li̇k Ve Turi̇zm Hi̇zmetleri̇⁩",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/0369288a-ba03-4d72-98da-039bf3af68ca.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/103592625",
+    "hostSinceYears": 6,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/648204798699274411",
+    "firstReview": "2022-06-19",
+    "lastReview": "2026-05-15",
+    "reviewScoresCleanliness": 4.86,
+    "reviewScoresLocation": 4.94,
+    "reviewScoresCommunication": 4.89,
+    "reviewScoresAccuracy": 4.84,
+    "reviewScoresCheckin": 4.96,
+    "reviewScoresValue": 4.76
   },
   {
     "id": 14645400,
@@ -2019,7 +2889,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 2
+    "beds": 2,
+    "hostName": "Ümit",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/1c58e5f7-ca9d-411d-a9c8-52dcd35eca9c.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/90921849",
+    "hostSinceYears": 9,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/14645400",
+    "firstReview": "2016-08-29",
+    "lastReview": "2024-05-06",
+    "reviewScoresCleanliness": 4.88,
+    "reviewScoresLocation": 4.91,
+    "reviewScoresCommunication": 4.96,
+    "reviewScoresAccuracy": 4.86,
+    "reviewScoresCheckin": 4.95,
+    "reviewScoresValue": 4.79
   },
   {
     "id": 607069272851808679,
@@ -2053,7 +2938,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 5
+    "beds": 5,
+    "hostName": "Zeynep",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/9fa6476a-f7a4-4cf1-b1e0-25c93c91887b.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/454678583",
+    "hostSinceYears": 4,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/607069272851808679",
+    "firstReview": "2022-04-24",
+    "lastReview": "2026-06-28",
+    "reviewScoresCleanliness": 4.94,
+    "reviewScoresLocation": 4.99,
+    "reviewScoresCommunication": 4.95,
+    "reviewScoresAccuracy": 4.91,
+    "reviewScoresCheckin": 4.94,
+    "reviewScoresValue": 4.88
   },
   {
     "id": 27183690,
@@ -2088,7 +2988,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 2
+    "beds": 2,
+    "hostName": "Cemre",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User-47260276/original/6fdc0a7e-666c-4f91-83d0-18618a8d425e.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/47260276",
+    "hostSinceYears": 7,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/27183690",
+    "firstReview": "2018-08-12",
+    "lastReview": "2026-06-29",
+    "reviewScoresCleanliness": 4.52,
+    "reviewScoresLocation": 4.76,
+    "reviewScoresCommunication": 4.96,
+    "reviewScoresAccuracy": 4.83,
+    "reviewScoresCheckin": 4.93,
+    "reviewScoresValue": 4.67
   },
   {
     "id": 3537435,
@@ -2122,7 +3037,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 6
+    "beds": 6,
+    "hostName": "Suha",
+    "hostPictureUrl": "https://a0.muscache.com/im/users/970283/profile_pic/1420651744/original.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/970283",
+    "hostSinceYears": 11,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/3537435",
+    "firstReview": "2014-10-12",
+    "lastReview": "2026-06-18",
+    "reviewScoresCleanliness": 4.93,
+    "reviewScoresLocation": 4.97,
+    "reviewScoresCommunication": 4.97,
+    "reviewScoresAccuracy": 4.89,
+    "reviewScoresCheckin": 4.97,
+    "reviewScoresValue": 4.87
   },
   {
     "id": 47723650,
@@ -2158,7 +3088,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 3
+    "beds": 3,
+    "hostName": "Team Can",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/1a19c5b0-d25f-45b8-9521-518f523c5723.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/269270647",
+    "hostSinceYears": 6,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/47723650",
+    "firstReview": "2021-03-04",
+    "lastReview": "2026-06-15",
+    "reviewScoresCleanliness": 4.91,
+    "reviewScoresLocation": 4.96,
+    "reviewScoresCommunication": 4.92,
+    "reviewScoresAccuracy": 4.95,
+    "reviewScoresCheckin": 4.89,
+    "reviewScoresValue": 4.8
   },
   {
     "id": 39712980,
@@ -2192,7 +3137,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 3
+    "beds": 3,
+    "hostName": "Cemre",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User-47260276/original/6fdc0a7e-666c-4f91-83d0-18618a8d425e.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/47260276",
+    "hostSinceYears": 7,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/39712980",
+    "firstReview": "2019-11-29",
+    "lastReview": "2026-06-08",
+    "reviewScoresCleanliness": 4.57,
+    "reviewScoresLocation": 4.85,
+    "reviewScoresCommunication": 4.95,
+    "reviewScoresAccuracy": 4.9,
+    "reviewScoresCheckin": 4.94,
+    "reviewScoresValue": 4.82
   },
   {
     "id": 38143598,
@@ -2226,7 +3186,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 3
+    "beds": 3,
+    "hostName": "Seda",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User/original/f909b2bf-915a-4d7a-ad6b-16950f4359c6.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/284220487",
+    "hostSinceYears": 6,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/38143598",
+    "firstReview": "2019-09-07",
+    "lastReview": "2026-06-12",
+    "reviewScoresCleanliness": 4.84,
+    "reviewScoresLocation": 4.82,
+    "reviewScoresCommunication": 4.92,
+    "reviewScoresAccuracy": 4.86,
+    "reviewScoresCheckin": 4.93,
+    "reviewScoresValue": 4.78
   },
   {
     "id": 170150,
@@ -2260,7 +3235,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 2
+    "beds": 2,
+    "hostName": "Tuna",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/48fc98c4-468c-4417-bb46-3cc82da22024.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/810759",
+    "hostSinceYears": 14,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/170150",
+    "firstReview": "2011-11-11",
+    "lastReview": "2026-06-14",
+    "reviewScoresCleanliness": 4.89,
+    "reviewScoresLocation": 4.71,
+    "reviewScoresCommunication": 4.95,
+    "reviewScoresAccuracy": 4.88,
+    "reviewScoresCheckin": 4.93,
+    "reviewScoresValue": 4.87
   },
   {
     "id": 879523940474281677,
@@ -2295,7 +3285,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 5
+    "beds": 5,
+    "hostName": "Koray",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User/original/dbd3ed12-7982-4d86-9ba8-d96ee78093ab.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/77518826",
+    "hostSinceYears": 3,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/879523940474281677",
+    "firstReview": "2023-05-31",
+    "lastReview": "2026-05-30",
+    "reviewScoresCleanliness": 4.95,
+    "reviewScoresLocation": 4.82,
+    "reviewScoresCommunication": 4.96,
+    "reviewScoresAccuracy": 4.94,
+    "reviewScoresCheckin": 4.89,
+    "reviewScoresValue": 4.88
   },
   {
     "id": 677440382137977209,
@@ -2330,7 +3335,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Baris",
+    "hostPictureUrl": "https://a0.muscache.com/im/users/9136397/profile_pic/1402574759/original.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/9136397",
+    "hostSinceYears": 5,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/677440382137977209",
+    "firstReview": "2022-08-03",
+    "lastReview": "2026-05-30",
+    "reviewScoresCleanliness": 4.71,
+    "reviewScoresLocation": 4.91,
+    "reviewScoresCommunication": 4.84,
+    "reviewScoresAccuracy": 4.79,
+    "reviewScoresCheckin": 4.87,
+    "reviewScoresValue": 4.6
   },
   {
     "id": 39668722,
@@ -2366,7 +3386,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 5
+    "beds": 5,
+    "hostName": "Muhammed Abed Ali",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/312d0cb3-9881-4cc5-a66c-83c7a6374ea8.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/23702343",
+    "hostSinceYears": 11,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/39668722",
+    "firstReview": "2019-11-18",
+    "lastReview": "2026-06-15",
+    "reviewScoresCleanliness": 4.46,
+    "reviewScoresLocation": 4.91,
+    "reviewScoresCommunication": 4.91,
+    "reviewScoresAccuracy": 4.7,
+    "reviewScoresCheckin": 4.87,
+    "reviewScoresValue": 4.47
   },
   {
     "id": 51163306,
@@ -2400,7 +3435,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 2
+    "beds": 2,
+    "hostName": "Naci Selçuk",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/34171b99-9429-4002-af0e-17f4ccd79e85.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/414071910",
+    "hostSinceYears": 4,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/51163306",
+    "firstReview": "2022-12-21",
+    "lastReview": "2024-09-13",
+    "reviewScoresCleanliness": 4.9,
+    "reviewScoresLocation": 4.85,
+    "reviewScoresCommunication": 4.91,
+    "reviewScoresAccuracy": 4.95,
+    "reviewScoresCheckin": 4.89,
+    "reviewScoresValue": 4.97
   },
   {
     "id": 19421661,
@@ -2433,7 +3483,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 4
+    "beds": 4,
+    "hostName": "Ilker",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/f1f0807a-6488-4083-8a7e-345de0ee772c.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/9991859",
+    "hostSinceYears": 8,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/19421661",
+    "firstReview": "2017-12-22",
+    "lastReview": "2026-06-15",
+    "reviewScoresCleanliness": 4.92,
+    "reviewScoresLocation": 4.8,
+    "reviewScoresCommunication": 4.97,
+    "reviewScoresAccuracy": 4.95,
+    "reviewScoresCheckin": 4.96,
+    "reviewScoresValue": 4.88
   },
   {
     "id": 544200927995998298,
@@ -2467,7 +3532,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 3
+    "beds": 3,
+    "hostName": "Behic",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/953e35f6-1065-486d-97a8-67217b79c2bb.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/16347682",
+    "hostSinceYears": 6,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/544200927995998298",
+    "firstReview": "2022-01-22",
+    "lastReview": "2026-06-30",
+    "reviewScoresCleanliness": 4.73,
+    "reviewScoresLocation": 4.78,
+    "reviewScoresCommunication": 4.86,
+    "reviewScoresAccuracy": 4.8,
+    "reviewScoresCheckin": 4.91,
+    "reviewScoresValue": 4.67
   },
   {
     "id": 689794637975945203,
@@ -2502,7 +3582,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Mertbey",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/a3205ca3-21ef-450a-a2f1-76ead156caf7.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/241317285",
+    "hostSinceYears": 6,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/689794637975945203",
+    "firstReview": "2022-08-25",
+    "lastReview": "2026-05-25",
+    "reviewScoresCleanliness": 4.82,
+    "reviewScoresLocation": 4.72,
+    "reviewScoresCommunication": 4.96,
+    "reviewScoresAccuracy": 4.89,
+    "reviewScoresCheckin": 4.88,
+    "reviewScoresValue": 4.93
   },
   {
     "id": 812920497954179661,
@@ -2536,7 +3631,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 2
+    "beds": 2,
+    "hostName": "Mehrigul",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User-183936538/original/a60b16c4-503e-4aff-b213-3c436fcb795b.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/183936538",
+    "hostSinceYears": 8,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/812920497954179661",
+    "firstReview": "2023-07-12",
+    "lastReview": "2024-09-04",
+    "reviewScoresCleanliness": 4.86,
+    "reviewScoresLocation": 4.86,
+    "reviewScoresCommunication": 4.91,
+    "reviewScoresAccuracy": 4.81,
+    "reviewScoresCheckin": 4.84,
+    "reviewScoresValue": 4.8
   },
   {
     "id": 1303554869614316677,
@@ -2573,7 +3683,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 2
+    "beds": 2,
+    "hostName": "⁨Hi̇lal D.⁩",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User/original/69607faf-2f73-4679-9c71-a7d5699d9e33.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/663099026",
+    "hostSinceYears": 1,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/1303554869614316677",
+    "firstReview": "2024-12-11",
+    "lastReview": "2026-06-29",
+    "reviewScoresCleanliness": 4.69,
+    "reviewScoresLocation": 4.83,
+    "reviewScoresCommunication": 4.78,
+    "reviewScoresAccuracy": 4.72,
+    "reviewScoresCheckin": 4.89,
+    "reviewScoresValue": 4.61
   },
   {
     "id": 630708505347437568,
@@ -2606,7 +3731,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 8
+    "beds": 8,
+    "hostName": "Tarabya Family Suit",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User/original/3622d345-cf46-4e17-a63c-0d2c6a89348d.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/228913599",
+    "hostSinceYears": 7,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/630708505347437568",
+    "firstReview": "2022-09-19",
+    "lastReview": "2026-06-08",
+    "reviewScoresCleanliness": 4.78,
+    "reviewScoresLocation": 4.98,
+    "reviewScoresCommunication": 4.96,
+    "reviewScoresAccuracy": 4.89,
+    "reviewScoresCheckin": 4.98,
+    "reviewScoresValue": 4.85
   },
   {
     "id": 20869938,
@@ -2640,7 +3780,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 3
+    "beds": 3,
+    "hostName": "Batuhan",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/1360652a-60cc-4b38-a8ea-99a85025f832.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/97415055",
+    "hostSinceYears": 3,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/20869938",
+    "firstReview": "2022-10-22",
+    "lastReview": "2026-05-20",
+    "reviewScoresCleanliness": 4.87,
+    "reviewScoresLocation": 4.96,
+    "reviewScoresCommunication": 5.0,
+    "reviewScoresAccuracy": 5.0,
+    "reviewScoresCheckin": 4.98,
+    "reviewScoresValue": 4.83
   },
   {
     "id": 818164572616298420,
@@ -2674,7 +3829,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 2
+    "beds": 2,
+    "hostName": "Barış",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/6f62d2f4-7c20-45bb-bdc8-fcfd0bdf7555.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/295365625",
+    "hostSinceYears": 3,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": false,
+    "listingUrl": "https://www.airbnb.com/rooms/818164572616298420",
+    "firstReview": "2023-04-15",
+    "lastReview": "2026-06-23",
+    "reviewScoresCleanliness": 4.98,
+    "reviewScoresLocation": 4.8,
+    "reviewScoresCommunication": 5.0,
+    "reviewScoresAccuracy": 4.91,
+    "reviewScoresCheckin": 4.96,
+    "reviewScoresValue": 4.89
   },
   {
     "id": 565577602022937597,
@@ -2708,7 +3878,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Mertbey",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/a3205ca3-21ef-450a-a2f1-76ead156caf7.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/241317285",
+    "hostSinceYears": 6,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/565577602022937597",
+    "firstReview": "2022-03-28",
+    "lastReview": "2026-06-25",
+    "reviewScoresCleanliness": 4.84,
+    "reviewScoresLocation": 4.59,
+    "reviewScoresCommunication": 4.91,
+    "reviewScoresAccuracy": 4.91,
+    "reviewScoresCheckin": 4.84,
+    "reviewScoresValue": 4.91
   },
   {
     "id": 1218692324787492605,
@@ -2745,7 +3930,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 2
+    "beds": 2,
+    "hostName": "VNG Property",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/a43bce5f-25f5-4084-a621-178de73e083c.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/21636586",
+    "hostSinceYears": 11,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/1218692324787492605",
+    "firstReview": "2024-09-01",
+    "lastReview": "2026-05-01",
+    "reviewScoresCleanliness": 4.58,
+    "reviewScoresLocation": 4.69,
+    "reviewScoresCommunication": 4.83,
+    "reviewScoresAccuracy": 4.64,
+    "reviewScoresCheckin": 4.75,
+    "reviewScoresValue": 4.53
   },
   {
     "id": 938288273647870165,
@@ -2779,7 +3979,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Aslihan",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User-57098633/original/b92e5220-7b5d-4e53-8db1-b33ca053dcf2.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/57098633",
+    "hostSinceYears": 2,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/938288273647870165",
+    "firstReview": "2023-08-21",
+    "lastReview": "2026-06-23",
+    "reviewScoresCleanliness": 4.84,
+    "reviewScoresLocation": 4.72,
+    "reviewScoresCommunication": 4.9,
+    "reviewScoresAccuracy": 4.86,
+    "reviewScoresCheckin": 4.93,
+    "reviewScoresValue": 4.69
   },
   {
     "id": 943944034885722367,
@@ -2816,7 +4031,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Aslihan",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User-57098633/original/b92e5220-7b5d-4e53-8db1-b33ca053dcf2.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/57098633",
+    "hostSinceYears": 2,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/943944034885722367",
+    "firstReview": "2023-08-15",
+    "lastReview": "2026-06-18",
+    "reviewScoresCleanliness": 4.87,
+    "reviewScoresLocation": 4.84,
+    "reviewScoresCommunication": 4.95,
+    "reviewScoresAccuracy": 4.91,
+    "reviewScoresCheckin": 4.92,
+    "reviewScoresValue": 4.8
   },
   {
     "id": 943968164393988163,
@@ -2853,7 +4083,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Aslihan",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User-57098633/original/b92e5220-7b5d-4e53-8db1-b33ca053dcf2.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/57098633",
+    "hostSinceYears": 2,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/943968164393988163",
+    "firstReview": "2023-08-29",
+    "lastReview": "2026-06-18",
+    "reviewScoresCleanliness": 4.82,
+    "reviewScoresLocation": 4.74,
+    "reviewScoresCommunication": 4.91,
+    "reviewScoresAccuracy": 4.88,
+    "reviewScoresCheckin": 4.93,
+    "reviewScoresValue": 4.73
   },
   {
     "id": 2242689,
@@ -2888,7 +4133,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 2
+    "beds": 2,
+    "hostName": "Reşit",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/7dbc5bd2-6c47-486f-aaab-f0393f381101.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/9702531",
+    "hostSinceYears": 12,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/2242689",
+    "firstReview": "2015-05-08",
+    "lastReview": "2026-01-18",
+    "reviewScoresCleanliness": 4.56,
+    "reviewScoresLocation": 4.76,
+    "reviewScoresCommunication": 4.85,
+    "reviewScoresAccuracy": 4.8,
+    "reviewScoresCheckin": 4.92,
+    "reviewScoresValue": 4.76
   },
   {
     "id": 1364318885047256842,
@@ -2924,7 +4184,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "⁨Cityloft 147⁩",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User/original/7bc0e89c-1eed-4eaa-869c-fc462d74ee88.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/540142691",
+    "hostSinceYears": 1,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/1364318885047256842",
+    "firstReview": "2025-07-14",
+    "lastReview": "2026-06-22",
+    "reviewScoresCleanliness": 4.79,
+    "reviewScoresLocation": 4.46,
+    "reviewScoresCommunication": 4.56,
+    "reviewScoresAccuracy": 4.76,
+    "reviewScoresCheckin": 4.7,
+    "reviewScoresValue": 4.45
   },
   {
     "id": 2255561,
@@ -2958,7 +4233,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 2
+    "beds": 2,
+    "hostName": "Reşit",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/7dbc5bd2-6c47-486f-aaab-f0393f381101.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/9702531",
+    "hostSinceYears": 12,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/2255561",
+    "firstReview": "2014-05-09",
+    "lastReview": "2024-08-12",
+    "reviewScoresCleanliness": 4.63,
+    "reviewScoresLocation": 4.75,
+    "reviewScoresCommunication": 4.88,
+    "reviewScoresAccuracy": 4.68,
+    "reviewScoresCheckin": 4.92,
+    "reviewScoresValue": 4.76
   },
   {
     "id": 1367272215093541463,
@@ -2994,7 +4284,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "⁨Cityloft 147⁩",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User/original/7bc0e89c-1eed-4eaa-869c-fc462d74ee88.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/540142691",
+    "hostSinceYears": 1,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/1367272215093541463",
+    "firstReview": "2025-04-01",
+    "lastReview": "2026-06-28",
+    "reviewScoresCleanliness": 4.83,
+    "reviewScoresLocation": 4.72,
+    "reviewScoresCommunication": 4.82,
+    "reviewScoresAccuracy": 4.91,
+    "reviewScoresCheckin": 4.89,
+    "reviewScoresValue": 4.63
   },
   {
     "id": 943977024746964852,
@@ -3030,7 +4335,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Aslihan",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User-57098633/original/b92e5220-7b5d-4e53-8db1-b33ca053dcf2.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/57098633",
+    "hostSinceYears": 2,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/943977024746964852",
+    "firstReview": "2023-08-11",
+    "lastReview": "2026-05-28",
+    "reviewScoresCleanliness": 4.91,
+    "reviewScoresLocation": 4.82,
+    "reviewScoresCommunication": 4.96,
+    "reviewScoresAccuracy": 4.96,
+    "reviewScoresCheckin": 4.93,
+    "reviewScoresValue": 4.76
   },
   {
     "id": 634470833944388075,
@@ -3066,7 +4386,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 2
+    "beds": 2,
+    "hostName": "Serkan",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/cd923fbf-5dae-406a-a1e8-2eb84417fae6.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/185439519",
+    "hostSinceYears": 4,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/634470833944388075",
+    "firstReview": "2022-09-16",
+    "lastReview": "2026-06-19",
+    "reviewScoresCleanliness": 4.91,
+    "reviewScoresLocation": 4.79,
+    "reviewScoresCommunication": 4.95,
+    "reviewScoresAccuracy": 4.94,
+    "reviewScoresCheckin": 4.93,
+    "reviewScoresValue": 4.83
   },
   {
     "id": 48634367,
@@ -3103,7 +4438,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Adam",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User/original/3658fd61-b252-46d2-80a2-d16326620c67.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/7238971",
+    "hostSinceYears": 12,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/48634367",
+    "firstReview": "2021-09-06",
+    "lastReview": "2026-05-21",
+    "reviewScoresCleanliness": 4.98,
+    "reviewScoresLocation": 4.93,
+    "reviewScoresCommunication": 4.99,
+    "reviewScoresAccuracy": 4.98,
+    "reviewScoresCheckin": 4.98,
+    "reviewScoresValue": 4.92
   },
   {
     "id": 1233637984923397155,
@@ -3139,7 +4489,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Bakırköy Otel",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User/original/1e0c8a28-4b01-46df-ae51-54dc2dd00876.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/598512186",
+    "hostSinceYears": 1,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/1233637984923397155",
+    "firstReview": "2024-09-13",
+    "lastReview": "2026-06-25",
+    "reviewScoresCleanliness": 4.47,
+    "reviewScoresLocation": 4.72,
+    "reviewScoresCommunication": 4.75,
+    "reviewScoresAccuracy": 4.61,
+    "reviewScoresCheckin": 4.75,
+    "reviewScoresValue": 4.52
   },
   {
     "id": 949989980201838757,
@@ -3173,7 +4538,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Hilal",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User-157623744/original/0f9c9d65-eb8f-429b-b4bf-1cfd3de40f95.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/157623744",
+    "hostSinceYears": 3,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/949989980201838757",
+    "firstReview": "2023-08-07",
+    "lastReview": "2026-06-29",
+    "reviewScoresCleanliness": 4.83,
+    "reviewScoresLocation": 4.94,
+    "reviewScoresCommunication": 4.92,
+    "reviewScoresAccuracy": 4.88,
+    "reviewScoresCheckin": 4.93,
+    "reviewScoresValue": 4.83
   },
   {
     "id": 750622015817088250,
@@ -3207,7 +4587,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Burak",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User/original/00ae1f63-b0d2-4080-af51-e4e8449c501d.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/202255063",
+    "hostSinceYears": 4,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/750622015817088250",
+    "firstReview": "2022-11-20",
+    "lastReview": "2026-06-20",
+    "reviewScoresCleanliness": 4.82,
+    "reviewScoresLocation": 4.91,
+    "reviewScoresCommunication": 4.94,
+    "reviewScoresAccuracy": 4.88,
+    "reviewScoresCheckin": 4.88,
+    "reviewScoresValue": 4.78
   },
   {
     "id": 52663227,
@@ -3243,7 +4638,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Burak",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User/original/00ae1f63-b0d2-4080-af51-e4e8449c501d.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/202255063",
+    "hostSinceYears": 4,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/52663227",
+    "firstReview": "2022-03-14",
+    "lastReview": "2026-06-27",
+    "reviewScoresCleanliness": 4.76,
+    "reviewScoresLocation": 4.94,
+    "reviewScoresCommunication": 4.97,
+    "reviewScoresAccuracy": 4.86,
+    "reviewScoresCheckin": 4.94,
+    "reviewScoresValue": 4.82
   },
   {
     "id": 768822764628238436,
@@ -3279,7 +4689,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Hilal",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User-157623744/original/0f9c9d65-eb8f-429b-b4bf-1cfd3de40f95.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/157623744",
+    "hostSinceYears": 3,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/768822764628238436",
+    "firstReview": "2022-12-06",
+    "lastReview": "2026-06-28",
+    "reviewScoresCleanliness": 4.78,
+    "reviewScoresLocation": 4.88,
+    "reviewScoresCommunication": 4.9,
+    "reviewScoresAccuracy": 4.82,
+    "reviewScoresCheckin": 4.87,
+    "reviewScoresValue": 4.79
   },
   {
     "id": 768605758428354315,
@@ -3315,7 +4740,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Burak",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User/original/00ae1f63-b0d2-4080-af51-e4e8449c501d.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/202255063",
+    "hostSinceYears": 4,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/768605758428354315",
+    "firstReview": "2023-01-06",
+    "lastReview": "2026-06-21",
+    "reviewScoresCleanliness": 4.81,
+    "reviewScoresLocation": 4.89,
+    "reviewScoresCommunication": 4.97,
+    "reviewScoresAccuracy": 4.81,
+    "reviewScoresCheckin": 4.93,
+    "reviewScoresValue": 4.82
   },
   {
     "id": 768605765960406021,
@@ -3351,7 +4791,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 2
+    "beds": 2,
+    "hostName": "Burak",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User/original/00ae1f63-b0d2-4080-af51-e4e8449c501d.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/202255063",
+    "hostSinceYears": 4,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/768605765960406021",
+    "firstReview": "2023-01-04",
+    "lastReview": "2026-05-31",
+    "reviewScoresCleanliness": 4.73,
+    "reviewScoresLocation": 4.91,
+    "reviewScoresCommunication": 4.91,
+    "reviewScoresAccuracy": 4.85,
+    "reviewScoresCheckin": 4.92,
+    "reviewScoresValue": 4.8
   },
   {
     "id": 856613506636307316,
@@ -3385,7 +4840,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 2
+    "beds": 2,
+    "hostName": "Emir Baran",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/2fe73dd7-1497-41aa-a7ea-e8e296f9c871.jpg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/506854526",
+    "hostSinceYears": 3,
+    "hostIsSuperhost": true,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/856613506636307316",
+    "firstReview": "2023-09-23",
+    "lastReview": "2026-06-25",
+    "reviewScoresCleanliness": 4.85,
+    "reviewScoresLocation": 4.83,
+    "reviewScoresCommunication": 4.9,
+    "reviewScoresAccuracy": 4.85,
+    "reviewScoresCheckin": 4.93,
+    "reviewScoresValue": 4.81
   },
   {
     "id": 1233645631417849141,
@@ -3421,7 +4891,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 1
+    "beds": 1,
+    "hostName": "Bakırköy Otel",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User/original/1e0c8a28-4b01-46df-ae51-54dc2dd00876.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/598512186",
+    "hostSinceYears": 1,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/1233645631417849141",
+    "firstReview": "2024-09-01",
+    "lastReview": "2026-06-14",
+    "reviewScoresCleanliness": 4.47,
+    "reviewScoresLocation": 4.68,
+    "reviewScoresCommunication": 4.77,
+    "reviewScoresAccuracy": 4.6,
+    "reviewScoresCheckin": 4.75,
+    "reviewScoresValue": 4.54
   },
   {
     "id": 27848471,
@@ -3455,7 +4940,22 @@ export const MOCK_LISTINGS = [
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80"
     ],
-    "beds": 2
+    "beds": 2,
+    "hostName": "Azize Şendil",
+    "hostPictureUrl": "https://a0.muscache.com/im/pictures/user/User-176339613/original/f1c34a5a-c41a-4209-944d-441e16142506.jpeg?aki_policy=profile_x_medium",
+    "hostUrl": "https://www.airbnb.com/users/show/176339613",
+    "hostSinceYears": 7,
+    "hostIsSuperhost": false,
+    "hostIdentityVerified": true,
+    "listingUrl": "https://www.airbnb.com/rooms/27848471",
+    "firstReview": "2018-08-29",
+    "lastReview": "2023-08-18",
+    "reviewScoresCleanliness": 4.94,
+    "reviewScoresLocation": 4.85,
+    "reviewScoresCommunication": 4.9,
+    "reviewScoresAccuracy": 4.94,
+    "reviewScoresCheckin": 4.88,
+    "reviewScoresValue": 4.94
   }
 ];
 
