@@ -111,7 +111,8 @@ export const ListingDetailPage = () => {
   const nightPrice = Math.round(Number(listing.price) || 2450);
   const predictedPrice = Math.round(Number(listing.predictedPrice) || (nightPrice * 1.15));
   const isLowerThanAverage = nightPrice < predictedPrice;
-  const discountPercent = Math.max(1, Math.round(((predictedPrice - nightPrice) / (predictedPrice || 1)) * 100));
+  const isHigherThanAverage = nightPrice > predictedPrice;
+  const diffPercent = Math.max(1, Math.round((Math.abs(predictedPrice - nightPrice) / (predictedPrice || 1)) * 100));
 
   // Dynamic Stay Calculation
   const calculateNights = () => {
@@ -151,8 +152,14 @@ export const ListingDetailPage = () => {
             <div className="space-y-2">
               <div className="flex items-center gap-2 flex-wrap">
                 {isLowerThanAverage ? (
-                  <span className="inline-flex items-center gap-1 bg-surface-container-low border border-border-subtle text-on-surface text-xs font-semibold px-3 py-1 rounded-full">
-                    Bölge ortalamasının %{discountPercent} altında
+                  <span className="inline-flex items-center gap-1.5 bg-emerald-50 text-emerald-700 border border-emerald-200 text-xs font-semibold px-3 py-1 rounded-full">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                    Bölge ortalamasının %{diffPercent} altında
+                  </span>
+                ) : isHigherThanAverage ? (
+                  <span className="inline-flex items-center gap-1.5 bg-rose-50 text-rose-700 border border-rose-200 text-xs font-semibold px-3 py-1 rounded-full">
+                    <span className="w-1.5 h-1.5 rounded-full bg-rose-500"></span>
+                    Bölge ortalamasının %{diffPercent} üzerinde
                   </span>
                 ) : (
                   <span className="inline-flex items-center gap-1 bg-surface-container-low border border-border-subtle text-on-surface text-xs font-semibold px-3 py-1 rounded-full">
@@ -223,15 +230,37 @@ export const ListingDetailPage = () => {
 
               {/* Sade Karşılaştırma Kartları */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="p-4 rounded-lg bg-surface-container-low border border-border-subtle">
-                  <span className="text-xs text-on-surface-variant block mb-1">Bu İlanın Fiyatı</span>
+                <div className="p-4 rounded-lg bg-surface-container-low border border-border-subtle flex flex-col justify-between">
+                  <div className="flex items-center justify-between gap-2 mb-2">
+                    <span className="text-xs text-on-surface-variant font-medium">Bu İlanın Fiyatı</span>
+                    {isLowerThanAverage ? (
+                      <span className="inline-flex items-center gap-1 text-[11px] font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-full">
+                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                        -%{diffPercent} Daha Uygun
+                      </span>
+                    ) : isHigherThanAverage ? (
+                      <span className="inline-flex items-center gap-1 text-[11px] font-bold text-rose-700 bg-rose-50 border border-rose-200 px-2.5 py-0.5 rounded-full">
+                        <span className="w-1.5 h-1.5 rounded-full bg-rose-500"></span>
+                        +%{diffPercent} Daha Yüksek
+                      </span>
+                    ) : (
+                      <span className="inline-flex items-center gap-1 text-[11px] font-medium text-slate-700 bg-slate-100 border border-slate-200 px-2 py-0.5 rounded-full">
+                        Ortalamada
+                      </span>
+                    )}
+                  </div>
                   <div className="text-2xl font-bold text-primary">
                     ₺{nightPrice.toLocaleString('tr-TR')} <span className="text-xs font-normal text-on-surface-variant">/ gece</span>
                   </div>
                 </div>
 
-                <div className="p-4 rounded-lg bg-surface-container-low border border-border-subtle">
-                  <span className="text-xs text-on-surface-variant block mb-1">{district} Bölge Ortalaması</span>
+                <div className="p-4 rounded-lg bg-surface-container-low border border-border-subtle flex flex-col justify-between">
+                  <div className="flex items-center justify-between gap-2 mb-2">
+                    <span className="text-xs text-on-surface-variant font-medium">{district} Bölge Ortalaması</span>
+                    <span className="text-[11px] text-on-surface-variant bg-surface px-2 py-0.5 rounded border border-border-subtle">
+                      Emsal İlanlar
+                    </span>
+                  </div>
                   <div className="text-2xl font-bold text-on-surface">
                     ₺{predictedPrice.toLocaleString('tr-TR')} <span className="text-xs font-normal text-on-surface-variant">/ gece</span>
                   </div>
@@ -239,12 +268,26 @@ export const ListingDetailPage = () => {
               </div>
 
               {/* Sade ve Samimi Açıklama Metni */}
-              <div className="p-4 rounded-lg bg-surface-container-low text-xs text-on-surface leading-relaxed flex items-start gap-2.5">
-                <span className="material-symbols-outlined text-sm text-on-surface mt-0.5">info</span>
+              <div className={`p-3.5 rounded-lg text-xs leading-relaxed flex items-start gap-2.5 ${
+                isLowerThanAverage 
+                  ? 'bg-emerald-50/50 border border-emerald-200/70 text-emerald-950' 
+                  : isHigherThanAverage 
+                  ? 'bg-rose-50/50 border border-rose-200/70 text-rose-950' 
+                  : 'bg-surface-container-low border border-border-subtle text-on-surface'
+              }`}>
+                <span className={`material-symbols-outlined text-base shrink-0 mt-0.5 ${
+                  isLowerThanAverage ? 'text-emerald-600' : isHigherThanAverage ? 'text-rose-600' : 'text-on-surface-variant'
+                }`}>
+                  {isLowerThanAverage ? 'check_circle' : isHigherThanAverage ? 'info' : 'balance'}
+                </span>
                 <div>
                   {isLowerThanAverage ? (
                     <p>
-                      Bu evin gecelik fiyatı, <strong>{district}</strong> bölgesindeki benzer konutların ortalamasından yaklaşık <strong>%{discountPercent} daha uygundur</strong>.
+                      Bu evin gecelik fiyatı, <strong>{district}</strong> bölgesindeki benzer konutların ortalamasından yaklaşık <strong>%{diffPercent} daha uygundur</strong>.
+                    </p>
+                  ) : isHigherThanAverage ? (
+                    <p>
+                      Bu evin gecelik fiyatı, <strong>{district}</strong> bölgesindeki benzer konutların ortalamasından yaklaşık <strong>%{diffPercent} daha yüksektir</strong>.
                     </p>
                   ) : (
                     <p>
