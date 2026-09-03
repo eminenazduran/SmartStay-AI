@@ -3417,6 +3417,16 @@ export function filterListings(listings, filters) {
     if (filters.maxPrice && item.price > filters.maxPrice) return false;
     if (filters.accommodates && item.accommodates < filters.accommodates) return false;
 
+    if (filters.dealOnly || filters.dealType === 'opportunity') {
+      const isDeal = Boolean(item.isDeal || (item.predictedPrice && item.price < item.predictedPrice));
+      if (!isDeal) return false;
+    }
+    if (filters.dealType === 'fair') {
+      const isDeal = Boolean(item.isDeal || (item.predictedPrice && item.price < item.predictedPrice));
+      if (isDeal) return false;
+    }
+    if (filters.minRating && item.reviewScoresRating < Number(filters.minRating)) return false;
+
     if (filters.amenities && filters.amenities.length > 0) {
       const hasAll = filters.amenities.every(a =>
         item.amenities?.some(ia => ia.toLowerCase().includes(a.toLowerCase()))

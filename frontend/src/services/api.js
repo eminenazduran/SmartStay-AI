@@ -92,11 +92,24 @@ export async function fetchListings(filters = {}) {
       const items = Array.isArray(response.data.data)
         ? response.data.data
         : (response.data.data.items || []);
+
+      let normalized = items.map(normalizeListing);
+
+      if (filters.dealOnly || filters.dealType === 'opportunity') {
+        normalized = normalized.filter(item => item.isDeal);
+      } else if (filters.dealType === 'fair') {
+        normalized = normalized.filter(item => !item.isDeal);
+      }
+
+      if (filters.minRating) {
+        normalized = normalized.filter(item => item.reviewScoresRating >= Number(filters.minRating));
+      }
+
       return {
         success: true,
-        data: items.map(normalizeListing),
+        data: normalized,
         isLive: true,
-        totalCount: response.data.data.totalCount || items.length,
+        totalCount: response.data.data.totalCount || normalized.length,
       };
     }
 
