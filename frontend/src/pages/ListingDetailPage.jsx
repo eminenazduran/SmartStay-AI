@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { fetchListingById } from '../services/api';
+import { fetchListingById, predictPrice, getDistrictBenchmarkPrice } from '../services/api';
 
 const AMENITY_MAP = {
   'wifi': { label: 'Kablosuz İnternet (Wi-Fi)', icon: 'wifi' },
@@ -45,6 +45,7 @@ export const ListingDetailPage = () => {
   const [guestsCount, setGuestsCount] = useState(2);
 
   const [listing, setListing] = useState(null);
+  const [mlPredictedPrice, setMlPredictedPrice] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
 
@@ -56,7 +57,31 @@ export const ListingDetailPage = () => {
       try {
         const res = await fetchListingById(id);
         if (res && res.success && res.data && isMounted) {
-          setListing(res.data);
+          const lData = res.data;
+          setListing(lData);
+
+          // Gerçek XGBoost ML Modeliyle Değerleme Tahmini Al
+          try {
+            const predRes = await predictPrice({
+              neighbourhoodCleansed: lData.neighbourhoodCleansed || 'Kadikoy',
+              roomType: lData.roomType || 'Entire home/apt',
+              accommodates: Number(lData.accommodates || 2),
+              bedrooms: Number(lData.bedrooms || 1),
+              beds: Number(lData.beds || 1),
+              bathrooms: Number(lData.bathrooms || 1.0),
+              latitude: Number(lData.latitude || 41.0),
+              longitude: Number(lData.longitude || 29.0),
+              minimumNights: Number(lData.minimumNights || 1),
+              numberOfReviews: Number(lData.numberOfReviews || 5),
+              reviewScoresRating: Number(lData.reviewScoresRating || 4.8)
+            });
+
+            if (predRes && predRes.success && predRes.data?.predictedPrice && isMounted) {
+              setMlPredictedPrice(Math.round(predRes.data.predictedPrice));
+            }
+          } catch (predErr) {
+            console.warn('[ListingDetailPage] ML tahmini servisten alınamadı, ilçe medyanı uygulanacak:', predErr);
+          }
         } else {
           throw new Error('İlan detayları yüklenemedi.');
         }
@@ -109,9 +134,10 @@ export const ListingDetailPage = () => {
 
   // Clean, rounded prices
   const nightPrice = Math.round(Number(listing.price) || 2450);
-  const predictedPrice = Math.round(Number(listing.predictedPrice) || (nightPrice * 1.15));
-  const isLowerThanAverage = nightPrice < predictedPrice;
-  const isHigherThanAverage = nightPrice > predictedPrice;
+  const districtFallback = getDistrictBenchmarkPrice(listing.neighbourhoodCleansed, listing.roomType, listing.accommodates);
+  const predictedPrice = mlPredictedPrice || (listing.predictedPrice ? Math.round(Number(listing.predictedPrice)) : districtFallback);
+  const isLowerThanAverage = nightPrice < (predictedPrice * 0.98);
+  const isHigherThanAverage = nightPrice > (predictedPrice * 1.02);
   const diffPercent = Math.max(1, Math.round((Math.abs(predictedPrice - nightPrice) / (predictedPrice || 1)) * 100));
 
   // Dynamic Stay Calculation

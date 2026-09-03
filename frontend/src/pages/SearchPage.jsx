@@ -346,18 +346,24 @@ export const SearchPage = () => {
                   onClick={() => navigate(`/listing/${listing.id}`)}
                   className="bg-surface rounded-xl border border-border-subtle overflow-hidden flex flex-col group hover:shadow-[0_20px_40px_rgba(19,27,46,0.08)] transition-all duration-300 cursor-pointer relative"
                 >
-                  {/* AI Badge Overlay */}
+                  {/* Price Comparison Badge Overlay */}
                   <div
-                    className={`absolute top-4 left-4 z-10 px-3 py-1.5 rounded-full flex items-center gap-1.5 text-xs font-bold shadow-sm ${
-                      isDeal
-                        ? 'bg-ai-purple-gradient text-white'
-                        : 'bg-surface-container-low/95 backdrop-blur-sm text-on-surface border border-border-subtle'
+                    className={`absolute top-4 left-4 z-10 px-2.5 py-1 rounded-full flex items-center gap-1.5 text-xs font-semibold shadow-sm backdrop-blur-sm ${
+                      listing.isDeal
+                        ? 'bg-emerald-50/95 text-emerald-800 border border-emerald-300'
+                        : listing.isHigh
+                        ? 'bg-rose-50/95 text-rose-800 border border-rose-300'
+                        : 'bg-surface/95 text-on-surface border border-border-subtle'
                     }`}
                   >
-                    <span className="material-symbols-outlined text-[16px]">
-                      {isDeal ? 'local_fire_department' : 'balance'}
-                    </span>
-                    {isDeal ? `🔥 Fırsat Fiyat (%${discount})` : 'Fiyatı Normal'}
+                    <span className={`w-1.5 h-1.5 rounded-full ${
+                      listing.isDeal ? 'bg-emerald-500' : listing.isHigh ? 'bg-rose-500' : 'bg-slate-400'
+                    }`}></span>
+                    {listing.isDeal 
+                      ? `-%${discount} Daha Uygun` 
+                      : listing.isHigh 
+                      ? `+${discount}% Daha Yüksek` 
+                      : 'Bölge Düzeyinde'}
                   </div>
 
                   <button

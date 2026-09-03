@@ -13,6 +13,62 @@ const apiClient = axios.create({
   },
 });
 
+export const DISTRICT_MEDIAN_PRICES = {
+  "Adalar": 5093,
+  "Arnavutkoy": 2222,
+  "Atasehir": 1491,
+  "Avcilar": 817,
+  "Bagcilar": 3724,
+  "Bahcelievler": 2794,
+  "Bakirkoy": 2500,
+  "Basaksehir": 1548,
+  "Bayrampasa": 1047,
+  "Besiktas": 2739,
+  "Beykoz": 1330,
+  "Beylikduzu": 1416,
+  "Beyoglu": 3383,
+  "Buyukcekmece": 1378,
+  "Catalca": 2081,
+  "Cekmekoy": 575,
+  "Esenler": 564,
+  "Esenyurt": 1096,
+  "Eyup": 980,
+  "Fatih": 2762,
+  "Gaziosmanpasa": 1693,
+  "Gungoren": 831,
+  "Kadikoy": 2133,
+  "Kagithane": 755,
+  "Kartal": 1210,
+  "Kucukcekmece": 1059,
+  "Maltepe": 928,
+  "Pendik": 2521,
+  "Sancaktepe": 799,
+  "Sariyer": 1554,
+  "Sile": 4142,
+  "Silivri": 1945,
+  "Sisli": 2849,
+  "Sultanbeyli": 419,
+  "Sultangazi": 724,
+  "Tuzla": 1529,
+  "Umraniye": 1666,
+  "Uskudar": 1370,
+  "Zeytinburnu": 2321
+};
+
+export function getDistrictBenchmarkPrice(neighbourhood, roomType = 'Entire home/apt', accommodates = 2) {
+  const districtKey = Object.keys(DISTRICT_MEDIAN_PRICES).find(k => 
+    k.toLowerCase() === (neighbourhood || '').toLowerCase()
+  ) || 'Kadikoy';
+  
+  let basePrice = DISTRICT_MEDIAN_PRICES[districtKey] || 2200;
+  
+  if (roomType === 'Private room') basePrice = Math.round(basePrice * 0.55);
+  else if (roomType === 'Shared room') basePrice = Math.round(basePrice * 0.35);
+  else if (accommodates && accommodates > 2) basePrice = Math.round(basePrice * (1 + (accommodates - 2) * 0.12));
+
+  return basePrice;
+}
+
 /**
  * Normalizes a backend API listing object to ensure seamless UI compatibility.
  */
@@ -20,11 +76,14 @@ export function normalizeListing(item) {
   if (!item) return null;
 
   const price = Number(item.price || 0);
-  const predictedPrice = item.predictedPrice ? Number(item.predictedPrice) : (price * 1.15);
-  const isDeal = Boolean(item.isDeal || (predictedPrice > 0 && price < predictedPrice));
-  const discountPercentage = item.discountPercentage != null
-    ? Math.round(Number(item.discountPercentage))
-    : (predictedPrice > 0 ? Math.round(((predictedPrice - price) / predictedPrice) * 100) : 0);
+  const benchmark = getDistrictBenchmarkPrice(item.neighbourhoodCleansed, item.roomType, item.accommodates);
+  const predictedPrice = item.predictedPrice ? Number(item.predictedPrice) : benchmark;
+  const isDeal = predictedPrice > 0 && price < predictedPrice * 0.95;
+  const isHigh = predictedPrice > 0 && price > predictedPrice * 1.05;
+  
+  const discountPercentage = predictedPrice > 0
+    ? Math.round(Math.abs((predictedPrice - price) / predictedPrice) * 100)
+    : 0;
 
   const fallbackImages = [
     item.imageUrl || 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80',
@@ -42,9 +101,9 @@ export function normalizeListing(item) {
     price: price,
     predictedPrice: predictedPrice,
     isDeal: isDeal,
-    discountPercentage: discountPercentage,
-    aiBadge: isDeal ? '🔥 Fırsat Fiyat' : 'Fiyatı Normal',
-    aiBadgeType: isDeal ? 'great-value' : 'fair',
+    aiBadge: isDeal ? `-%${discountPercentage} Uygun` : isHigh ? `+${discountPercentage}% Yüksek` : 'Bölge Düzeyinde',
+    aiBadgeType: isDeal ? 'great-value' : isHigh ? 'high-price' : 'fair',
+    isHigh: isHigh,
     accommodates: Number(item.accommodates || 2),
     bedrooms: Number(item.bedrooms || 1),
     bathrooms: Number(item.bathrooms || 1.0),
@@ -206,6 +265,8 @@ export async function predictListingPrice(payload) {
     };
   }
 }
+
+export const predictPrice = predictListingPrice;
 
 /**
  * 5. Anlamsal İlan Öneri İsteği (POST /api/listings/recommend)
