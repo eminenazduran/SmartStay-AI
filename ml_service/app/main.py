@@ -1,6 +1,8 @@
 from fastapi import FastAPI, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
-from typing import Dict, Any
+from typing import Dict, Any, List
+import httpx
+import re
 
 from app.schemas import (
     PricePredictionRequest,
@@ -126,3 +128,36 @@ def get_recommendations(request: RecommendationRequest):
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=f"Öneri üretilirken hata oluştu: {str(e)}"
         )
+
+
+_gallery_cache: Dict[int, List[str]] = {}
+
+@app.get("/gallery/{listing_id}", tags=["Galeri"])
+async def get_listing_gallery(listing_id: int):
+    """
+    Herhangi bir ilan ID'si için Airbnb üzerinden o eve ait tüm gerçek oda fotoğraflarını çeker ve önbelleğe alır.
+    """
+    if listing_id in _gallery_cache and len(_gallery_cache[listing_id]) > 0:
+        return {"success": True, "listing_id": listing_id, "photos": _gallery_cache[listing_id]}
+
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+        'Accept-Language': 'en-US,en;q=0.9',
+    }
+    url = f"https://www.airbnb.com/rooms/{listing_id}"
+    try:
+        async with httpx.AsyncClient(timeout=6.0) as client:
+            r = await client.get(url, headers=headers, follow_redirects=True)
+            muscache = set(re.findall(r'https://a0\.muscache\.com/im/pictures/[^"\'\s<>]+\.jpg', r.text))
+            clean = [
+                p.split('?')[0] for p in muscache 
+                if 'airbnb' not in p.lower() and 'user' not in p.lower() and 'icon' not in p.lower()
+            ]
+            unique_photos = list(dict.fromkeys(clean))
+            if unique_photos:
+                _gallery_cache[listing_id] = unique_photos
+                return {"success": True, "listing_id": listing_id, "photos": unique_photos}
+            return {"success": False, "listing_id": listing_id, "photos": []}
+    except Exception as e:
+        return {"success": False, "listing_id": listing_id, "photos": [], "error": str(e)}
+

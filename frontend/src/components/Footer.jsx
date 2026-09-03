@@ -7,10 +7,10 @@ export const Footer = () => {
       <div className="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
         <div>
           <Link to="/" className="font-headline-sm text-headline-sm font-bold text-primary mb-4 block tracking-tight">
-            SmartStay AI
+            SmartStay
           </Link>
           <p className="font-body-sm text-body-sm text-on-surface mt-2 max-w-md opacity-80">
-            © 2026 SmartStay AI Istanbul. Institutional Grade Real Estate Data.
+            © 2026 SmartStay Istanbul. Institutional Grade Real Estate Data.
           </p>
         </div>
         <div className="flex flex-wrap gap-x-8 gap-y-4 md:justify-end">

@@ -19,7 +19,7 @@ export const Navbar = () => {
             insights
           </span>
           <span className="font-headline-sm text-headline-sm font-bold text-primary tracking-tight">
-            SmartStay AI
+            SmartStay
           </span>
         </Link>
 
@@ -43,7 +43,7 @@ export const Navbar = () => {
                 : 'text-on-surface-variant border-transparent hover:text-primary'
             }`}
           >
-            AI Analiz
+            Analiz
           </Link>
         </nav>
 

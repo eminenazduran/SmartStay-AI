@@ -98,7 +98,7 @@ export const HomePage = () => {
         {/* Hero Content */}
         <div className="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col items-center text-center pt-20">
           <span className="inline-block px-4 py-2 bg-surface-glass backdrop-blur-md border border-border-subtle rounded-full font-label-md text-label-md text-primary uppercase tracking-widest mb-6">
-            SmartStay AI
+            SmartStay
           </span>
           <h1 className="font-headline-lg text-headline-lg-mobile md:text-headline-xl text-on-primary mb-6 drop-shadow-lg">
             İstanbul'un En Akıllı <br /> Konaklama Rehberi
@@ -267,7 +267,7 @@ export const HomePage = () => {
       <section className="py-section-gap px-margin-mobile md:px-margin-desktop w-full max-w-container-max mx-auto bg-surface-container-low/50">
         <div className="mb-20 text-center max-w-4xl mx-auto">
           <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-6">
-            Neden SmartStay AI?
+            Neden SmartStay?
           </h2>
           <p className="font-body-lg text-body-lg text-on-surface-variant">
             Kurumsal düzeyde veri bütünlüğü ile gayrimenkul kiralama sürecinizi optimize ediyoruz.

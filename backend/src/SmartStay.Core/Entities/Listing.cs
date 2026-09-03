@@ -25,6 +25,7 @@ namespace SmartStay.Core.Entities
         public int MinimumNights { get; set; }
         public int Availability365 { get; set; }
         public string Amenities { get; set; } = string.Empty;
+        public string? PictureUrl { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }
 }

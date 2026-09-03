@@ -25,6 +25,7 @@ namespace SmartStay.Core.DTOs.Listings
         public int MinimumNights { get; set; }
         public int Availability365 { get; set; }
         public List<string> Amenities { get; set; } = new List<string>();
+        public string? PictureUrl { get; set; }
     }
 
     /// <summary>
@@ -41,6 +42,7 @@ namespace SmartStay.Core.DTOs.Listings
         public int Accommodates { get; set; }
         public double Latitude { get; set; }
         public double Longitude { get; set; }
+        public string? PictureUrl { get; set; }
     }
 
     /// <summary>

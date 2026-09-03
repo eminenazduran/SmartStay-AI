@@ -13,6 +13,18 @@ const apiClient = axios.create({
   },
 });
 
+// ML & Galeri Servisi (FastAPI - Port 8000)
+const ML_API_BASE_URL = import.meta.env.VITE_ML_API_BASE_URL || 'http://localhost:8000';
+
+const mlClient = axios.create({
+  baseURL: ML_API_BASE_URL,
+  timeout: 10000,
+  headers: {
+    'Content-Type': 'application/json',
+    Accept: 'application/json',
+  },
+});
+
 export const DISTRICT_MEDIAN_PRICES = {
   "Adalar": 5093,
   "Arnavutkoy": 2222,
@@ -85,12 +97,10 @@ export function normalizeListing(item) {
     ? Math.round(Math.abs((predictedPrice - price) / predictedPrice) * 100)
     : 0;
 
-  const fallbackImages = [
-    item.imageUrl || 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80',
-    'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80',
-    'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80',
-    'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80',
-  ];
+  const realPhoto = item.pictureUrl || item.imageUrl;
+  const photoUrl = (realPhoto && typeof realPhoto === 'string' && realPhoto.trim().length > 10) ? realPhoto.trim() : null;
+
+  const defaultPlaceholder = 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80';
 
   return {
     id: item.id,
@@ -113,8 +123,8 @@ export function normalizeListing(item) {
     numberOfReviews: Number(item.numberOfReviews || 0),
     reviewScoresRating: Number(item.reviewScoresRating || 4.8),
     amenities: Array.isArray(item.amenities) ? item.amenities : ['Wifi', 'Kitchen', 'Heating', 'Hot water'],
-    imageUrl: item.imageUrl || fallbackImages[0],
-    images: (Array.isArray(item.images) && item.images.length > 0) ? item.images : fallbackImages,
+    imageUrl: photoUrl || defaultPlaceholder,
+    images: photoUrl ? [photoUrl] : [defaultPlaceholder],
     trendPercent: isDeal ? -Math.abs(discountPercentage) : 0,
   };
 }
@@ -302,11 +312,27 @@ export async function fetchRecommendations(payload) {
   }
 }
 
+/**
+ * 6. Herhangi bir İlanın Tüm Orijinal Oda ve Mekan Fotoğraflarını Getirir (GET /gallery/:id)
+ */
+export async function fetchListingGallery(listingId) {
+  try {
+    const res = await mlClient.get(`/gallery/${listingId}`);
+    if (res.data && res.data.success && Array.isArray(res.data.photos) && res.data.photos.length > 0) {
+      return res.data.photos;
+    }
+  } catch (err) {
+    console.warn('[SmartStay] Ek oda fotoğrafları servisten alınamadı:', err.message);
+  }
+  return null;
+}
+
 export default {
   fetchListings,
   fetchListingById,
   fetchFeaturedListings,
   predictListingPrice,
   fetchRecommendations,
+  fetchListingGallery,
   normalizeListing,
 };

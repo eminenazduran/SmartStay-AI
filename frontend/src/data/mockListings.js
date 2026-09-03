@@ -21,12 +21,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/9dcd7b49-7051-41d8-b021-0c07def19544.jpg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -13,
     "images": [
-      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/9dcd7b49-7051-41d8-b021-0c07def19544.jpg",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80"
@@ -55,12 +55,12 @@ export const MOCK_LISTINGS = [
       "TV",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/353ed89d-7920-4b27-a20b-7c92c42b934b.jpg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -20,
     "images": [
-      "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/353ed89d-7920-4b27-a20b-7c92c42b934b.jpg",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80"
@@ -87,12 +87,12 @@ export const MOCK_LISTINGS = [
       "Heating",
       "Hot water"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/5a2138f7-0cc8-4934-b357-a6c5bd82f78e.jpg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -7,
     "images": [
-      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/5a2138f7-0cc8-4934-b357-a6c5bd82f78e.jpg",
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80"
@@ -121,12 +121,12 @@ export const MOCK_LISTINGS = [
       "Washer",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/481fbae7-c25a-48da-af14-489fcc6cd8d8.jpg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 11,
     "images": [
-      "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/481fbae7-c25a-48da-af14-489fcc6cd8d8.jpg",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80"
@@ -154,12 +154,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/miso/Hosting-33730243/original/31d56a7a-ed08-4fd4-9890-45351d147e64.jpeg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 9,
     "images": [
-      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/miso/Hosting-33730243/original/31d56a7a-ed08-4fd4-9890-45351d147e64.jpeg",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80"
@@ -188,12 +188,12 @@ export const MOCK_LISTINGS = [
       "Air conditioning",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/hosting/Hosting-1109410403679737908/original/645198a8-a90f-4920-aee7-712f12a7545f.jpeg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -7,
     "images": [
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/hosting/Hosting-1109410403679737908/original/645198a8-a90f-4920-aee7-712f12a7545f.jpeg",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80"
@@ -221,12 +221,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/miso/Hosting-992063181695271198/original/31e7f155-abd3-4bdf-aef5-b9e9e33675ee.jpeg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -13,
     "images": [
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/miso/Hosting-992063181695271198/original/31e7f155-abd3-4bdf-aef5-b9e9e33675ee.jpeg",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80"
@@ -254,12 +254,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Air conditioning"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/hosting/Hosting-987785467664090332/original/3eb14fa8-c21c-422f-94a6-69dab028f0fe.png",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 9,
     "images": [
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/hosting/Hosting-987785467664090332/original/3eb14fa8-c21c-422f-94a6-69dab028f0fe.png",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80"
@@ -289,12 +289,12 @@ export const MOCK_LISTINGS = [
       "Washer",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/c9bb614a-3003-48fe-b0ec-888c0700b508.jpg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 14,
     "images": [
-      "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/c9bb614a-3003-48fe-b0ec-888c0700b508.jpg",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80"
@@ -321,12 +321,12 @@ export const MOCK_LISTINGS = [
       "Heating",
       "Hot water"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/miso/Hosting-660039929104569967/original/d0835006-6f05-4e1b-8185-cc6a9b239034.jpeg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -13,
     "images": [
-      "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/miso/Hosting-660039929104569967/original/d0835006-6f05-4e1b-8185-cc6a9b239034.jpeg",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80"
@@ -354,12 +354,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/miso/Hosting-753515621427946412/original/75e34a5b-4d2d-4d8e-af3b-c9dce380db88.jpeg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 14,
     "images": [
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/miso/Hosting-753515621427946412/original/75e34a5b-4d2d-4d8e-af3b-c9dce380db88.jpeg",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80"
@@ -387,12 +387,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/miso/Hosting-753562225721171681/original/d8011297-5969-4f15-b919-f38014d755f4.jpeg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 0,
     "images": [
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/miso/Hosting-753562225721171681/original/d8011297-5969-4f15-b919-f38014d755f4.jpeg",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80"
@@ -419,12 +419,12 @@ export const MOCK_LISTINGS = [
       "Heating",
       "Hot water"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/miso/Hosting-751946896471898170/original/2603b9f7-d379-45e8-a415-76c727d975ca.jpeg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -20,
     "images": [
-      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/miso/Hosting-751946896471898170/original/2603b9f7-d379-45e8-a415-76c727d975ca.jpeg",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80"
@@ -452,12 +452,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/miso/Hosting-752038819278909666/original/1c513178-8560-4a83-afa2-76701c116aca.jpeg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 0,
     "images": [
-      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/miso/Hosting-752038819278909666/original/1c513178-8560-4a83-afa2-76701c116aca.jpeg",
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80"
@@ -484,12 +484,12 @@ export const MOCK_LISTINGS = [
       "Heating",
       "Hot water"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/miso/Hosting-53028976/original/ca34cea4-c4fb-4106-9684-648b342c33d7.jpeg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -20,
     "images": [
-      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/miso/Hosting-53028976/original/ca34cea4-c4fb-4106-9684-648b342c33d7.jpeg",
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80"
@@ -517,12 +517,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/e2696b07-2471-4ef7-a2b7-9039bbf12b96.jpg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -13,
     "images": [
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/e2696b07-2471-4ef7-a2b7-9039bbf12b96.jpg",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80"
@@ -550,12 +550,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/miso/Hosting-753560696977964601/original/87fcfeed-f2e2-4c93-9092-0f4761d94893.jpeg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 22,
     "images": [
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/miso/Hosting-753560696977964601/original/87fcfeed-f2e2-4c93-9092-0f4761d94893.jpeg",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80"
@@ -584,12 +584,12 @@ export const MOCK_LISTINGS = [
       "TV",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6ODQ2MjY2ODAyNzE5ODE1NjQw/original/d599f927-9ff4-461f-a205-abcb157e23ca.jpeg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 22,
     "images": [
-      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6ODQ2MjY2ODAyNzE5ODE1NjQw/original/d599f927-9ff4-461f-a205-abcb157e23ca.jpeg",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80"
@@ -617,12 +617,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6ODQxOTg4MTk0Nzk4MjIxMjQ5/original/2d138b66-2483-4d95-b94e-a4020a2c7bf8.jpeg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 11,
     "images": [
-      "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6ODQxOTg4MTk0Nzk4MjIxMjQ5/original/2d138b66-2483-4d95-b94e-a4020a2c7bf8.jpeg",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80"
@@ -650,12 +650,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6ODQ2OTIzMzU5MTMxNDAwMDA3/original/b9e8cec1-09bc-4be4-b06e-95d4c0fd3a8b.jpeg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 11,
     "images": [
-      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6ODQ2OTIzMzU5MTMxNDAwMDA3/original/b9e8cec1-09bc-4be4-b06e-95d4c0fd3a8b.jpeg",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80"
@@ -682,12 +682,12 @@ export const MOCK_LISTINGS = [
       "Heating",
       "Hot water"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/ac2a16ec-2efc-42ba-8a4b-71cdf03a4df7.jpg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 11,
     "images": [
-      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/ac2a16ec-2efc-42ba-8a4b-71cdf03a4df7.jpg",
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80"
@@ -716,12 +716,12 @@ export const MOCK_LISTINGS = [
       "Air conditioning",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/488ab296-62b5-4081-a352-c8cfe1f3b27a.jpg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 14,
     "images": [
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/488ab296-62b5-4081-a352-c8cfe1f3b27a.jpg",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80"
@@ -749,12 +749,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/miso/Hosting-32186550/original/a4d5da3e-49d7-46f3-97f7-3e6219856166.jpeg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -7,
     "images": [
-      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/miso/Hosting-32186550/original/a4d5da3e-49d7-46f3-97f7-3e6219856166.jpeg",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80"
@@ -782,12 +782,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/50129e2c-7f1f-490f-8fe4-51ab9a8af32f.jpg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 11,
     "images": [
-      "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/50129e2c-7f1f-490f-8fe4-51ab9a8af32f.jpg",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80"
@@ -815,12 +815,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Air conditioning"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/89042066/c10eed0c_original.jpg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 14,
     "images": [
-      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/89042066/c10eed0c_original.jpg",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80"
@@ -848,12 +848,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Air conditioning"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/32260250/1de28774_original.jpg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -13,
     "images": [
-      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/32260250/1de28774_original.jpg",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80"
@@ -881,12 +881,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/c76bb7fa-3cd0-4fc5-be49-ebc389725fee.jpg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 11,
     "images": [
-      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/c76bb7fa-3cd0-4fc5-be49-ebc389725fee.jpg",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80"
@@ -913,12 +913,12 @@ export const MOCK_LISTINGS = [
       "Heating",
       "Hot water"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/hosting/Hosting-38287262/original/7b8ca8a1-45ab-4e23-9f12-66c9e6ae4a20.jpeg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 9,
     "images": [
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/hosting/Hosting-38287262/original/7b8ca8a1-45ab-4e23-9f12-66c9e6ae4a20.jpeg",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80"
@@ -946,12 +946,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Air conditioning"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/31861551/ecc11268_original.jpg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -20,
     "images": [
-      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/31861551/ecc11268_original.jpg",
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80"
@@ -981,12 +981,12 @@ export const MOCK_LISTINGS = [
       "Washer",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/78194239-843c-4797-9cfe-191c65940c52.jpg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 0,
     "images": [
-      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/78194239-843c-4797-9cfe-191c65940c52.jpg",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80"
@@ -1016,12 +1016,12 @@ export const MOCK_LISTINGS = [
       "TV",
       "Washer"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/75630505/425eec7d_original.jpg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 11,
     "images": [
-      "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/75630505/425eec7d_original.jpg",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80"
@@ -1051,12 +1051,12 @@ export const MOCK_LISTINGS = [
       "TV",
       "Washer"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/84035217/8d62e253_original.jpg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 9,
     "images": [
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/84035217/8d62e253_original.jpg",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80"
@@ -1084,12 +1084,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Air conditioning"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/miso/Hosting-9745074/original/607b54c0-6f8e-4426-a175-5b5096cc6f10.jpeg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 9,
     "images": [
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/miso/Hosting-9745074/original/607b54c0-6f8e-4426-a175-5b5096cc6f10.jpeg",
       "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80"
@@ -1117,12 +1117,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/aba75a77-df88-46c0-b66b-10218886ab71.jpg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -20,
     "images": [
-      "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/aba75a77-df88-46c0-b66b-10218886ab71.jpg",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80"
@@ -1151,12 +1151,12 @@ export const MOCK_LISTINGS = [
       "Air conditioning",
       "TV"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/68812080/a0449dd6_original.jpg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 0,
     "images": [
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/68812080/a0449dd6_original.jpg",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80"
@@ -1184,12 +1184,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Air conditioning"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/miso/Hosting-12621498/original/866f4708-63e1-4441-8e8c-162085191727.jpeg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -13,
     "images": [
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/miso/Hosting-12621498/original/866f4708-63e1-4441-8e8c-162085191727.jpeg",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80"
@@ -1217,12 +1217,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/airflow/Hosting-23661826/original/34236612-a0c3-4231-b20d-a09531a7f99f.jpg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -20,
     "images": [
-      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/airflow/Hosting-23661826/original/34236612-a0c3-4231-b20d-a09531a7f99f.jpg",
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80"
@@ -1252,12 +1252,12 @@ export const MOCK_LISTINGS = [
       "Washer",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/41162549/add1ca04_original.jpg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -20,
     "images": [
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/41162549/add1ca04_original.jpg",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80"
@@ -1285,12 +1285,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/750c17cb-9429-4d00-a8ce-2681ca6a1090.jpg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 14,
     "images": [
-      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/750c17cb-9429-4d00-a8ce-2681ca6a1090.jpg",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80"
@@ -1318,12 +1318,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Air conditioning"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/fe1f6605-e722-4e69-8579-3a54a6b5db4b.jpg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 9,
     "images": [
-      "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/fe1f6605-e722-4e69-8579-3a54a6b5db4b.jpg",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80"
@@ -1351,12 +1351,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Washer"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/miso/Hosting-3598671/original/29608ea5-b06d-427f-9826-b602af4e8661.jpeg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -13,
     "images": [
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/miso/Hosting-3598671/original/29608ea5-b06d-427f-9826-b602af4e8661.jpeg",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80"
@@ -1384,12 +1384,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/3c8d9120-4881-44f7-970b-2265bcf9370f.jpg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 22,
     "images": [
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/3c8d9120-4881-44f7-970b-2265bcf9370f.jpg",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80"
@@ -1417,12 +1417,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/miso/Hosting-782635148159751010/original/81ba98d0-c9f6-486b-b718-d4ac664e5c51.jpeg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 9,
     "images": [
-      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/miso/Hosting-782635148159751010/original/81ba98d0-c9f6-486b-b718-d4ac664e5c51.jpeg",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80"
@@ -1451,12 +1451,12 @@ export const MOCK_LISTINGS = [
       "Washer",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NTk0MTMzNjMxNjQzMTM3Nzg5/original/bf43028c-1190-48ca-aeff-656bc9b9ff63.jpeg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 14,
     "images": [
-      "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NTk0MTMzNjMxNjQzMTM3Nzg5/original/bf43028c-1190-48ca-aeff-656bc9b9ff63.jpeg",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80"
@@ -1484,12 +1484,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MzcyNTA1Mjg%3D/original/f7bcf624-3436-4ae9-8be9-d4e7b43d9fd5.jpeg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 9,
     "images": [
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MzcyNTA1Mjg%3D/original/f7bcf624-3436-4ae9-8be9-d4e7b43d9fd5.jpeg",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80"
@@ -1517,12 +1517,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/62a1708d-1e76-4dcd-8f4f-b4caa17debed.jpg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -13,
     "images": [
-      "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/62a1708d-1e76-4dcd-8f4f-b4caa17debed.jpg",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80"
@@ -1550,12 +1550,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/7ef3f181-c177-48e2-b5a0-0dd49da36c8e.jpg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 0,
     "images": [
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/7ef3f181-c177-48e2-b5a0-0dd49da36c8e.jpg",
       "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80"
@@ -1583,12 +1583,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MjQ3MTA2NDQ%3D/original/eb839605-1141-42fc-9da6-cd19ded17c38.jpeg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -20,
     "images": [
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MjQ3MTA2NDQ%3D/original/eb839605-1141-42fc-9da6-cd19ded17c38.jpeg",
       "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80"
@@ -1616,12 +1616,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Air conditioning"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTM3NDE5MjczNzg2Mjc5MjQ2MQ==/original/d341378b-8518-4e4f-9f13-25300852d1eb.jpeg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 22,
     "images": [
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTM3NDE5MjczNzg2Mjc5MjQ2MQ==/original/d341378b-8518-4e4f-9f13-25300852d1eb.jpeg",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80"
@@ -1650,12 +1650,12 @@ export const MOCK_LISTINGS = [
       "TV",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/hosting/Hosting-843840183562215849/original/811ad09e-5d5a-418b-a0cf-49f5a0a2cc8f.jpeg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 22,
     "images": [
-      "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/hosting/Hosting-843840183562215849/original/811ad09e-5d5a-418b-a0cf-49f5a0a2cc8f.jpeg",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80"
@@ -1684,12 +1684,12 @@ export const MOCK_LISTINGS = [
       "TV",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6ODUxNzg5Ng%3D%3D/original/36b79ed6-55c5-4b95-afa7-1fdc1e891ed0.jpeg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -20,
     "images": [
-      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6ODUxNzg5Ng%3D%3D/original/36b79ed6-55c5-4b95-afa7-1fdc1e891ed0.jpeg",
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80"
@@ -1717,12 +1717,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6ODcxNTQzNg%3D%3D/original/23c83660-45b9-48df-a6e4-a11d4ca30e63.jpeg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 0,
     "images": [
-      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6ODcxNTQzNg%3D%3D/original/23c83660-45b9-48df-a6e4-a11d4ca30e63.jpeg",
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80"
@@ -1750,12 +1750,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "TV"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/063af869-21a8-4f97-8652-cdbf2234eb4a.jpg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -13,
     "images": [
-      "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/063af869-21a8-4f97-8652-cdbf2234eb4a.jpg",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80"
@@ -1783,12 +1783,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/e4b68cde-96a0-4f1f-84d2-1fdffff32841.jpg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -20,
     "images": [
-      "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/e4b68cde-96a0-4f1f-84d2-1fdffff32841.jpg",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80"
@@ -1816,12 +1816,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Washer"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/c543a314-128f-414a-a3cd-3fc6b874f09f.jpg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -7,
     "images": [
-      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/c543a314-128f-414a-a3cd-3fc6b874f09f.jpg",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80"
@@ -1850,12 +1850,12 @@ export const MOCK_LISTINGS = [
       "Air conditioning",
       "Washer"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/44564857/244fde0a_original.jpg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -7,
     "images": [
-      "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/44564857/244fde0a_original.jpg",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80"
@@ -1883,12 +1883,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/miso/Hosting-584430639633403398/original/a0919d1c-c23c-4780-9542-fce962b9a28f.jpeg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 9,
     "images": [
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/miso/Hosting-584430639633403398/original/a0919d1c-c23c-4780-9542-fce962b9a28f.jpeg",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80"
@@ -1917,12 +1917,12 @@ export const MOCK_LISTINGS = [
       "TV",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/prohost-api/Hosting-648204798699274411/original/23c8aeb7-0cfa-4149-9fcf-ac69c4c24279.jpeg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -20,
     "images": [
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/prohost-api/Hosting-648204798699274411/original/23c8aeb7-0cfa-4149-9fcf-ac69c4c24279.jpeg",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80"
@@ -1951,12 +1951,12 @@ export const MOCK_LISTINGS = [
       "Washer",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/cca0718c-db39-42ff-8975-6aa1009d660c.jpg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 22,
     "images": [
-      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/cca0718c-db39-42ff-8975-6aa1009d660c.jpg",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80"
@@ -1984,12 +1984,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/hosting/Hosting-607069272851808679/original/47444205-e285-4e9e-8d9f-649cda4bf823.jpeg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 14,
     "images": [
-      "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/hosting/Hosting-607069272851808679/original/47444205-e285-4e9e-8d9f-649cda4bf823.jpeg",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80"
@@ -2018,12 +2018,12 @@ export const MOCK_LISTINGS = [
       "TV",
       "Washer"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/2e45f43f-e81c-4573-826a-3ef155591527.jpg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -13,
     "images": [
-      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/2e45f43f-e81c-4573-826a-3ef155591527.jpg",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80"
@@ -2051,12 +2051,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/airflow/Hosting-3537435/original/5fc1253a-97ac-4998-9a1f-b0bca99bde9c.jpg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -13,
     "images": [
-      "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/airflow/Hosting-3537435/original/5fc1253a-97ac-4998-9a1f-b0bca99bde9c.jpg",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80"
@@ -2086,12 +2086,12 @@ export const MOCK_LISTINGS = [
       "Washer",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/d1057d5f-4219-4533-9e60-9f18d1e3f050.jpg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -20,
     "images": [
-      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/d1057d5f-4219-4533-9e60-9f18d1e3f050.jpg",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80"
@@ -2119,12 +2119,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Washer"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/cdd384aa-2546-4cf1-ac08-3893db98cfd9.jpg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 11,
     "images": [
-      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/cdd384aa-2546-4cf1-ac08-3893db98cfd9.jpg",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80"
@@ -2152,12 +2152,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/7266bc23-bc16-4b10-a3ae-70d402e0d4ce.jpg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 0,
     "images": [
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/7266bc23-bc16-4b10-a3ae-70d402e0d4ce.jpg",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80"
@@ -2185,12 +2185,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/041cc569-4204-40f0-8ab9-b825b1f2f9b8.jpg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 9,
     "images": [
-      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/041cc569-4204-40f0-8ab9-b825b1f2f9b8.jpg",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80"
@@ -2219,12 +2219,12 @@ export const MOCK_LISTINGS = [
       "TV",
       "Washer"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/hosting/Hosting-879523940474281677/original/0819b759-4498-4d29-a1d5-76d7c520704e.jpeg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -13,
     "images": [
-      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/hosting/Hosting-879523940474281677/original/0819b759-4498-4d29-a1d5-76d7c520704e.jpeg",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80"
@@ -2253,12 +2253,12 @@ export const MOCK_LISTINGS = [
       "Air conditioning",
       "TV"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/miso/Hosting-677440382137977209/original/6e46cfe4-1440-405e-9cb3-cf6e2d5b0eda.jpeg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 22,
     "images": [
-      "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/miso/Hosting-677440382137977209/original/6e46cfe4-1440-405e-9cb3-cf6e2d5b0eda.jpeg",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80"
@@ -2288,12 +2288,12 @@ export const MOCK_LISTINGS = [
       "TV",
       "Washer"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/feecbc9a-ff6a-4fce-b4d7-a914ea264152.jpg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 9,
     "images": [
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/feecbc9a-ff6a-4fce-b4d7-a914ea264152.jpg",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80"
@@ -2321,12 +2321,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/b4373f14-a8a2-440d-818c-200b29b12f54.jpg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 22,
     "images": [
-      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/b4373f14-a8a2-440d-818c-200b29b12f54.jpg",
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80"
@@ -2353,12 +2353,12 @@ export const MOCK_LISTINGS = [
       "Heating",
       "Hot water"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/463e32e7-9e8e-4c64-8395-85adcd329176.jpg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 0,
     "images": [
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/463e32e7-9e8e-4c64-8395-85adcd329176.jpg",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80"
@@ -2386,12 +2386,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/miso/Hosting-544200927995998298/original/954ae680-28d0-4107-9549-cfa28861ba9d.jpeg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -7,
     "images": [
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/miso/Hosting-544200927995998298/original/954ae680-28d0-4107-9549-cfa28861ba9d.jpeg",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80"
@@ -2420,12 +2420,12 @@ export const MOCK_LISTINGS = [
       "TV",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/53d77720-4dda-4b91-a538-802adaa65c37.jpg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -20,
     "images": [
-      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/53d77720-4dda-4b91-a538-802adaa65c37.jpg",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80"
@@ -2453,12 +2453,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/9c60915a-6208-4f64-9be8-2a201175472f.jpg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -13,
     "images": [
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/9c60915a-6208-4f64-9be8-2a201175472f.jpg",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80"
@@ -2489,12 +2489,12 @@ export const MOCK_LISTINGS = [
       "Washer",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/miso/Hosting-1303554869614316677/original/3b6ea55e-0814-4819-a7cc-33536edb6b39.jpeg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -13,
     "images": [
-      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/miso/Hosting-1303554869614316677/original/3b6ea55e-0814-4819-a7cc-33536edb6b39.jpeg",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80"
@@ -2521,12 +2521,12 @@ export const MOCK_LISTINGS = [
       "Heating",
       "Hot water"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/hosting/Hosting-630708505347437568/original/4121eed9-e9d6-4f49-b70c-0d0d9513bd69.jpeg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -20,
     "images": [
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/hosting/Hosting-630708505347437568/original/4121eed9-e9d6-4f49-b70c-0d0d9513bd69.jpeg",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80"
@@ -2554,12 +2554,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/b59f639f-3751-4fe7-a226-67fe745f478d.jpg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 14,
     "images": [
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/b59f639f-3751-4fe7-a226-67fe745f478d.jpg",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80"
@@ -2587,12 +2587,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/miso/Hosting-818164572616298420/original/4fd907e7-65e0-4d3e-b0a6-36c57e06a7ef.jpeg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 14,
     "images": [
-      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/miso/Hosting-818164572616298420/original/4fd907e7-65e0-4d3e-b0a6-36c57e06a7ef.jpeg",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80"
@@ -2620,12 +2620,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/51459a36-6642-438e-80ee-d4354be8e59b.jpg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -13,
     "images": [
-      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/51459a36-6642-438e-80ee-d4354be8e59b.jpg",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80"
@@ -2656,12 +2656,12 @@ export const MOCK_LISTINGS = [
       "Washer",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/prohost-api/Hosting-1218692324787492605/original/b6f8006b-29f1-473f-a658-6264832d113a.jpeg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 22,
     "images": [
-      "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/prohost-api/Hosting-1218692324787492605/original/b6f8006b-29f1-473f-a658-6264832d113a.jpeg",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80"
@@ -2689,12 +2689,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/miso/Hosting-938288273647870165/original/60dc1b05-868e-4749-b646-b2d83ee96e69.jpeg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -20,
     "images": [
-      "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/miso/Hosting-938288273647870165/original/60dc1b05-868e-4749-b646-b2d83ee96e69.jpeg",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80"
@@ -2725,12 +2725,12 @@ export const MOCK_LISTINGS = [
       "Washer",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/hosting/Hosting-943944034885722367/original/dfe557d4-05ac-4fb9-bbe9-a3c1b3bbdd1a.jpeg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 0,
     "images": [
-      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/hosting/Hosting-943944034885722367/original/dfe557d4-05ac-4fb9-bbe9-a3c1b3bbdd1a.jpeg",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80"
@@ -2761,12 +2761,12 @@ export const MOCK_LISTINGS = [
       "Washer",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/9223c902-68dc-4bcc-a7c8-dd277859e734.jpg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 11,
     "images": [
-      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/9223c902-68dc-4bcc-a7c8-dd277859e734.jpg",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80"
@@ -2795,12 +2795,12 @@ export const MOCK_LISTINGS = [
       "TV",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/cb6c042d-d518-40db-83ed-2979e6f19267.jpg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -13,
     "images": [
-      "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/cb6c042d-d518-40db-83ed-2979e6f19267.jpg",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80"
@@ -2830,12 +2830,12 @@ export const MOCK_LISTINGS = [
       "TV",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/miso/Hosting-1364318885047256842/original/48a3f1c7-7ae6-4b38-a6cf-e9d42e9e992b.jpeg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -7,
     "images": [
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/miso/Hosting-1364318885047256842/original/48a3f1c7-7ae6-4b38-a6cf-e9d42e9e992b.jpeg",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80"
@@ -2863,12 +2863,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "TV"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/3565db26-f9d1-4b88-938b-94a160eceebb.jpg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 9,
     "images": [
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/3565db26-f9d1-4b88-938b-94a160eceebb.jpg",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80"
@@ -2898,12 +2898,12 @@ export const MOCK_LISTINGS = [
       "TV",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/miso/Hosting-1367272215093541463/original/16261e97-6f63-4762-b440-8deb4a2b0f90.jpeg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -13,
     "images": [
-      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/miso/Hosting-1367272215093541463/original/16261e97-6f63-4762-b440-8deb4a2b0f90.jpeg",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80"
@@ -2933,12 +2933,12 @@ export const MOCK_LISTINGS = [
       "TV",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/hosting/Hosting-943977024746964852/original/f42a3921-5bd2-4e0c-979e-94e8622e1094.jpeg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -13,
     "images": [
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/hosting/Hosting-943977024746964852/original/f42a3921-5bd2-4e0c-979e-94e8622e1094.jpeg",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80"
@@ -2968,12 +2968,12 @@ export const MOCK_LISTINGS = [
       "TV",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/hosting/Hosting-634470833944388075/original/105de248-a4ec-4fca-b69d-2f1bf9708521.jpeg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -13,
     "images": [
-      "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/hosting/Hosting-634470833944388075/original/105de248-a4ec-4fca-b69d-2f1bf9708521.jpeg",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80"
@@ -3004,12 +3004,12 @@ export const MOCK_LISTINGS = [
       "Washer",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/hosting/Hosting-48634367/original/b5dd5343-b706-49e5-bc22-d20862cee46c.jpeg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -13,
     "images": [
-      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/hosting/Hosting-48634367/original/b5dd5343-b706-49e5-bc22-d20862cee46c.jpeg",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80"
@@ -3039,12 +3039,12 @@ export const MOCK_LISTINGS = [
       "TV",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/miso/Hosting-1233637984923397155/original/77015d91-1813-4356-9a1b-c038686144ec.jpeg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 22,
     "images": [
-      "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/miso/Hosting-1233637984923397155/original/77015d91-1813-4356-9a1b-c038686144ec.jpeg",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80"
@@ -3072,12 +3072,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Air conditioning"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/hosting/Hosting-949989980201838757/original/5395353e-b3ab-42c0-a87d-5aa1bc4f2a48.png",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -7,
     "images": [
-      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/hosting/Hosting-949989980201838757/original/5395353e-b3ab-42c0-a87d-5aa1bc4f2a48.png",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80"
@@ -3105,12 +3105,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "TV"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/c820b31e-b713-44d5-8401-eda4d02121f8.jpg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -13,
     "images": [
-      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/c820b31e-b713-44d5-8401-eda4d02121f8.jpg",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80"
@@ -3140,12 +3140,12 @@ export const MOCK_LISTINGS = [
       "TV",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/hosting/Hosting-52663227/original/e7eed126-d546-4820-81e0-25ef26256558.png",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -7,
     "images": [
-      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/hosting/Hosting-52663227/original/e7eed126-d546-4820-81e0-25ef26256558.png",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80"
@@ -3175,12 +3175,12 @@ export const MOCK_LISTINGS = [
       "TV",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/57c7c3a7-d4b0-4807-b5a2-d04e5120c796.jpg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 22,
     "images": [
-      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/57c7c3a7-d4b0-4807-b5a2-d04e5120c796.jpg",
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80"
@@ -3210,12 +3210,12 @@ export const MOCK_LISTINGS = [
       "TV",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/hosting/Hosting-768605758428354315/original/bcc6904f-ceb2-451f-ba99-0e18c88f4938.png",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 11,
     "images": [
-      "https://images.unsplash.com/photo-1540518614846-7ede433c4550?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/hosting/Hosting-768605758428354315/original/bcc6904f-ceb2-451f-ba99-0e18c88f4938.png",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80"
@@ -3245,12 +3245,12 @@ export const MOCK_LISTINGS = [
       "TV",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/bdfc860b-076c-4220-866c-5f1a679779e7.jpg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 11,
     "images": [
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/bdfc860b-076c-4220-866c-5f1a679779e7.jpg",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80"
@@ -3278,12 +3278,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/miso/Hosting-856613506636307316/original/74972658-88ea-45bd-b661-87b5d25fe6a5.jpeg",
     "aiBadge": "Harika Değer",
     "aiBadgeType": "great-value",
     "trendPercent": -7,
     "images": [
-      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/miso/Hosting-856613506636307316/original/74972658-88ea-45bd-b661-87b5d25fe6a5.jpeg",
       "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&auto=format&fit=crop&q=80"
@@ -3313,12 +3313,12 @@ export const MOCK_LISTINGS = [
       "TV",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/miso/Hosting-1233645631417849141/original/c5fe302d-6f49-4af1-98fd-3cdbe4cc77d9.jpeg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 22,
     "images": [
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/miso/Hosting-1233645631417849141/original/c5fe302d-6f49-4af1-98fd-3cdbe4cc77d9.jpeg",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80"
@@ -3346,12 +3346,12 @@ export const MOCK_LISTINGS = [
       "Hot water",
       "Dedicated workspace"
     ],
-    "imageUrl": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
+    "imageUrl": "https://a0.muscache.com/pictures/a95d21f7-e0fc-4a13-a5a0-7d9ed71c693e.jpg",
     "aiBadge": "Fiyatı Normal",
     "aiBadgeType": "fair",
     "trendPercent": 11,
     "images": [
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
+      "https://a0.muscache.com/pictures/a95d21f7-e0fc-4a13-a5a0-7d9ed71c693e.jpg",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80",
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80"

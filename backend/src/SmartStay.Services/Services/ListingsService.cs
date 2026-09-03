@@ -129,7 +129,8 @@ namespace SmartStay.Services.Services
                 ReviewScoresRating = entity.ReviewScoresRating,
                 Accommodates = entity.Accommodates,
                 Latitude = entity.Latitude,
-                Longitude = entity.Longitude
+                Longitude = entity.Longitude,
+                PictureUrl = entity.PictureUrl
             };
         }
 
@@ -158,7 +159,8 @@ namespace SmartStay.Services.Services
                 ReviewsPerMonth = entity.ReviewsPerMonth,
                 MinimumNights = entity.MinimumNights,
                 Availability365 = entity.Availability365,
-                Amenities = amenitiesList
+                Amenities = amenitiesList,
+                PictureUrl = entity.PictureUrl
             };
         }
     }
