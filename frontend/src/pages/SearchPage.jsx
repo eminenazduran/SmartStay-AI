@@ -390,14 +390,14 @@ export const SearchPage = () => {
                         </h3>
                         <p className="text-xs text-on-surface-variant flex items-center gap-1.5">
                           <span className="material-symbols-outlined text-[16px]">location_on</span>
-                          {listing.districtName || listing.neighbourhoodCleansed}, İstanbul • {listing.roomType}
+                          {listing.districtName || listing.neighbourhoodCleansed}, İstanbul • {listing.roomType} • {listing.accommodates || 2} misafir
                         </p>
                       </div>
                       <div className="flex items-center gap-1 bg-surface-container-low px-2 py-1 rounded-lg text-on-surface text-xs font-semibold border border-border-subtle shrink-0">
                         <span className="material-symbols-outlined text-[15px] text-yellow-500" style={{ fontVariationSettings: "'FILL' 1" }}>
                           star
                         </span>
-                        {Number(listing.reviewScoresRating || 4.8).toFixed(2)}
+                        {listing.reviewScoresRating ? Number(listing.reviewScoresRating).toFixed(2) : 'Yeni'}
                       </div>
                     </div>
 

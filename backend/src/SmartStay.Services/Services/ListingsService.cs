@@ -127,7 +127,11 @@ namespace SmartStay.Services.Services
                 RoomType = entity.RoomType,
                 Price = entity.Price,
                 ReviewScoresRating = entity.ReviewScoresRating,
+                NumberOfReviews = entity.NumberOfReviews,
                 Accommodates = entity.Accommodates,
+                Bedrooms = entity.Bedrooms,
+                Bathrooms = entity.Bathrooms,
+                Beds = entity.Beds,
                 Latitude = entity.Latitude,
                 Longitude = entity.Longitude,
                 PictureUrl = entity.PictureUrl

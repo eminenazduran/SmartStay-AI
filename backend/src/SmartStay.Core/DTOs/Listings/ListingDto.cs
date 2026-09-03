@@ -39,7 +39,11 @@ namespace SmartStay.Core.DTOs.Listings
         public string RoomType { get; set; } = string.Empty;
         public decimal Price { get; set; }
         public double ReviewScoresRating { get; set; }
+        public int NumberOfReviews { get; set; }
         public int Accommodates { get; set; }
+        public double Bedrooms { get; set; }
+        public double Bathrooms { get; set; }
+        public double Beds { get; set; }
         public double Latitude { get; set; }
         public double Longitude { get; set; }
         public string? PictureUrl { get; set; }

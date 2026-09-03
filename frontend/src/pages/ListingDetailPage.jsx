@@ -326,17 +326,33 @@ export const ListingDetailPage = () => {
                   <span className="material-symbols-outlined text-sm text-yellow-500" style={{ fontVariationSettings: "'FILL' 1" }}>
                     star
                   </span>
-                  {Number(listing.reviewScoresRating || 4.8).toFixed(2)}
+                  {listing.reviewScoresRating
+                    ? Number(listing.reviewScoresRating).toFixed(2)
+                    : (listing.numberOfReviews === 0 ? 'Yeni İlan' : '4.80')}
                   <span className="font-normal text-on-surface-variant text-xs">
-                    ({listing.numberOfReviews || 120} değerlendirme)
+                    ({listing.numberOfReviews != null ? listing.numberOfReviews : 0} değerlendirme)
                   </span>
                 </span>
                 <span>•</span>
-                <span>{listing.accommodates || 2} misafir</span>
+                <span>{listing.accommodates || 1} misafir</span>
                 <span>•</span>
-                <span>{listing.bedrooms || 1} yatak odası</span>
+                <span>
+                  {listing.bedrooms != null
+                    ? (listing.bedrooms === 0 ? 'Stüdyo' : `${listing.bedrooms} yatak odası`)
+                    : '1 yatak odası'}
+                </span>
+                {listing.beds != null && listing.beds > 0 && (
+                  <>
+                    <span>•</span>
+                    <span>{listing.beds} yatak</span>
+                  </>
+                )}
                 <span>•</span>
-                <span>{listing.bathrooms || 1} banyo</span>
+                <span>
+                  {listing.bathrooms != null
+                    ? `${listing.bathrooms} banyo`
+                    : '1 banyo'}
+                </span>
               </div>
             </div>
 
@@ -543,9 +559,13 @@ export const ListingDetailPage = () => {
                 <div>
                   <h3 className="text-base font-bold text-primary flex items-center gap-2">
                     <span className="material-symbols-outlined text-yellow-500" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                    <span>{Number(listing.reviewScoresRating || 4.8).toFixed(2)}</span>
+                    <span>
+                      {listing.reviewScoresRating
+                        ? Number(listing.reviewScoresRating).toFixed(2)
+                        : (listing.numberOfReviews === 0 ? 'Yeni İlan' : '4.80')}
+                    </span>
                     <span className="text-on-surface-variant text-sm font-normal">
-                      • {listing.numberOfReviews || 16} değerlendirme
+                      • {listing.numberOfReviews != null ? listing.numberOfReviews : 0} değerlendirme
                     </span>
                   </h3>
                   <p className="text-xs text-on-surface-variant mt-1">
