@@ -134,8 +134,8 @@ export const ListingDetailPage = () => {
 
   // Clean, rounded prices
   const nightPrice = Math.round(Number(listing.price) || 2450);
-  const districtFallback = getDistrictBenchmarkPrice(listing.neighbourhoodCleansed, listing.roomType, listing.accommodates);
-  const predictedPrice = mlPredictedPrice || (listing.predictedPrice ? Math.round(Number(listing.predictedPrice)) : districtFallback);
+  const districtBenchmark = getDistrictBenchmarkPrice(listing.neighbourhoodCleansed, listing.roomType, listing.accommodates);
+  const predictedPrice = listing.predictedPrice ? Math.round(Number(listing.predictedPrice)) : districtBenchmark;
   const isLowerThanAverage = nightPrice < (predictedPrice * 0.98);
   const isHigherThanAverage = nightPrice > (predictedPrice * 1.02);
   const diffPercent = Math.max(1, Math.round((Math.abs(predictedPrice - nightPrice) / (predictedPrice || 1)) * 100));

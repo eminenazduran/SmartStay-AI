@@ -336,7 +336,7 @@ export const SearchPage = () => {
           ) : activeListings.length > 0 ? (
             activeListings.map((listing) => {
               const isDeal = Boolean(listing.isDeal);
-              const discount = listing.discountPercentage || 15;
+              const discount = Number(listing.discountPercentage || 0);
               const hasNights = filters.nights > 0;
               const totalStayPrice = hasNights ? Number(listing.price) * filters.nights : null;
 

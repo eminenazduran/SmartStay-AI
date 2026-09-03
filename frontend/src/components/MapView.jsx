@@ -83,20 +83,40 @@ export const MapView = ({ listings, onListingSelect }) => {
               key={listing.id}
               position={[listing.latitude, listing.longitude]}
               icon={createMapPinIcon(listing.price, listing.aiBadgeType)}
-              eventHandlers={{
-                click: () => onListingSelect && onListingSelect(listing)
-              }}
             >
-              <Popup className="ss-popup">
-                <div style={{ width: 230, fontFamily: "'Plus Jakarta Sans', sans-serif", background: '#ffffff', borderRadius: 14, overflow: 'hidden', color: '#1b1b1d' }}>
-                  <div style={{ position: 'relative', height: 120, overflow: 'hidden', background: '#e4e2e4' }}>
+              <Popup className="ss-popup" closeButton={true}>
+                <div
+                  onClick={() => onListingSelect && onListingSelect(listing)}
+                  style={{
+                    width: 230,
+                    fontFamily: "'Plus Jakarta Sans', sans-serif",
+                    background: '#ffffff',
+                    borderRadius: 14,
+                    overflow: 'hidden',
+                    color: '#1b1b1d',
+                    cursor: 'pointer'
+                  }}
+                  className="group hover:opacity-95 transition-opacity"
+                >
+                  <div style={{ position: 'relative', height: 125, overflow: 'hidden', background: '#e4e2e4' }}>
                     <img
                       src={listing.imageUrl}
                       alt={listing.name}
                       style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                      loading="lazy"
                     />
                     {listing.aiBadge && (
-                      <div style={{ position: 'absolute', top: 8, left: 8, background: 'linear-gradient(135deg, #8b5cf6, #6366f1)', color: '#fff', padding: '3px 9px', borderRadius: 20, fontSize: 10, fontWeight: 700 }}>
+                      <div style={{
+                        position: 'absolute',
+                        top: 8,
+                        left: 8,
+                        background: listing.isDeal ? '#059669' : listing.isHigh ? '#e11d48' : '#1e293b',
+                        color: '#fff',
+                        padding: '3px 8px',
+                        borderRadius: 12,
+                        fontSize: 10,
+                        fontWeight: 700
+                      }}>
                         {listing.aiBadge}
                       </div>
                     )}
@@ -105,14 +125,30 @@ export const MapView = ({ listings, onListingSelect }) => {
                     <p style={{ fontWeight: 700, fontSize: 13, margin: '0 0 3px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
                       {listing.name}
                     </p>
-                    <p style={{ fontSize: 11, color: '#45464d', margin: '0 0 8px' }}>
-                      {listing.neighbourhoodCleansed}
+                    <p style={{ fontSize: 11, color: '#64748b', margin: '0 0 8px' }}>
+                      {listing.districtName || listing.neighbourhoodCleansed} • {listing.roomType}
                     </p>
-                    <div style={{ borderTop: '1px solid #e2e8f0', paddingTop: 8, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                      <span style={{ fontSize: 15, fontWeight: 800 }}>₺{Number(listing.price).toLocaleString('tr-TR')}</span>
-                      <a href={`/listing/${listing.id}`} style={{ background: '#4648d4', color: '#ffffff', padding: '4px 10px', borderRadius: 8, fontSize: 11, fontWeight: 700, textDecoration: 'none' }}>
-                        Detay
-                      </a>
+                    <div style={{ borderTop: '1px solid #f1f5f9', paddingTop: 8, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                      <span style={{ fontSize: 15, fontWeight: 800 }}>₺{Number(listing.price).toLocaleString('tr-TR')}<span style={{ fontSize: 11, fontWeight: 500, color: '#64748b' }}> /gece</span></span>
+                      <button
+                        type="button"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          onListingSelect && onListingSelect(listing);
+                        }}
+                        style={{
+                          background: '#131b2e',
+                          color: '#ffffff',
+                          padding: '5px 12px',
+                          borderRadius: 8,
+                          fontSize: 11,
+                          fontWeight: 700,
+                          border: 'none',
+                          cursor: 'pointer'
+                        }}
+                      >
+                        İncele
+                      </button>
                     </div>
                   </div>
                 </div>

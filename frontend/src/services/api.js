@@ -101,6 +101,7 @@ export function normalizeListing(item) {
     price: price,
     predictedPrice: predictedPrice,
     isDeal: isDeal,
+    discountPercentage: discountPercentage,
     aiBadge: isDeal ? `-%${discountPercentage} Uygun` : isHigh ? `+${discountPercentage}% Yüksek` : 'Bölge Düzeyinde',
     aiBadgeType: isDeal ? 'great-value' : isHigh ? 'high-price' : 'fair',
     isHigh: isHigh,
