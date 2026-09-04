@@ -1,4 +1,4 @@
-# SmartStay AI 🏠⚡
+# SmartStay
 > **Yapay Zeka Destekli Akıllı Konaklama Öneri ve Dinamik Fiyat Değerleme Platformu**
 
 [![.NET](https://img.shields.io/badge/.NET-10.0-512BD4?style=flat-square&logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
@@ -10,7 +10,7 @@
 [![MSSQL](https://img.shields.io/badge/MSSQL-Server_2022-CC292B?style=flat-square&logo=microsoft-sql-server&logoColor=white)](https://www.microsoft.com/sql-server)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
 
-SmartStay AI; Inside Airbnb'nin İstanbul açık verisi üzerine inşa edilmiş, konaklama arayan misafirler ve ev sahipleri için **makine öğrenmesi destekli adil fiyat değerlemesi**, **içerik tabanlı kişiselleştirilmiş ev önerileri** ve **akıllı semt rehberliği** sunan modern bir web ve mobil platformudur.
+SmartStay; Inside Airbnb'nin İstanbul açık verisi üzerine inşa edilmiş, konaklama arayan misafirler ve ev sahipleri için **makine öğrenmesi destekli adil fiyat değerlemesi**, **içerik tabanlı kişiselleştirilmiş ev önerileri** ve **akıllı semt rehberliği** sunan modern bir web ve mobil platformudur.
 
 ---
 
@@ -31,7 +31,7 @@ SmartStay AI; Inside Airbnb'nin İstanbul açık verisi üzerine inşa edilmiş,
 
 Kısa dönemli ev kiralama pazarında (Airbnb vb.) hem misafirler hem de ev sahipleri için en kritik konu **"Bu evin gerçek piyasa değeri nedir?"** sorusudur. 
 
-SmartStay AI bu problemi çözmek için geliştirilmiştir:
+SmartStay bu problemi çözmek için geliştirilmiştir:
 1. **İlan Fiyatını Değerler:** Bir evin konumuna, kapasitesine ve 30'dan fazla olanağına bakarak tahmin ettiği değer ile gerçek liste fiyatını kıyaslar. Evin *"Fırsat"*, *"Piyasa Değerinde"* veya *"Ortalama Üzeri"* olduğunu rozetlerle gösterir.
 2. **Kişiselleştirilmiş Alternatifler Önerir:** Misafirin incelediği ilanın özelliklerine en çok benzeyen alternatif evleri içerik tabanlı benzerlik analiziyle sunar.
 3. **Gerçek Veri Güvenilirliği:** Şablon veriler yerine İstanbul'daki 22.000'den fazla evin gerçek konumlarını, doğrulanmış ev sahiplerini ve misafirlerin yazdığı on binlerce orijinal yorumu sunar.
